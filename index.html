@@ -1,0 +1,15 @@
+<script>
+  const jsonData = {
+    dog: [
+      { name: "식빵", family: "웰시코기", age: 1, weight: 2.14 },
+      { name: "콩콩", family: "포메라니안", age: 3, weight: 2.5 },
+      { name: "젤리", family: "푸들", age: 7, weight: 3.1 },
+    ],
+  };
+
+  console.log(jsonData);
+  console.log(jsonData.dog[2].name);
+  jsonData.dog.forEach((element) => {
+    console.log(element);
+  });
+</script>
