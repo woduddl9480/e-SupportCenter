@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background: #f5f8fa;
+
+    &-top {
+        height: 160px;
+        position: relative;
+
+        h1 {
+            font-family: 'ONE-Mobile-Title';
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+
+    &-bottom {
+        padding: 40px 0 80px;
+    }
+}
+
+.lnb {
+    &-wrap {
+        position: absolute;
+    }
+}
+
+.contents {
+    margin: 0 auto;
+    background: #fff;
+    max-width: 1280px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 43px 40px 80px;
+}
