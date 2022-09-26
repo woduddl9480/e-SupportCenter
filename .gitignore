@@ -3,3 +3,5 @@ dist/**
 !dist/img/
 !dist/img/**
 scss/test.css.map
+package-lock.json
+package.json
