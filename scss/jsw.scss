@@ -1,5 +1,12 @@
-.test {
-  padding: 0;
-  margin: 0;
-  background-color: aqua;
+.footer {
+  background: #222;
+  padding: 32px 0;
+  .inner {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .siteWrap {
+    width: 19%;
+  }
 }
