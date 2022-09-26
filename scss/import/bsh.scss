@@ -179,7 +179,9 @@ header {
         }
 
         &:hover {
-            background: #000e52;
+            a {
+                background: #000e52;
+            }
 
             ul {
                 display: block;
@@ -323,4 +325,10 @@ header {
             display: block;
         }
     }
+}
+
+select {
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 }
