@@ -141,6 +141,26 @@ header {
             text-align: center;
             line-height: 1;
         }
+
+        &.notice {
+            background: url(../img/sub_w.png) no-repeat center;
+        }
+
+        &.recruit {
+            background: url(../img/recruit_sub_w.png) no-repeat center;
+        }
+
+        &.counseledu {
+            background: url(../img/counseledu_sub_w.png);
+        }
+
+        &.join {
+            background: url(../img/join_sub_w.png);
+        }
+
+        &.welfare {
+            background: url(../img/welfare_sub_w.png);
+        }
     }
 
     &-bottom {
@@ -149,11 +169,11 @@ header {
 }
 
 .lnb {
-    overflow: hidden;
+    clear: both;
 
     >li {
         float: left;
-        overflow: hidden;
+        position: relative;
 
         >a {
             color: #fff;
@@ -178,34 +198,37 @@ header {
             }
         }
 
-        &.active {
-            background: #000e52;
+        &:hover {
+            a {
+                background: #000e52;
+            }
 
             ul {
-                height: 220px;
-                border-top: 1px solid #162881;
+                display: block;
             }
         }
 
         ul {
+            display: none;
             width: 100%;
-            height: 0;
+            height: auto;
+            min-height: 220px;
             background: #000e52;
             border-radius: 0 0 4px 4px;
-            transition: 0.2s;
-            padding: 0 24px;
+            padding: 20px 24px;
             overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 64px;
+            border-top: 1px solid #162881;
 
             li {
-                margin-bottom: 15px;
+                margin-bottom: 20px;
+                line-height: 1;
                 a {
                     color: #fff;
                     font-size: 16px;
                     line-height: 1;
-                }
-
-                &:first-child {
-                    padding-top: 20px;
                 }
 
                 &:last-child {
@@ -322,4 +345,10 @@ header {
             display: block;
         }
     }
+}
+
+select {
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 }
