@@ -90,17 +90,19 @@ header {
 }
 .lnb > li {
   float: left;
+  overflow: hidden;
 }
 .lnb > li > a {
   color: #fff;
-  display: block;
+  display: flex;
   width: 240px;
   height: 100%;
   position: relative;
-  padding: 22px 24px;
+  padding-left: 24px;
   font-size: 18px;
   line-height: 1;
   border-right: 1px solid #3952cc;
+  align-items: center;
 }
 .lnb > li > a::after {
   content: "";
@@ -111,8 +113,35 @@ header {
   top: 28px;
   right: 16px;
 }
+.lnb > li.active {
+  background: #000e52;
+}
+.lnb > li.active ul {
+  height: 220px;
+  border-top: 1px solid #162881;
+}
 .lnb > li ul {
-  display: none;
+  width: 100%;
+  height: 0;
+  background: #000e52;
+  border-radius: 0 0 4px 4px;
+  transition: 0.2s;
+  padding: 0 24px;
+  overflow: hidden;
+}
+.lnb > li ul li {
+  margin-bottom: 15px;
+}
+.lnb > li ul li a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+.lnb > li ul li:first-child {
+  padding-top: 20px;
+}
+.lnb > li ul li:last-child {
+  margin-bottom: 0;
 }
 .lnb > li.home a {
   width: 64px;
@@ -144,12 +173,9 @@ header {
   padding: 43px 40px 80px;
 }
 .contents-title {
-  overflow: hidden;
   width: 100%;
   margin-bottom: 24px;
-}
-.contents-title > * {
-  float: left;
+  display: flex;
 }
 .contents-title p {
   font-size: 32px;
