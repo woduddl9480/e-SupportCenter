@@ -187,6 +187,10 @@ header {
     padding: 43px 40px 80px;
 
     &-title {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 24px;
+
         >* {
             float: left;
         }
@@ -198,6 +202,10 @@ header {
             line-height: 1;
         }
     }
+
+    &-box {
+        width: 100%;
+    }
 }
 
 .icon-box {
@@ -207,4 +215,52 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.tab {
+    width: 100%;
+    height: 56px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: inherit;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+
+    li {
+        width: 100%;
+        a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border-right: 1px solid #cccccc;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-family: 'ONE-Mobile-Title';
+            color: #444;
+        }
+
+        &:last-child {
+            a {
+                border: none;
+            }
+        }
+
+        &.active {
+            a {
+                background: #3355ff;
+                color: #fff;
+            }
+        }
+    }
+
+    &-con {
+        width: 100%;
+        margin-top: 40px;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
 }
