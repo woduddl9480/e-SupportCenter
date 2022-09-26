@@ -1,0 +1,43 @@
+// 페이지네이션
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-control {
+        font-size: 0;
+        &--prev {
+            margin-right: 5px;
+            margin-left: -5px;
+        }
+        &--next {
+            margin-left: 5px;
+        }
+    }
+    button {
+        min-width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+    }
+    &-list {
+        display: flex;
+        li {
+            min-width: 40px;
+            height: 40px;
+            border: none;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+            color: #666;
+        }
+        li.is_active{
+            background-color: #4766ff;
+            border: none;
+            color: #fff;
+        }
+    }
+}
