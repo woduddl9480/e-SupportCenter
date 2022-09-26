@@ -7,11 +7,11 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .siteWrap {
-    width: 100%;
-    .mobile_only {
-      display: flex;
+    .siteWrap {
+      width: 100%;
+      .mobile_only {
+        display: flex;
+      }
     }
   }
 }
