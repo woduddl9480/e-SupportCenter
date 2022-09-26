@@ -11,13 +11,17 @@
     background: #f5f8fa;
 
     &-top {
+        width: 100%;
         height: 160px;
         position: relative;
+        padding-top: 53px;
 
         h1 {
             font-family: 'ONE-Mobile-Title';
             font-size: 40px;
             color: #fff;
+            text-align: center;
+            line-height: 1;
         }
     }
 
@@ -27,8 +31,61 @@
 }
 
 .lnb {
+    overflow: hidden;
+
+    >li {
+        float: left;
+
+        >a {
+            color: #fff;
+            display: block;
+            width: 240px;
+            height: 100%;
+            position: relative;
+            padding: 22px 24px;
+            font-size: 18px;
+            line-height: 1;
+            border-right: 1px solid #3952cc;
+
+            &::after {
+                content: '';
+                width: 16px;
+                height: 9px;
+                background: url(../img/arrow-down.png);
+                position: absolute;
+                top: 28px;
+                right: 16px;
+            }
+        }
+
+        ul {
+            display: none;
+        }
+
+        &.home {
+            a {
+                width: 64px;
+                height: 64px;
+                background: url(../img/home.png) center no-repeat #4766ff;
+                border-radius: 4px;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
     &-wrap {
         position: absolute;
+        max-width: 1280px;
+        width: 100%;
+        height: 64px;
+        background: #18297a;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        border-radius: 4px;
     }
 }
 
@@ -39,4 +96,26 @@
     width: 100%;
     border-radius: 16px;
     padding: 43px 40px 80px;
+
+    &-title {
+        >* {
+            float: left;
+        }
+
+        p {
+            font-size: 32px;
+            font-family: 'ONE-Mobile-Title';
+            color: #222;
+            line-height: 1;
+        }
+    }
+}
+
+.icon-box {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
