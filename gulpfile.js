@@ -67,12 +67,20 @@ gulp.task("gulp_js", function () {
 
 // browser-sync
 gulp.task("browserSync", function () {
-  return browserSync.init({ port: 3000, server: { baseDir: "./dist" } });
+  return browserSync.init({ port: 5000, server: { baseDir: "./dist" } });
 });
+
+// gulp.watch(['html/**', 'js/**', 'scss/**', 'include/**'],
+//   function () {
+//     browserSync.reload();
+//   });
 
 gulp.task("watch", function () {
   gulp
     .watch(paths.src.html, gulp.series("include"))
+    .on("change", browserSync.reload);
+  gulp
+    .watch('include/**', gulp.series("include"))
     .on("change", browserSync.reload);
   gulp
     .watch("./scss/**", gulp.series("gulp_css"))
@@ -84,5 +92,5 @@ gulp.task("watch", function () {
 
 gulp.task(
   "default",
-  gulp.parallel("browserSync", "include", "gulp_css", "gulp_js", "watch")
+  gulp.parallel("include", "gulp_css", "gulp_js", "watch", 'browserSync')
 );
