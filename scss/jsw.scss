@@ -1,4 +1,6 @@
 .footer {
+  width: 100%;
+  height: 199px;
   background: #222;
   padding: 32px 0;
   .inner {
@@ -8,5 +10,8 @@
   }
   .siteWrap {
     width: 19%;
+    .mobile_only {
+      display: flex;
+    }
   }
 }
