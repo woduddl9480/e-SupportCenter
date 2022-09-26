@@ -72,13 +72,13 @@ gulp.task("browserSync", function () {
 
 gulp.task("watch", function () {
   gulp
-    .watch("./src/html/**", gulp.series("include"))
+    .watch(paths.src.html, gulp.series("include"))
     .on("change", browserSync.reload);
   gulp
-    .watch("./src/scss/**", gulp.series("gulp_css"))
+    .watch("./scss/**", gulp.series("gulp_css"))
     .on("change", browserSync.reload);
   gulp
-    .watch("./src/js/**", gulp.series("gulp_js"))
+    .watch("./js/**", gulp.series("gulp_js"))
     .on("change", browserSync.reload);
 });
 
