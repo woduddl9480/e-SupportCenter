@@ -2,3 +2,4 @@ node_modules
 dist/**
 !dist/img/
 !dist/img/**
+scss/test.css.map
