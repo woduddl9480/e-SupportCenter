@@ -141,6 +141,26 @@ header {
             text-align: center;
             line-height: 1;
         }
+
+        &.notice {
+            background: url(../img/sub_w.png) no-repeat center;
+        }
+
+        &.recruit {
+            background: url(../img/recruit_sub_w.png) no-repeat center;
+        }
+
+        &.counseledu {
+            background: url(../img/counseledu_sub_w.png);
+        }
+
+        &.join {
+            background: url(../img/join_sub_w.png);
+        }
+
+        &.welfare {
+            background: url(../img/welfare_sub_w.png);
+        }
     }
 
     &-bottom {
