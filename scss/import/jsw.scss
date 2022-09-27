@@ -76,3 +76,11 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .relevant-site {
+    select {
+      display: none;
+    }
+  }
+}
