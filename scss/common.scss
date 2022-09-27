@@ -316,16 +316,6 @@
     }    
 }
 
-/* radio, checkbox 공통 */
-
-
-input[type="checkbox"]+label,
-input[type="radio"]+label {
-  color: #222;
-  font-size: 1.6rem;
-  margin-right: 1rem;
-}
-
 /* radio */
 .radio {
     display: flex;
