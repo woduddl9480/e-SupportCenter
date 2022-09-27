@@ -1,17 +1,19 @@
 let tabBtn = document.querySelectorAll('.tab li a');
 
 const tabOn = (tabClick) => {
-    let clicked = tabClick.currentTarget;
+    const clicked = tabClick.currentTarget;
     const clickedLi = clicked.parentNode;
-    const li = document.querySelectorAll('.tab li')
+    const clickedWrap = clickedLi.parentNode;
+    const li = clickedWrap.children;
 
     for (let i = 0; i < li.length; i++) {
         li[i].classList.remove('active')
     }
     clickedLi.classList.add('active')
 
-    let tabIndex = Array.from(li).indexOf(clickedLi)
-    let tabcon = document.querySelectorAll('.tab-con')
+    const tabWrap = clickedLi.parentNode.parentNode;
+    const tabIndex = Array.from(li).indexOf(clickedLi)
+    const tabcon = tabWrap.querySelectorAll('.tab-con')
 
     for (let i = 0; i < tabcon.length; i++) {
         tabcon[i].classList.remove('active')

@@ -8,7 +8,7 @@
 header {
     width: 100%;
     height: 80px;
-    padding: 10px 40px;
+    padding: 0 40px;
     position: relative;
 }
 
@@ -46,10 +46,8 @@ header {
 }
 
 .nav {
-    max-width: 1000px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     clear: both;
     >li {
         float: left;
@@ -84,7 +82,20 @@ header {
             padding-top: 20px;
             display: none;
 
-            &.active {
+            li {
+                margin-bottom: 20px;
+                line-height: 1;
+
+                a {
+                    font-size: 18px;
+                    color: #222;
+                    line-height: 1;
+                }
+            }
+        }
+
+        &:hover {
+            ul {
                 background: #f0f7fa;
                 
                 &::before {
@@ -95,17 +106,6 @@ header {
                     position: absolute;
                     left: -1px;
                     top: -4px;
-                }
-            }
-
-            li {
-                margin-bottom: 20px;
-                line-height: 1;
-
-                a {
-                    font-size: 18px;
-                    color: #222;
-                    line-height: 1;
                 }
             }
         }
@@ -120,6 +120,21 @@ header {
         top: 80px;
         z-index: 1;
         display: none;
+    }
+
+    &-wrap {
+        max-width: 1000px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        &:hover {
+            ul {
+                display: block;
+            }
+            .nav-bg {
+                display: block;
+            }
+        }
     }
 }
 
