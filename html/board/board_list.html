@@ -1,10 +1,98 @@
 <!-- header include -->
 @@include('../../include/header.html')
 <!-- header include -->
-
-
-
-
+<div class="container">
+  <!--
+      container-top
+      notice recruit counseledu join welfare 클래스로 배경 변경
+  -->
+  <div class="container-top notice">
+    <h1>게시판</h1>
+    <div class="lnb-wrap">
+      <ul class="lnb">
+        <li class="home">
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">게시판</a>
+          <ul>
+            <li><a href="">상담 및 교육</a></li>
+            <li><a href="">채용정보</a></li>
+            <li><a href="">스포츠복지</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="">센터 안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">공지사항</a>
+          <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">질의응답</a></li>
+            <li><a href="">보도홍보자료</a></li>
+            <li><a href="">정보자료실</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-bottom">
+    <div class="contents">
+      <div class="contents-title">
+        <div class="icon-box">
+          <img src="../img/notice.png" alt="정보자료실" />
+        </div>
+        <p>정보자료실</p>
+      </div>
+      <div class="contents-box">
+        <div class="tab-wrap">
+          <ul class="tab">
+            <li class="active"><a href="#" onclick="return false;">탭1</a></li>
+            <li><a href="#" onclick="return false;">탭2</a></li>
+            <li><a href="#" onclick="return false;">탭3</a></li>
+          </ul>
+          <div class="tab-con active">탭 콘텐츠 1</div>
+          <div class="tab-con">탭 콘텐츠 2</div>
+          <div class="tab-con">탭 콘텐츠 3</div>
+        </div>
+        <br />
+        <p>셀렉트박스</p>
+        <select name="" id="">
+          <option value="">제목1</option>
+          <option value="">제목2</option>
+          <option value="">제목3</option>
+          <option value="">제목4</option>
+        </select>
+      </div>
+      <!-- 페이지네이션 -->
+      <div class="pagination">
+        <div class="pagination-control--prev">
+          <button type="button">
+            <i class="icon icon-pagination--d"></i>
+          </button>
+          <button type="button" class="prev">
+            <i class="icon icon-pagination"></i>
+          </button>
+        </div>
+        <ol class="pagination-list">
+          <li class="is_active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+        </ol>
+        <div class="pagination-control--next">
+          <button type="button" class="next">
+            <i class="icon icon-pagination"></i>
+          </button>
+          <button type="button">
+            <i class="icon icon-pagination--d"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- footer include -->
 @@include('../../include/footer.html')
 <!-- footer include -->
