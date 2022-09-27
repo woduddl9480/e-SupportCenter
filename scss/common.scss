@@ -326,11 +326,34 @@
         height: 2.2rem;
     }
     &__label {
-        font-size: 1.6rem;
-        color: map-get($color, primary);
-        letter-spacing: -0.064rem
+        @extend %radio-chkbox-ft;
     }
 }
+
+
+/* checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    &__inp {
+        margin-right: 0.6rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    &__label {
+        @extend %radio-chkbox-ft;
+    }
+    &--disabled {
+        .checkbox__inp {
+            &:disabled {
+                background-color: red !important;
+                color: red !important;
+            }
+        }
+    }
+}
+
+
 
 @import "../scss/import/kkami.scss";
 @import "../scss/import/bsh.scss";
