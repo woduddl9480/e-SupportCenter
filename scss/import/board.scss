@@ -212,6 +212,7 @@
 @media screen and (max-width: 768px) {
   .listType-header .free-main ol li .left-free {
     display: block;
+    width: 100%;
   }
   .listType-header .free-main ol li .left-free .announ {
     margin-left: 0rem;
@@ -258,6 +259,8 @@
     margin-right: 1.5rem;
   }
   .listType-header .free-main ol li .left-free h4 {
+    max-width: 128rem;
+    width: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
