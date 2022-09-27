@@ -113,19 +113,19 @@
         line-height: 1;
         letter-spacing: -0.096rem;
     }
+    .item {
+        display: flex;
+        min-height: 12rem;
+        padding: 2.4rem 0 6.4rem;
+        border-top: 0.1rem solid #eee;
 
-    ul {
-        border-top: 0.2rem solid #1a1a1a;
-        margin-top: 1.2rem;
-        li {
-            display: flex;
-            min-height: 12rem;
-            padding: 2.4rem 0 6.4rem;
-            border-top: 0.1rem solid #eee;
+        &:first-child {
+            border: none;
+        }
 
-            &:first-child {
-                border: none;
-            }
+        &-wrap {
+            border-top: 0.2rem solid #1a1a1a;
+            margin-top: 1.2rem;
         }
     }
 
@@ -196,6 +196,13 @@
         .history {
             line-height: 2.22;
             font-weight: normal;
+        }
+
+        ul {
+            li {
+                margin-bottom: 1.2rem;
+                color: #222;
+            }
         }
 
         .caution {
