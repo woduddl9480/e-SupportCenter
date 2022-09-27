@@ -1,4 +1,4 @@
-// board_list //
+// start-boardList //
 .list {
   width: 100%;
   height: 8rem;
@@ -299,5 +299,196 @@
   }
   .list .search-box {
     max-width: 20rem;
+  }
+}
+
+// end-boardList //
+
+// start-boardQnaList //
+.listType-header .qna-main {
+  border-top: 0.3rem solid #000;
+  width: 100%;
+  max-width: 128rem;
+}
+
+.listType-header .qna-main-title {
+  font-size: 1.6rem;
+  color: #888;
+  font-stretch: normal;
+  font-style: normal;
+
+  letter-spacing: -0.064rem;
+  text-align: left;
+}
+
+.listType-header .qna-main-title strong {
+  font-weight: bold;
+
+  color: #4766ff;
+}
+
+.listType-header .qna-main {
+  margin-top: 1.6rem;
+}
+
+.listType-header .qna-main ol li {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.listType-header .qna-main ol li:nth-child(1) {
+  height: 4.8rem;
+}
+
+.listType-header .qna-main ol li .left-qna {
+  width: 100%;
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+  gap: 3%;
+}
+
+.listType-header .qna-main ol li .left-qna b {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #1a1a1a;
+
+  width: 10%;
+}
+.listType-header .qna-main ol li .left-qna b:nth-child(1) {
+  margin-left: 2.2rem;
+}
+
+.listType-header .qna-main ol li .left-qna b:nth-child(2) {
+  margin-left: -3.2rem;
+}
+
+.listType-header .qna-main ol li .left-qna .announ {
+  color: #35f;
+  width: 12%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.06rem;
+}
+
+.listType-header .qna-main ol li .left-qna p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: -0.06rem;
+  width: 10%;
+  text-align: center;
+}
+
+.listType-header .qna-main ol li .left-qna h4 {
+  letter-spacing: -0.072rem;
+  line-height: 1.19;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #222222;
+  width: 100%;
+}
+
+.listType-header .qna-main ol li .left-qna h4 span {
+  margin-left: 1rem;
+}
+
+.listType-header .qna-main ol li .right-qna {
+  color: #666;
+  line-height: 1.6;
+  letter-spacing: -0.06rem;
+  font-size: 1.5rem;
+  width: 29%;
+  align-items: center;
+  display: flex;
+
+  gap: 20%;
+}
+.listType-header .qna-main ol li .right-qna b {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  line-height: 1.6;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.listType-header .qna-main ol li .right-qna span {
+  color: #222;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.06rem;
+  line-height: 1.6;
+  width: 7rem;
+  height: 3rem;
+  padding-left: 0.9rem;
+  padding-top: 0.3rem;
+  border-radius: 0.4rem;
+  border: solid 0.1rem #aaa;
+  background-color: #fff;
+}
+
+.listType-header .qna-main ol li .right-qna .finsh {
+  color: #00a9ff;
+  border: solid 1px #00a9ff;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.06rem;
+  line-height: 1.6;
+  width: 7rem;
+  height: 3rem;
+  padding-left: 0.9rem;
+  padding-top: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+.listType-header .qna-main ol li .right-qna b:nth-child(1) {
+  margin-right: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .listType-header .qna-main ol li .left-qna {
+    margin-left: 0rem;
+    display: block;
+    width: 100%;
+  }
+  .listType-header .qna-main ol li .left-qna .announ {
+    margin-left: 0rem;
+  }
+  .listType-header .qna-main ol li {
+    padding: 1rem 0;
+    display: block;
+    height: inherit;
+  }
+  .listType-header .qna-main ol li .right-qna {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .listType-header .qna-main ol li .right-qna p {
+    margin-right: 0rem;
+  }
+  .listType-header .qna-main ol li .left-qna h4 {
+    max-width: 128rem;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .listType-header .qna-main ol li:nth-child(1) {
+    display: none;
+  }
+  .listType-header .qna-main ol li .left-qna p {
+    display: none;
   }
 }

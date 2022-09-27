@@ -41,3 +41,10 @@
         @content;
     }
 }
+
+
+%radio-chkbox-ft {
+    font-size: 1.6rem;
+    color: map-get($color, primary);
+    letter-spacing: -0.064rem
+}
