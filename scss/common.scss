@@ -209,15 +209,13 @@
   }
 }
 
-<<<<<<< HEAD
 /* 라디오 */
 .radio {
   &__input {
   }
   &__label {
   }
-=======
-
+}
 /* 버튼 */
 .btn {
     display: flex;
@@ -306,7 +304,6 @@
     &__label {
         
     }
->>>>>>> db75dd7c0de674e406c889441f411c3c16b5510c
 }
 
 @import "../scss/import/kkami.scss";
