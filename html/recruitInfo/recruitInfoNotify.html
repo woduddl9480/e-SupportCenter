@@ -40,64 +40,56 @@
         <div class="contents">
             <div class="contents-title">
                 <div class="icon-box">
-                    <img src="img/notice.png" alt="채용정보 대표 아이콘">
+                    <img src="/img/ico_recruitInfo.svg" alt="채용정보 대표 아이콘">
                 </div>
-                <p>정보자료실</p>
+                <p>채용정보알림신청</p>
             </div>
             <div class="contents-box">
-                <div class="tab-wrap">
-                    <ul class="tab">
-                        <li class="active"><a href="#" onclick="return false;">탭1</a></li>
-                        <li><a href="#" onclick="return false;">탭2</a></li>
-                        <li><a href="#" onclick="return false;">탭3</a></li>
-                    </ul>
-                    <div class="tab-con active">
-                        탭 콘텐츠 1
-                    </div>
-                    <div class="tab-con">
-                        탭 콘텐츠 2
-                    </div>
-                    <div class="tab-con">
-                        탭 콘텐츠 3
-                    </div>
-                </div>
-                <br />
-                <p>셀렉트박스</p>
-                <select name="" id="">
-                    <option value="">제목1</option>
-                    <option value="">제목2</option>
-                    <option value="">제목3</option>
-                    <option value="">제목4</option>
-                </select>
+                <table class="table table-custom1 norespon" summary="">
+                    <caption>회원가입 정보입력 2단계</caption>
+                    <colgroup>
+                        <col width="10%">
+                        <col width="90%">
+                    </colgroup>
+                    <tbody><tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                            <input type="text" name="memberId" id="memberId" class="clear" value="" placeholder="아이디를 입력하세요" minlength="6" maxlength="12">
+                                
+                                                
+                            
+                            <span class="erorMsg" id="erorMsg" style="display: inline-block; color: rgb(128, 128, 128);">6~12자의 영문 소문자, 숫자만 사용할 수 있습니다.</span>
+                            <span class="erorMsg" id="info1">아이디는 6~12자의 영문 소문자, 숫자만 사용할 수 있습니다.</span>
+                            <span class="erorMsg" id="info2">아이디를 입력해 주세요.</span>
+                            <span class="erorMsg" id="info3">아이디는 최소 6자이어야 합니다.</span>
+                            <span class="erorMsg" id="info4">이미 사용중인 아이디입니다. 아이디를 확인해 주세요.</span>
+                            <span class="erorMsg" id="info5">사용가능한 아이디 입니다.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호</th>
+                        <td>
+                            <input type="password" name="memberPw" class="clear" id="memberPw" placeholder="비밀번호를를 입력하세요" minlength="6" maxlength="16">
+                            <span class="pwInfo" id="pwInfo" style="display: inline-block; color: rgb(128, 128, 128);">6~16자의 영문/숫자/특수기호 조합</span>
+                            <span class="erorMsg pwInfo" id="pwInfo1">비밀번호 길이 형식에 맞지 않습니다. 6~16자 사이로 입력해 주세요.</span>
+                            <span class="erorMsg pwInfo" id="pwInfo2">비밀번호 형식에 맞지 않습니다.
+                            6~16자의 영문/숫자/특수기호 조합이어야 합니다.</span>
+                            <span class="erorMsg pwInfo" id="pwInfo3">사용 가능한 비밀번호입니다.</span>
+                            <span class="erorMsg pwInfo" id="pwInfo4">비밀번호를 입력해 주세요.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호 확인</th>
+                        <td>
+                            <input type="password" id="memberPwCfm" class="clear" name="memberPwCfm" placeholder="비밀번호를 한번 더 입력하세요" minlength="6" maxlength="16">
+                            <span class="erorMsg rePwInfo" id="rePwInfo">비밀번호와 비밀번호 확인이 맞지 않습니다. 비밀번호를 확인해 주세요.</span>
+                            <span class="erorMsg rePwInfo" id="rePwInfo1">비밀번호 확인이 완료 되었습니다.</span>
+                            <span class="erorMsg rePwInfo" id="rePwInfo2">비밀번호 확인을 입력해 주세요.</span>
+                        </td>
+                    </tr>
+                </tbody></table>
             </div>
-            <!-- 페이지네이션 -->
-            <div class="pagination">
-                <div class="pagination-control--prev">
-                    <button type="button">
-                        <i class="icon icon-pagination--d"></i>
-                    </button>
-                    <button type="button" class="prev">
-                        <i class="icon icon-pagination"></i>
-                    </button>
-                </div>
-                <ol class="pagination-list">
-                    <li class="is_active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                </ol>
-                <div class="pagination-control--next">
-                    <button type="button" class="next">
-                        <i class="icon icon-pagination reverse"></i>
-                    </button>
-                    <button type="button">
-                        <i class="icon icon-pagination--d reverse"></i>
-                    </button>
-                </div>
-            </div>
-            <!-- //페이지네이션 -->
+            
         </div>
     </div>
 </div>

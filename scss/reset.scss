@@ -78,6 +78,7 @@ table {
     width: 100%;
     border-spacing: 0;
     table-layout: fixed;
+    border-collapse: collapse;
 }
 
 th,
@@ -150,6 +151,15 @@ a:active {
 a:focus {
     text-decoration: none;
     color: inherit;
+}
+
+caption {
+    overflow: hidden;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
 }
 
 .m {
