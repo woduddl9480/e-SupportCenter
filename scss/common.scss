@@ -290,14 +290,15 @@
     }
 }
 
-/* 라디오 */
-.radio {
-    
-    &__input {
-
-    }
-    &__label {
-        
+/* 셀렉트박스 */
+.select {      
+    appearance: none;
+    padding: 0 10px;
+    &__value {
+        line-height: 1.19;
+        font-size: 1.6rem;
+        color: map-get($color, primary);
+        letter-spacing: -0.064rem;
     }
 }
 
