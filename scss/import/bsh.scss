@@ -8,7 +8,7 @@
 header {
     width: 100%;
     height: 80px;
-    padding: 10px 40px;
+    padding: 0 40px;
     position: relative;
 }
 
@@ -46,10 +46,8 @@ header {
 }
 
 .nav {
-    max-width: 1000px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     clear: both;
     >li {
         float: left;
@@ -75,28 +73,14 @@ header {
 
         ul {
             position: absolute;
-            top: 70px;
+            top: 80px;
             width: 100%;
             height: 561px;
-            z-index: 2;
+            z-index: 3;
             border-right: 1px solid #eeeeee;
             text-align: center;
             padding-top: 20px;
             display: none;
-
-            &.active {
-                background: #f0f7fa;
-                
-                &::before {
-                    content: '';
-                    width: calc(100% + 2px);
-                    height: 4px;
-                    background: #4c6aff;
-                    position: absolute;
-                    left: -1px;
-                    top: -4px;
-                }
-            }
 
             li {
                 margin-bottom: 20px;
@@ -109,6 +93,22 @@ header {
                 }
             }
         }
+
+        &:hover {
+            ul {
+                background: #f0f7fa;
+                
+                &::before {
+                    content: '';
+                    width: calc(100% + 2px);
+                    height: 4px;
+                    background: #4c6aff;
+                    position: absolute;
+                    left: -1px;
+                    top: -4px;
+                }
+            }
+        }
     }
 
     &-bg  {
@@ -118,8 +118,23 @@ header {
         background: #fff;
         left: 0;
         top: 80px;
-        z-index: 1;
+        z-index: 2;
         display: none;
+    }
+
+    &-wrap {
+        max-width: 1000px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        &:hover {
+            ul {
+                display: block;
+            }
+            .nav-bg {
+                display: block;
+            }
+        }
     }
 }
 
@@ -151,15 +166,15 @@ header {
         }
 
         &.counseledu {
-            background: url(../img/counseledu_sub_w.png);
+            background: url(../img/counseledu_sub_w.png) no-repeat center;
         }
 
         &.join {
-            background: url(../img/join_sub_w.png);
+            background: url(../img/join_sub_w.png) no-repeat center;
         }
 
         &.welfare {
-            background: url(../img/welfare_sub_w.png);
+            background: url(../img/welfare_sub_w.png) no-repeat center;
         }
     }
 
@@ -221,6 +236,7 @@ header {
             left: 0;
             top: 64px;
             border-top: 1px solid #162881;
+            z-index: 2;
 
             li {
                 margin-bottom: 20px;
@@ -261,6 +277,7 @@ header {
         bottom: 0;
         transform: translate(-50%, 50%);
         border-radius: 4px;
+        z-index: 1;
     }
 }
 
