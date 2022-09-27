@@ -329,6 +329,14 @@
         @extend %radio-chkbox-ft;
     }
 }
+input[type="radio"] {
+  width: 1.8rem;
+  height: 1.8rem !important;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+
+}
 
 
 /* checkbox */
@@ -339,6 +347,11 @@
         margin-right: 0.6rem;
         width: 2rem;
         height: 2rem;
+        &:disabled {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     }
     &__label {
         @extend %radio-chkbox-ft;
@@ -346,8 +359,9 @@
     &--disabled {
         .checkbox__inp {
             &:disabled {
-                background-color: red !important;
-                color: red !important;
+                background: #eee url(map-get($imgSrc, common) + 'arrow_disabled.png') no-repeat center;
+                border: 1px solid #ccc;
+                border-radius: 4px;
             }
         }
     }
