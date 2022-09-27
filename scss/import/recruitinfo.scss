@@ -47,19 +47,4 @@ table.table-recruit {
     }
 }
 
-input[type="radio"] {
-    width: 18px;
-    height: 1.8rem !important;
-    display: inline-block;
-    vertical-align: text-top;
-    margin-right: 0.5rem;
-
-}
-
-input[type="checkbox"]+label,
-input[type="radio"]+label {
-    color: #222;
-    font-size: 1.6rem;
-    margin-right: 1rem;
-}
 
