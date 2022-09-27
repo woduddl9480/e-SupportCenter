@@ -27,7 +27,6 @@ table.table-recruit {
                 padding-left: 2.4rem;
 
                 input {
-                    max-width: 24rem;
                     height: 4.8rem;
                 }
 
@@ -45,6 +44,11 @@ table.table-recruit {
             }
         }
     }
+}
+
+.btn_area {
+    display: flex;
+    justify-content: center;
 }
 
 
