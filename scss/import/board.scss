@@ -80,19 +80,19 @@
 }
 
 .listType-header .free-main-title {
-  font-size: 1.6rem;
-  color: #888;
-  font-stretch: normal;
-  font-style: normal;
+  // font-size: 1.6rem;
+  // color: #888;
+  // font-stretch: normal;
+  // font-style: normal;
 
-  letter-spacing: -0.064rem;
-  text-align: left;
+  // letter-spacing: -0.064rem;
+  // text-align: left;
 }
 
 .listType-header .free-main-title strong {
-  font-weight: bold;
+  // font-weight: bold;
 
-  color: #4766ff;
+  // color: #4766ff;
 }
 
 .listType-header .free-main {
@@ -126,14 +126,14 @@
 }
 
 .listType-header .free-main ol li .left-free b {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.06rem;
-  text-align: left;
-  color: #1a1a1a;
+  // font-size: 1.5rem;
+  // font-weight: 600;
+  // font-stretch: normal;
+  // font-style: normal;
+  // line-height: 1.2;
+  // letter-spacing: -0.06rem;
+  // text-align: left;
+  // color: #1a1a1a;
 
   width: 10%;
 }
@@ -150,12 +150,12 @@
 }
 
 .listType-header .free-main ol li .left-free .announ {
-  color: #0c4fff;
+  // color: #0c4fff;
   width: 12%;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  // font-size: 1.5rem;
+  // font-weight: 500;
 }
 
 .listType-header .free-main ol li .left-free p {
@@ -164,10 +164,10 @@
 }
 
 .listType-header .free-main ol li .left-free h4 {
-  line-height: 1.19;
-  font-weight: normal;
-  font-size: 1.8rem;
-  color: #222222;
+  // line-height: 1.19;
+  // font-weight: normal;
+  // font-size: 1.8rem;
+  // color: #222222;
   width: 60%;
 }
 
@@ -176,21 +176,21 @@
 }
 
 .listType-header .free-main ol li .right-free {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   width: 29%;
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
 .listType-header .free-main ol li .right-free b {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.06rem;
-  text-align: left;
-  color: #1a1a1a;
+  // font-size: 1.5rem;
+  // font-weight: 600;
+  // font-stretch: normal;
+  // font-style: normal;
+  // line-height: 1.2;
+  // letter-spacing: -0.06rem;
+  // text-align: left;
+  // color: #1a1a1a;
 }
 .listType-header .free-main ol li .right-free b:nth-child(1) {
   margin-left: 1rem;
@@ -223,36 +223,8 @@
     height: inherit;
   }
   .listType-header .free-main ol li .right-free {
-    margin-left: 0rem;
     justify-content: flex-start;
     width: 100%;
-  }
-
-  .listType-header .free-main ol li:nth-child(3) .right-free {
-    margin-left: -4rem;
-  }
-
-  .listType-header .free-main ol li:nth-child(6) .right-free {
-    margin-left: -4rem;
-  }
-  .listType-header .free-main ol li:nth-child(7) .right-free {
-    margin-left: -4rem;
-  }
-  .listType-header .free-main ol li:nth-child(8) .right-free {
-    margin-left: -4rem;
-  }
-  .listType-header .free-main ol li:nth-child(10) .right-free {
-    margin-left: -4rem;
-  }
-  .listType-header .free-main ol li:nth-child(11) .right-free {
-    margin-left: -4rem;
-  }
-  .listType-header .free-main ol li:nth-child(12) .right-free {
-    margin-left: -4rem;
-  }
-
-  .listType-header .free-main ol li:nth-child(13) .right-free {
-    margin-left: -4rem;
   }
 
   .listType-header .free-main ol li .right-free p {
@@ -266,14 +238,14 @@
   }
   .list {
     width: 100%;
-    height: 4.8rem;
+    height: 15.2rem;
     display: flex;
     margin-bottom: 2rem;
     justify-content: center;
   }
   .list select {
     border: 0rem;
-    border-bottom: 0.1rem solid #000;
+
     width: 30%;
     max-width: 12rem;
     height: 4.8rem;
@@ -287,5 +259,30 @@
   }
   .listType-header .free-main ol li .left-free p {
     display: none;
+  }
+  .list .list-left {
+    display: none;
+  }
+  .list .list-right {
+    max-width: 30rem;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .list .search-box {
+    margin-top: 1rem;
+  }
+  .list button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .list .list-right {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 0rem;
+  }
+  .list .search-box {
+    max-width: 20rem;
   }
 }
