@@ -1,0 +1,43 @@
+
+@mixin flex ($display: flex, $justify: space-between, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+
+
+@mixin bar ($height, $padding, $margin, $bg, $top: 50%, $transform: translateY(-50%), $width: 0.1rem) {
+    position: relative;
+    padding-right: $padding;
+    margin-right: $margin;
+    &::after {
+        content: '';
+        position: absolute;
+        top: $top;
+        right: 0;
+        transform: $transform;
+        width: $width;
+        height: $height;
+        background-color: $bg;
+    }
+    &:last-of-type {
+        padding-right: 0;
+        margin-right: 0;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
+@mixin tablet {
+    @media (max-width: #{map-get($responsive, tablet)}) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: #{map-get($responsive, mobile)}) {
+        @content;
+    }
+}
