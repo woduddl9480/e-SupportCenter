@@ -2,12 +2,12 @@
   width: 100%;
 
   background: #222;
-  padding: 32px 0;
+  padding: 3.2rem 0;
   .inner {
     width: 100%;
     position: relative;
-    max-width: 1280px;
-    margin: -15px auto;
+    max-width: 128rem;
+    margin: -1.5rem auto;
 
     .siteWrap {
       align-items: center;
@@ -18,83 +18,85 @@
         width: 90%;
         color: #ccc;
         gap: 4%;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 500;
-        letter-spacing: -0.72px;
+        letter-spacing: -0.072rem;
         text-align: left;
       }
       .relevant-site {
         select {
-          border-radius: 4px;
-          border: solid 1px #aaa;
+          border-radius: 0.4rem;
+          border: solid 0.1rem #aaa;
           background-color: #222;
-          width: 240px;
-          height: 48px;
-          font-size: 16px;
+          width: 24rem;
+          height: 4.8rem;
+          font-size: 1.6rem;
           font-weight: 500;
           color: #aaa;
           -o-appearance: none;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          background: url("../img/footer_arrow.png") no-repeat 93% 50%/15px auto;
-          padding-left: 20px;
+          background: url("../img/footer_arrow.png") no-repeat 93% 50%/1.5rem
+            auto;
+          padding-left: 2rem;
         }
       }
     }
   }
   .line {
     width: 100%;
-    margin-top: 31px;
-    border: 1px solid #444;
+    margin-top: 3.1rem;
+    border: 0.1rem solid #444;
   }
   .footer-bottom {
     width: 100%;
     position: relative;
-    max-width: 1280px;
+    max-width: 128rem;
     display: flex;
-    margin: 20px auto;
+    margin: 2rem auto;
     h1 {
       width: 26%;
       .relevant-site2 {
         select {
           display: none;
-          border-radius: 4px;
-          border: solid 1px #aaa;
+          border-radius: 0.4rem;
+          border: solid 0.1rem #aaa;
           background-color: #222;
-          width: 180px;
-          height: 40px;
-          font-size: 16px;
+          width: 18rem;
+          height: 4rem;
+          font-size: 1.5rem;
           font-weight: 500;
           color: #aaa;
           -o-appearance: none;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          background: url("../img/footer_arrow.png") no-repeat 93% 50%/15px auto;
-          padding-left: 20px;
-          letter-spacing: -0.64px;
+          background: url("../img/footer_arrow.png") no-repeat 93% 50%/1.5rem
+            auto;
+          padding-left: 2rem;
+          letter-spacing: -0.064rem;
         }
       }
     }
     .line2 {
       display: none;
       width: 100%;
-      margin-top: 31px;
-      border: 1px solid #444;
+      margin-top: 3.1rem;
+      border: 0.1rem solid #444;
     }
     .information {
-      letter-spacing: -0.64px;
-      font-size: 16px;
+      letter-spacing: -0.064rem;
+      font-size: 1.5rem;
       color: #aaa;
       width: 100%;
-      max-width: 1050px;
+      max-width: 105rem;
       display: flex;
       justify-content: start;
       flex-wrap: wrap;
       p {
         text-align: left;
-        margin-right: 20px;
+        margin-right: 2rem;
       }
     }
   }
@@ -112,7 +114,7 @@
         .mobile_only {
           width: 100%;
           justify-content: center;
-          font-size: 15px;
+          font-size: 1.5rem;
           li:nth-child(4) {
             display: none;
           }
@@ -137,20 +139,20 @@
       .line2 {
         display: block;
         width: 100%;
-        margin-top: 25px;
-        border: 1px solid #444;
+        margin-top: 2.5rem;
+        border: 0.1rem solid #444;
       }
       .information {
-        margin-top: 30px;
-        margin-left: 20px;
+        margin-top: 3rem;
+        margin-left: 2rem;
         p:nth-child(4) {
           line-height: 1.69;
-          font-size: 13px;
-          padding-top: 20px;
+          font-size: 1.3rem;
+          padding-top: 2rem;
         }
         p {
-          letter-spacing: -0.26px;
-          font-size: 14px;
+          letter-spacing: -0.026rem;
+          font-size: 1.4rem;
           line-height: 2;
         }
       }
