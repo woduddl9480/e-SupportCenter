@@ -339,6 +339,11 @@
         margin-right: 0.6rem;
         width: 2rem;
         height: 2rem;
+        &:disabled {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     }
     &__label {
         @extend %radio-chkbox-ft;
@@ -346,8 +351,9 @@
     &--disabled {
         .checkbox__inp {
             &:disabled {
-                background-color: red !important;
-                color: red !important;
+                background: #eee url(map-get($imgSrc, common) + 'arrow_disabled.png') no-repeat center;
+                border: 1px solid #ccc;
+                border-radius: 4px;
             }
         }
     }
