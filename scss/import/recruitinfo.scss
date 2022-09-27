@@ -1,0 +1,41 @@
+// 채용정보알림신청
+.txt-blue {
+    font-size: 15px;
+    text-align: center;
+    color: #4766ff;
+}
+
+table.table-recruit {
+    border-top: 1px solid #18297a;
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #e4e6ee;
+
+            th {
+                height: 80px;
+                padding: 24px 0 24px 30px;
+                border: none;
+                color: #18297a;
+                background-color: #f5f7ff;
+                text-align: left;
+            }
+
+            td {
+                border: none;
+                padding-left: 24px;
+
+                input {
+                    max-width: 240px;
+                    height: 48px;
+                }
+                .td_span {
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+input[type="checkbox"],input[type="radio"] {
+    display:none;
+}
