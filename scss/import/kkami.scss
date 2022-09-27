@@ -1,0 +1,187 @@
+
+/* 타이틀 */
+.title {
+    &-01 {
+        line-height: 0.9;
+        font: {
+            family: map-get($ftStyle, secondary);
+            size: 4rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.08rem;        
+    }
+    &-02 {
+        line-height: 1.13;
+        font: {
+            family: map-get($ftStyle, secondary);
+            size: 3.2rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.064rem;
+    }
+    &-03 {
+        line-height: 1.5;
+        font: {
+            family: map-get($ftStyle, secondary);
+            size: 2.4rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.048rem;
+    }
+    &-04 {
+        line-height: 1.5;
+        font: {
+            weight: 600;
+            size: 2.4rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.048rem;
+    }
+    &-05 {
+        line-height: 1.5;
+        font: {
+            weight: 600;
+            size: 2rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.04rem;
+        &--weight {
+            &-700 {
+                font-weight: 700;
+            }
+        }
+        &--family {
+            &-one {
+                font: {
+                    family: map-get($ftStyle, secondary);
+                    weight: 400;
+                }
+            }
+        }
+    }
+    &-06 {
+        line-height: 1.56;
+        font: {
+            weight: 500;
+            size: 1.8rem;
+        }
+        color: map-get($color, title);
+        letter-spacing: -0.072rem;
+    }
+    @include mobile {
+        &-01 {
+            line-height: 1.13;
+            font: {
+                size: 3.2rem;
+            }
+            letter-spacing: -0.064rem;        
+        }
+        &-04 {
+            font: {
+                size: 2rem;
+            }
+            letter-spacing: -0.04rem;
+        }
+        &-05 {
+            line-height: 1.56;
+            font: {
+                weight: 500;
+                size: 2rem;
+            }
+            color: map-get($color, title);
+            letter-spacing: -0.036rem;
+        }
+        &-06 {
+            line-height: 1.5;
+            font: {
+                weight: 500;
+                size: 1.6rem;
+            }
+            color: map-get($color, title);
+            letter-spacing: -0.064rem;
+        }
+    }
+}
+/* //타이틀 */
+
+/* 텍스트 */
+.txt {
+    &-01 {
+        line-height: 1.56;
+        font: {
+            size: 1.8rem;
+        }
+        color: map-get($color, secondary);
+        letter-spacing: -0.072rem;
+    }
+    &-02 {
+        line-height: 1.88;
+        font: {
+            size: 1.6rem;
+        }
+        color: map-get($color, secondary);
+        letter-spacing: -0.064rem;
+    }
+    &-03 {
+        line-height: 1.5;
+        font: {
+            size: 1.6rem;
+        }
+        color: map-get($color, secondary);
+        letter-spacing: -0.064rem;
+    }
+    &-04 {
+        line-height: 1.6;
+        font: {
+            size: 1.5rem;
+        }
+        color: map-get($color, secondary);
+        letter-spacing: -0.06rem;
+        &--family {
+            &-one {
+                font: {
+                    family: map-get($ftStyle, secondary);
+                }
+            }
+        }
+        &--color {
+            &-primary {
+                color: map-get($color, primary);
+            }
+        }
+    }
+    @include mobile {
+        &-01 {
+            line-height: 1.63;
+            font: {
+                size: 1.6rem;
+            }
+            letter-spacing: -0.064rem;
+        }
+        &-02 {
+            line-height: 1.75;
+            font: {
+                size: 1.6rem;
+            }
+            letter-spacing: -0.064rem;
+        }
+        &-03 {
+            line-height: 1.6;
+            font: {
+                weight: 500;
+                size: 1.5rem;
+            }
+            color: map-get($color, title);
+            letter-spacing: -0.06rem;
+        }
+        &-04 {
+            line-height: 1.57;
+            font: {
+                size: 1.4rem;
+            }
+            color: map-get($color, title);
+            letter-spacing: -0.056rem;
+        }
+    }
+}
+/* //텍스트 */
