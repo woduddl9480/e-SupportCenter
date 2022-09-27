@@ -6,38 +6,95 @@
 
     &-control {
         font-size: 0;
+
         &--prev {
-            margin-right: 5px;
-            margin-left: -5px;
+            margin-right: 0.5rem;
+            margin-left: -0.5rem;
         }
+
         &--next {
-            margin-left: 5px;
+            margin-left: 0.5rem;
+
+            i {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
         }
     }
+
     button {
-        min-width: 40px;
-        height: 40px;
-        border-radius: 3px;
-        border: 1px solid #ccc;
+        min-width: 4rem;
+        height: 4rem;
+        border-radius: 0.3rem 0 0 0.3rem;
+        border: 0.1rem solid #ccc;
         text-align: center;
-        line-height: 40px;
+        line-height: 4rem;
         position: relative;
+
+        i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &.reverse {
+                transform: rotate(180deg) translate(50%, 50%);
+            }
+        }
+
+        &.prev {
+            margin-left: -0.5rem;
+            border-left: none;
+        }
+
+        &.next {
+            margin-right: -0.5rem;
+            border-right: none;
+        }
     }
+
+
     &-list {
         display: flex;
+
         li {
-            min-width: 40px;
-            height: 40px;
             border: none;
             text-align: center;
-            line-height: 40px;
+            line-height: 4rem;
             position: relative;
             color: #666;
+
+            a {
+                display: block;
+                width: 4rem;
+                height: 4rem;
+
+            }
         }
-        li.is_active{
+
+        li.is_active {
             background-color: #4766ff;
             border: none;
             color: #fff;
+            border-radius: 0.2rem;
         }
     }
+}
+
+.icon-pagination {
+    width: 0.6rem;
+    height: 1rem;
+    background: url(/img/icon-pagination.svg)no-repeat center / 100%;
+    display: inline-block;
+
+}
+
+.icon-pagination--d {
+    width: 1.2rem;
+    height: 1rem;
+    background: url(/img/icon-pagination--d.svg)no-repeat center / 100%;
+    display: inline-block;
 }
