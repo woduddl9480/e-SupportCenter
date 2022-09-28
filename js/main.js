@@ -3,8 +3,8 @@ let tabBtn = document.querySelectorAll('.tab li a');
 const tabOn = (tabClick) => {
     const clicked = tabClick.currentTarget;
     const clickedLi = clicked.parentNode;
-    const clickedWrap = clickedLi.parentNode;
-    const li = clickedWrap.children;
+    const clickedWrap = clickedLi.parentNode.parentNode;
+    const li = clickedWrap.querySelectorAll('.tab li');
 
     for (let i = 0; i < li.length; i++) {
         li[i].classList.remove('active')
