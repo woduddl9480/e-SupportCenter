@@ -94,7 +94,6 @@ input[type=number],
 input[type=password],
 input[type=search],
 input[type=tel],
-input[type=text],
 input[type=time],
 input[type=url],
 input[type=week],
@@ -113,6 +112,23 @@ input[type=submit] {
     -webkit-appearance: none;
     appearance: none;
 }
+
+input[type=text] {
+    height: 4.8rem;
+    padding-left: 1.5rem;
+    border-radius: 0.2rem;
+    border: solid 0.1rem #ccc;
+}
+input::placeholder {
+    color:#ccc;
+}
+input::-webkit-input-placeholder {
+    color:#ccc;
+}
+input:-ms-input-placeholder {
+    color:#ccc;
+}
+
 
 select:disabled {
     border: solid 1px #ccc;
@@ -240,3 +256,4 @@ caption {
         }
     }
 }
+
