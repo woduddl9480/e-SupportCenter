@@ -54,6 +54,7 @@ table.table-recruit {
 .board_top {
     display: flex;
     justify-content: space-between;
+
     &--total {
         font-size: 1.6rem;
         color: #888;
@@ -63,7 +64,12 @@ table.table-recruit {
         text-align: left;
         height: 4.8rem;
         line-height: 4.8rem;
+
+        strong {
+            color: #4766ff;
+        }
     }
+
     &--srch {
         select {
             border-color: #ccc;
@@ -77,19 +83,71 @@ table.table-recruit {
     }
 }
 
+.free-main2 {
+    border-top: 0.2rem solid #000;
+    width: 100%;
+    max-width: 128rem;
+    margin-top: 0.8rem;
+
+    ol {
+        li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.1rem solid #eee;
+
+            .left-free2 {
+                width: 55%;
+                display: flex;
+                margin-left: 2rem;
+                align-items: center;
+            }
+
+            .right-free2 {
+                color: #666;
+                line-height: 1.6;
+                letter-spacing: -0.06rem;
+                font-size: 1.5rem;
+                width: 45%;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &.left-p25 {
+                padding: 2.5rem 0 !important;
+                height: auto;
+
+                .ico_provider {
+                    padding: 1.7rem 1.3rem 0.7rem;
+                    border-radius: 1.6rem;
+                    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.08);
+                    border: solid 1px #eee;
+                    background-color: #fff;
+
+                }
+            }
+        }
+
+        li:nth-child(1) {
+            height: 4.8rem;
+        }
+    }
+}
+
 .w-130 {
-    min-width: 130px;
+    min-width: 13rem;
 }
 
 .w-160 {
-    min-width: 160px;
+    min-width: 16rem;
 }
 
 .w-a {
-    width: auto!important;
+    width: auto !important;
 }
+
 .bg-white {
-    background-color: #fff!important; 
+    background-color: #fff !important;
 }
 
 .announ2 {
@@ -100,13 +158,3 @@ table.table-recruit {
     line-height: 1.6;
     letter-spacing: -0.06rem;
 }
-
-// .free-main {
-//     li {
-//         .left-free {
-//             &--title {
-                
-//             }
-//         }
-//     }
-// }

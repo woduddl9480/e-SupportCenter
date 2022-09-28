@@ -29,6 +29,7 @@
 
         p {
             margin-top: 0.9rem;
+            color: #fff;
         }
 
         .right {
@@ -57,7 +58,7 @@
         width: 100%;
         height: 10.7rem;
         background: #f9f9f9;
-        border: 0.1rem solid #eee;
+        border: 1px solid #eee;
         border-radius: 0.4rem;
         padding: 2.1rem 4rem 2.4rem;
         margin-top: 2.4rem;
@@ -91,7 +92,7 @@
                     &:first-child {
                         font-size: 1.5rem;
                         color: #888;
-                        border-right: 0.1rem solid #ddd;
+                        border-right: 1px solid #ddd;
                         padding: 0 0.9rem 0 0;
                         font-weight: normal;
                     }
@@ -117,7 +118,7 @@
         display: flex;
         min-height: 12rem;
         padding: 2.4rem 0 6.4rem;
-        border-top: 0.1rem solid #eee;
+        border-top: 1px solid #eee;
 
         &:first-child {
             border: none;
@@ -154,16 +155,32 @@
 
     .right {
         table {
-            border-radius: 4px;
+            border-radius: 0.4rem;
             overflow: hidden;
             position: relative;
             width: 100rem;
+
+            col {
+                &.th {
+                    &-width {
+                        width: 22%;
+                    }
+                    &-left, &-right {
+                        width: 20%;
+                    }
+                }
+            }
+
             th {
                 background: #f5f7ff;
                 color: #18297a;
                 font-size: 1.5rem;
                 font-weight: 600;
                 text-align: center;
+
+                span {
+                    display: block;
+                }
             }
 
             td {
@@ -172,7 +189,7 @@
             }
 
             th, td {
-                border: 0.1rem solid #e4e6ee;
+                border: 1px solid #e4e6ee;
             }
 
             thead {
@@ -187,9 +204,15 @@
                 height: calc(100% + 0.3rem);
                 position: absolute;
                 border: 0.2rem solid #e4e6ee;
-                border-radius: 5px;
+                border-radius: 0.5rem;
                 top: -0.2rem;
                 left: -0.1rem;
+            }
+
+            .mobile {
+                &-90 {
+                    width: 9rem !important;
+                }
             }
         }
 
@@ -216,6 +239,150 @@
                 width: 13.4rem;
                 margin-left: 1.6rem;
             }
+        }
+    }
+}
+
+@include mobile {
+    .contents-list {
+        .item {
+            display: block;
+            padding-bottom: 4rem;
+        }
+
+        .left {
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .right {
+            
+            .table-wrap {
+                width: calc(100% + 2rem);
+                padding-right: 2rem;
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+            table {
+                width: 87rem;
+                th {
+                    font-size: 1.3rem;
+                }
+
+                col {
+                    &.th {
+                        &-width {
+                            width: 9rem;
+                        }
+
+                        &-left {
+                            width: 10rem;
+                        }
+                        &-right {
+                            width: 20rem;
+                        }
+                    }
+                }
+
+                &::after {
+                    left: -0.2rem;
+                }
+            }
+
+            .caution {
+                display: block;
+
+                button {
+                    margin: 1.2rem 0 0 0;
+                }
+
+                &.m {
+                    color: map-get($color, primary);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .welfare {
+        &-info {
+            height: 15.1rem;
+            padding: 2rem 0 2rem 2rem;
+            .top {
+                height: 4rem;
+                background-size: 4rem 4rem;
+                font-size: 1.8rem;
+                padding-top: 0;
+                padding: 0 0 0 5.2rem;
+
+                span {
+                    display: block;
+                    margin-top: 0.6rem;
+                }
+            }
+            .bottom {
+                flex-wrap: wrap;
+                margin-top: 2rem;
+
+                p {
+                    &:first-child {
+                        width: 100%;
+                        margin-bottom: 0.9rem;
+                    }
+
+                    &.number {
+                        font-size: 1.5rem;
+                        margin-left: -0.8rem;
+                    }
+
+                    span {
+                        font-size: 1.5rem;
+
+                        &:first-child {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-title {
+            height: 35rem;
+            flex-direction: column;
+            padding: 2rem;
+            background-size: cover !important;
+
+            h1 {
+                font-size: 3.2rem;
+            }
+
+            &.house {
+                background: url(../img/welfare_house_m.png) no-repeat center;
+                color: #222;
+            }
+    
+            &.prize {
+                background: url(../img/welfare_prize_m.png) no-repeat center;
+            }
+    
+            &.study {
+                background: url(../img/welfare_study_m.png) no-repeat center;
+            }
+    
+            &.etc {
+                background: url(../img/welfare_fund_m.png) no-repeat center;
+            }
+        }
+
+        .icon-box {
+            width: 4.8rem;
+            height: 4.8rem;
         }
     }
 }

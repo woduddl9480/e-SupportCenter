@@ -51,7 +51,7 @@ header {
 
             &:last-child {
                 a {
-                    border-left: 0.1rem solid #eee;
+                    border-left: 1px solid #eee;
                     padding-right: 0;
                 }
             }
@@ -83,7 +83,7 @@ header {
 
         &:first-child {
             ul {
-                border-left: 0.1rem solid #eeeeee;
+                border-left: 1px solid #eeeeee;
             }
         }
 
@@ -93,7 +93,7 @@ header {
             width: 100%;
             height: 56.1rem;
             z-index: 3;
-            border-right: 0.1rem solid #eeeeee;
+            border-right: 1px solid #eeeeee;
             text-align: center;
             padding-top: 2rem;
             display: none;
@@ -217,17 +217,18 @@ header {
             padding-left: 2.4rem;
             font-size: 1.8rem;
             line-height: 1;
-            border-right: 0.1rem solid #3952cc;
+            border-right: 1px solid #3952cc;
             align-items: center;
 
             &::after {
                 content: '';
                 width: 1.6rem;
                 height: 0.9rem;
-                background: url(../img/arrow-down.png);
+                background: url(../img/arrow-down.png) no-repeat;
                 position: absolute;
-                top: 2.8rem;
+                top: 50%;
                 right: 1.6rem;
+                transform: translateY(-50%);
             }
         }
 
@@ -253,7 +254,7 @@ header {
             position: absolute;
             left: 0;
             top: 6.4rem;
-            border-top: 0.1rem solid #162881;
+            border-top: 1px solid #162881;
             z-index: 2;
 
             li {
@@ -305,7 +306,7 @@ header {
     max-width: 128rem;
     width: 100%;
     border-radius: 1.6rem;
-    padding: 4.3rem 4rem 8rem;
+    padding: 4.3rem 4rem 4rem;
 
     &-title {
         width: 100%;
@@ -340,7 +341,7 @@ header {
     border-radius: 0.4rem;
     display: flex;
     flex-flow: inherit;
-    border: 0.1rem solid #cccccc;
+    border: 1px solid #cccccc;
     overflow: hidden;
 
     li {
@@ -349,12 +350,19 @@ header {
             display: flex;
             width: 100%;
             height: 100%;
-            border-right: 0.1rem solid #cccccc;
+            border-right: 1px solid #cccccc;
             align-items: center;
             justify-content: center;
             font-size: 1.6rem;
             font-family: 'ONE-Mobile-Title';
             color: #444;
+            text-align: center;
+            flex-wrap: wrap;
+
+            span {
+                margin-left: 5px;
+                flex-shrink: 0;
+            }
         }
 
         &:last-child {
@@ -378,6 +386,168 @@ header {
 
         &.active {
             display: block;
+        }
+    }
+}
+
+@include mobile {
+    header {
+        height: 6rem;
+    }
+    
+    .header {
+        &-logo {
+            width: 25rem;
+            height: 4rem;
+            left: 1rem;
+        }
+
+        &-login {
+            display: none;
+        }
+    }
+
+    .nav {
+        &-wrap {
+            display: none;
+        }
+    }
+
+    .container {
+        &-top {
+            height: 12rem;
+            padding-top: 0;
+
+            h1 {
+                font-size: 3.2rem;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.notice {
+                background: url(../img/sub_m.png) no-repeat center;
+            }
+    
+            &.recruit {
+                background: url(../img/recruit_sub_m.png) no-repeat center;
+            }
+    
+            &.counseledu {
+                background: url(../img/counseledu_sub_m.png) no-repeat center;
+            }
+    
+            &.join {
+                background: url(../img/join_sub_m.png) no-repeat center;
+            }
+    
+            &.welfare {
+                background: url(../img/welfare_sub_m.png) no-repeat center;
+            }
+        }
+
+        &-bottom {
+            background: #fff;
+        }
+    }
+
+    .lnb {
+        &-wrap {
+            height: 4.8rem;
+            bottom: -2.4rem;
+            border-radius: 0;
+        }
+
+        >li {
+            width: calc(50% - 2.4rem);
+
+            a {
+                width: 100%;
+                font-size: 1.5rem;
+                padding-left: 1.2rem;
+
+                &::after {
+                    right: 1rem;
+                    width: 1.2rem;
+                    height: 0.8rem;
+                    background-size: 100%;
+                }
+            }
+
+            &.home {
+                width: 4.8rem;
+
+                a {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    font-size: 1.5rem;
+                    border-radius: 0;
+                }
+            }
+
+            ul {
+                top: 4.8rem;
+                padding: 2rem 0 2rem 1.6rem;
+            }
+        }
+    }
+
+    .contents {
+        padding: 3.9rem 2rem 0 !important;
+    }
+
+    .tab {
+        display: block;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        li {
+            height: 5.6rem;
+            float: left;
+            width: 33.3%;
+            margin-bottom: 0.4rem;
+            a {
+                font-size: 1.4rem;
+                flex-direction: column;
+                border: 1px solid #cccccc !important;
+
+                span {
+                    margin-left: 0;
+                }
+            }
+
+            &.half {
+                width: 50%;
+
+                &.right {
+                    a {
+                        border-left: 0 !important;
+                    }
+                }
+            }
+
+            &.left {
+                a {
+                    border-radius: 4px 0 0 4px;
+                }
+            }
+            &.right {
+                a {
+                    border-radius: 0 4px 4px 0;
+                }
+            }
+            &.center {
+                a {
+                    border-width: 1px 0 1px 0 !important;
+                }
+            }
+
+            &.active {
+                a {
+                    border-color: #3355ff;;
+                }
+            }
         }
     }
 }
