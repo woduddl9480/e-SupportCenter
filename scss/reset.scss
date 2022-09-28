@@ -259,7 +259,7 @@ caption {
 
 // 클래스명
 .pc-wd {
-    @for $i from 1 to 61 {
+    @for $i from 1 to 81 {
         &-#{$i*5} {
             width: $i * 5px !important;
         }
@@ -345,14 +345,14 @@ caption {
     }
 
     .pc-wd {
-        @for $i from 1 to 20 {
+        @for $i from 1 to 81 {
             &-#{$i*5} {
                 display: none;
             }
         }
     }
 
-     /*피씨버전 마진/패딩/width값 모바일 클래스 설정. 너무 작은 단위는 클래스로 맞추기*/
+     /*피씨버전 마진/패딩/width값 모바일 클래스 설정. 너무 작은 단위는 스타일로 맞추기*/
     .mo-m {
         &-l {
             @for $i from 0 to 20 {
