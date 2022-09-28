@@ -67,10 +67,11 @@ header {
         float: left;
         position: relative;
         height: 100%;
+        width: 20%;
 
         >a {
             display: flex;
-            width: 20rem;
+            width: 100%;
             height: 100%;
             font-size: 2rem;
             color: #222;
