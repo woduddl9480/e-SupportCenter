@@ -1,6 +1,7 @@
 @import "../scss/import/_variables.scss";
 @import "../scss/import/_mixin.scss";
 
+
 /* blind */
 .blind {
   overflow: hidden;
@@ -331,7 +332,6 @@
 }
 
 
-
 /* checkbox */
 .checkbox {
     display: flex;
@@ -361,6 +361,69 @@
 }
 
 
+/* 라벨, 상태, 뱃지 */
+.label {
+    display: inline-flex;
+    justify-content: center;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #ebeeff;
+    border-radius: 4px;
+    font: {
+        weight: 500;
+        size: 1.5rem;
+    }
+    color: #18297a;
+    letter-spacing: -0.06rem;
+}
+
+.state {
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font: {
+        weight: 500;
+        size: 1.5rem;
+    }
+    letter-spacing: -0.06rem;
+    &--waiting {
+        border-color: #aaa;
+        color: map-get($color, primary);
+    }
+    &--completion {
+        border-color: #00a9ff;
+        color: #00a9ff;
+    }
+}
+
+
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 0.8rem;
+    border-radius: 1.5rem;
+    font: {
+        weight: 600;
+        size: 1.4rem;
+    }
+    letter-spacing: -0.056rem;
+    &--info {
+        background-color: #1ab2ff;
+        color: #fff;
+    }
+    &--warning {
+        background-color: #fc3;
+        color: map-get($color, primary);
+    }
+}
 
 @import "../scss/import/kkami.scss";
 @import "../scss/import/bsh.scss";
