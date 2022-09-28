@@ -276,7 +276,7 @@ caption {
      /*피씨버전 마진/패딩/width값 모바일 클래스 설정. 너무 작은 단위는 스타일로 맞추기*/
     .mo-m {
         &-l {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     margin-left: $i * 0.1rem !important;
                 }
@@ -284,7 +284,7 @@ caption {
         }
     
         &-r {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     margin-right: $i * 0.1rem !important;
                 }
@@ -292,7 +292,7 @@ caption {
         }
     
         &-t {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     margin-top: $i * 0.1rem !important;
                 }
@@ -300,7 +300,7 @@ caption {
         }
     
         &-b {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     margin-bottom: $i * 0.1rem !important;
                 }
@@ -309,14 +309,8 @@ caption {
     }
     
     .mo-p {
-        @for $i from 0 to 20 {
-            &-#{$i} {
-                padding: $i * 0.1rem !important;
-            }
-        }
-    
         &-l {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     padding-left: $i * 0.1rem !important;
                 }
@@ -324,7 +318,7 @@ caption {
         }
     
         &-r {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     padding-right: $i * 0.1rem !important;
                 }
@@ -332,7 +326,7 @@ caption {
         }
     
         &-t {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     padding-top: $i * 0.1rem !important;
                 }
@@ -340,7 +334,7 @@ caption {
         }
     
         &-b {
-            @for $i from 0 to 20 {
+            @for $i from 0 to 41 {
                 &-#{$i} {
                     padding-bottom: $i * 0.1rem !important;
                 }
