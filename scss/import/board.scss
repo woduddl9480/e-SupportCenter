@@ -670,7 +670,7 @@
 
 .list-info {
   width: 100%;
-  height: 16rem;
+  height: auto;
   border-radius: 0.4rem;
   border: solid 0.1rem #e5e5e5;
   background-color: #f9f9f9;
@@ -709,6 +709,14 @@
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   background-color: #fff;
+}
+
+.list-info ol li:nth-child(10) button {
+  display: none;
+}
+
+.list-info ol li:nth-child(16) button {
+  display: none;
 }
 
 .list-info ol li:nth-child(1) button {
@@ -911,4 +919,56 @@
   color: #666;
   line-height: 1.5;
   letter-spacing: -0.064rem;
+}
+
+@media screen and (max-width: 768px) {
+  .list-info ol li:nth-child(17) button {
+    display: block;
+  }
+
+  .list-info ol li:nth-child(16) button {
+    display: none;
+  }
+  .list-info ol li:nth-child(18) button {
+    display: none;
+  }
+  .list-info ol li button {
+    font-size: 1.3rem;
+  }
+  .list-info ol li:nth-child(10) button {
+    display: block;
+  }
+  .list-info ol li:nth-child(9) button {
+    display: none;
+  }
+  .listType-header .article-main .artile-section1 {
+    display: block;
+  }
+  .listType-header .article-main .artile-section1 .left {
+    width: 100%;
+  }
+  .listType-header .article-main .artile-section1 .right .right-content {
+    display: block;
+  }
+  .listType-header
+    .article-main
+    .artile-section1
+    .right
+    .right-content
+    #width-control {
+    width: 100%;
+  }
+  .listType-header .article-main .artile-section1 .right .sign {
+    margin-left: 0rem;
+  }
+  .listType-header
+    .article-main
+    .artile-section1
+    .right
+    .right-content2
+    ul
+    li
+    span {
+    width: 11rem;
+  }
 }
