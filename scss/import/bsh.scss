@@ -32,7 +32,8 @@ header {
         height: 6rem;
         position: absolute;
         left: 4rem;
-        top: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &-login {
@@ -152,6 +153,196 @@ header {
             }
         }
     }
+
+    &-box {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &-right {
+        z-index: 10;
+        width: 35rem;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: 0.1s;
+        background: url(../img/nav_bg.png) no-repeat right bottom #fff;
+        padding: 12rem 0 11.3rem;
+        overflow-y: auto;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.active {
+            right: 0;
+
+            .nav-header, .nav-info {
+                right: 0;
+            }
+        }
+    }
+
+    &-header {
+        width: 35rem;
+        height: 12rem;
+        background:#4766ff;
+        color: #fff;
+        padding: 2rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: 0.1s;
+
+        p {
+            line-height: 2.4rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .none {
+            font-size: 1.8rem;
+        }
+
+        .login {
+            padding-left: 2.6rem;
+            background: url(../img/login_icon.png) left center no-repeat;
+
+            .name {
+                font-size: 2rem;
+                margin-right: 0.6rem;
+            }
+
+            .badge {
+                background: rgba(0, 0, 0, 0.24);
+            }
+        }
+
+        .btn {
+            font-size: 1.5rem;
+            border: 1px solid #fff;
+            display: inline;
+            width: 9rem;
+            height: 4rem;
+        }
+
+        .close {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url(../img/nav_close_icon.png) no-repeat;
+            position: absolute;
+            right: 1.5rem;
+            top: 1.8rem;
+            cursor: pointer;
+        }
+
+        &.lightblue {
+            background: #00a9ff;
+        }
+        &.purple {
+            background: #8548fe;
+        }
+        &.green {
+            background: #00a388;
+        }
+        &.blue {
+            background: #4766ff;
+        }
+    }
+
+    &-list {
+        padding: 0 2rem;
+        width: 100%;
+
+        >li {
+            width: 100%;
+            padding-top: 2.4rem;
+            color: map-get($color, primary);
+
+            >a {
+                display: block;
+                width: 100%;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #eee;
+                background: url(../img/nav_open_button.png) no-repeat right center;
+            }
+
+            ul {
+                height: 0;
+                overflow: hidden;
+                padding: 0 2rem;
+                background: #f0f6fa;
+                font-size: 1.8rem;
+                line-height: 1;
+                border-radius: 0 0 4px 4px;
+
+                li {
+                    margin-bottom: 2.2rem;
+
+                    &:first-child {
+                        margin-top: 2.4rem;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 2.4rem;
+                    }
+                }
+            }
+
+            &.active {
+                >a {
+                    border-color: #3355ff;
+                    background: url(../img/nav_close_button.png) no-repeat right center;
+                }
+
+                ul {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &-info {
+        width: 35rem;
+        height: 11.3rem;
+        background: url(../img/nav_bg.png) no-repeat right bottom #fff;
+        position: fixed;
+        right: -100%;
+        bottom: 0;
+        transition: 0.1s;
+        padding: 0 0 4.2rem 2rem;
+        color: map-get($color, primary);
+        h5 {
+            font: {
+                family: map-get($ftStyle, secondary);
+                size: 1.8rem;
+            }
+        }
+    }
+}
+
+.hamburger {
+    width: 2.4rem;
+    height: 1.6rem;
+    background: url(../img/hamburger.png) no-repeat;
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
 }
 
 .container {
@@ -306,7 +497,7 @@ header {
     max-width: 128rem;
     width: 100%;
     border-radius: 1.6rem;
-    padding: 4.3rem 4rem 4rem;
+    padding: 4.3rem 4rem 8rem;
 
     &-title {
         width: 100%;
@@ -390,7 +581,83 @@ header {
     }
 }
 
-@include mobile {
+/* header용 미디어 쿼리 */
+
+@media screen and (max-width: 1830px) {
+    .header {
+        &-logo {
+            width: 30rem;
+            height: 4.8rem;
+            left: 2rem;
+        }
+
+        &-login {
+            right: 2rem;
+        }
+    }
+    
+
+	.nav-wrap {
+        max-width: 90rem;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    header {
+        height: 7rem;
+    }
+
+    .header {
+        &-logo {
+            width: 27rem;
+            height: 4.3rem;
+        }
+    }
+    
+	.nav {
+        &-wrap {
+            max-width: 70rem;
+        }
+
+        &-bg {
+            top: 7rem;
+        }
+
+        >li {
+            ul {
+                top: 7rem;
+                li {
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        &-logo {
+            width: 25rem;
+            height: 4rem;
+        }
+    }
+    
+	.nav {
+        &-wrap {
+            max-width: 60rem;
+        }
+
+        >li {
+            >a {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
     header {
         height: 6rem;
     }
@@ -401,7 +668,31 @@ header {
             height: 4rem;
             left: 1rem;
         }
+        
+        &-login {
+            right: 1rem;
+        }
+    }
+    
+	.nav {
+        &-wrap {
+            max-width: 50rem;
+        }
 
+        >li {
+            >a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 6rem;
+    }
+    
+    .header {
         &-login {
             display: none;
         }
@@ -412,6 +703,15 @@ header {
             display: none;
         }
     }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* header용 미디어 쿼리 끝 */
+
+@include mobile {
 
     .container {
         &-top {
