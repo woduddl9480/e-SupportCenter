@@ -89,7 +89,7 @@
       letter-spacing: -0.064rem;
       font-size: 1.5rem;
       color: #aaa;
-      width: 100%;
+      width: 90%;
       max-width: 105rem;
       display: flex;
       justify-content: start;
@@ -143,8 +143,8 @@
         border: 0.1rem solid #444;
       }
       .information {
-        margin-top: 3rem;
-        margin-left: 2rem;
+        margin: 3rem auto;
+
         p:nth-child(4) {
           line-height: 1.69;
           font-size: 1.3rem;
