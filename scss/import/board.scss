@@ -833,6 +833,8 @@
   font-family: "Pretendard";
 }
 .listType-header .article-main .artile-section1 .right .right-content p a {
+  overflow: hidden;
+  word-break: break-all;
   font-size: 1.6rem;
   color: #35f;
 }
