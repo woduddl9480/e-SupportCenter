@@ -257,3 +257,180 @@ caption {
     }
 }
 
+// 클래스명
+.pc-wd {
+    @for $i from 1 to 61 {
+        &-#{$i*5} {
+            width: $i * 5px !important;
+        }
+    }
+}
+
+
+
+@media all and (max-width: 768px)  {
+    /*피씨버전 마진/패딩/width값 display:none 설정*/
+    .m {
+        &-l {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-r {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-t {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-b {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .p {
+        @for $i from 0 to 20 {
+            &-#{$i} {
+                display: none;
+            }
+        }
+    
+        &-l {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-r {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-t {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    
+        &-b {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .pc-wd {
+        @for $i from 1 to 20 {
+            &-#{$i*5} {
+                display: none;
+            }
+        }
+    }
+
+     /*피씨버전 마진/패딩/width값 모바일 클래스 설정. 너무 작은 단위는 클래스로 맞추기*/
+    .mo-m {
+        &-l {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    margin-left: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-r {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    margin-right: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-t {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    margin-top: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-b {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    margin-bottom: $i * 0.1rem !important;
+                }
+            }
+        }
+    }
+    
+    .mo-p {
+        @for $i from 0 to 20 {
+            &-#{$i} {
+                padding: $i * 0.1rem !important;
+            }
+        }
+    
+        &-l {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    padding-left: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-r {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    padding-right: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-t {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    padding-top: $i * 0.1rem !important;
+                }
+            }
+        }
+    
+        &-b {
+            @for $i from 0 to 20 {
+                &-#{$i} {
+                    padding-bottom: $i * 0.1rem !important;
+                }
+            }
+        }
+    }
+    .mo-wd {
+        @for $i from 1 to 101 {
+            &-#{$i*1} {
+                width: $i * 1% !important;
+            }
+        }
+    }
+}
