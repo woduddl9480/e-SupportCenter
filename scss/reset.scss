@@ -259,7 +259,7 @@ caption {
 
 // 클래스명
 .pc-wd {
-    @for $i from 1 to 61 {
+    @for $i from 1 to 81 {
         &-#{$i*5} {
             width: $i * 5px !important;
         }
@@ -345,7 +345,7 @@ caption {
     }
 
     .pc-wd {
-        @for $i from 1 to 20 {
+        @for $i from 1 to 81 {
             &-#{$i*5} {
                 display: none;
             }
