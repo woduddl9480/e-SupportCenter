@@ -183,6 +183,7 @@ caption {
     clip-path: inset(50%);
 }
 
+/* 마진 단위 */
 .m {
     &-l {
         @for $i from 0 to 20 {
@@ -217,6 +218,7 @@ caption {
     }
 }
 
+/* 패딩 단위 */
 .p {
     @for $i from 0 to 20 {
         &-#{$i} {
@@ -257,7 +259,7 @@ caption {
     }
 }
 
-// 클래스명
+/* width 단위 */
 .pc-wd {
     @for $i from 1 to 81 {
         &-#{$i*5} {
@@ -269,88 +271,7 @@ caption {
 
 
 @media all and (max-width: 768px)  {
-    /*피씨버전 마진/패딩/width값 display:none 설정*/
-    .m {
-        &-l {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-r {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-t {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-b {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    }
-    
-    .p {
-        @for $i from 0 to 20 {
-            &-#{$i} {
-                display: none;
-            }
-        }
-    
-        &-l {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-r {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-t {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    
-        &-b {
-            @for $i from 0 to 20 {
-                &-#{$i} {
-                    display: none;
-                }
-            }
-        }
-    }
 
-    .pc-wd {
-        @for $i from 1 to 81 {
-            &-#{$i*5} {
-                display: none;
-            }
-        }
-    }
 
      /*피씨버전 마진/패딩/width값 모바일 클래스 설정. 너무 작은 단위는 스타일로 맞추기*/
     .mo-m {
