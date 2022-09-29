@@ -836,11 +836,12 @@
 .listType-header .article-main .artile-section1 .right .right-content p {
   color: #222;
   font-size: 1.8rem;
-  line-height: 0.8;
+  line-height: 1.56;
   letter-spacing: -0.072rem;
   font-family: "Pretendard";
 }
-.listType-header .article-main .artile-section1 .right .right-content p a {
+.listType-header .article-main .artile-section1 .right .right-content a {
+  line-height: 1;
   overflow: hidden;
   word-break: break-all;
   font-size: 1.6rem;
