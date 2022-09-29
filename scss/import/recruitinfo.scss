@@ -98,6 +98,7 @@ table.table-recruit {
     ol {
         li {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             border-bottom: 0.1rem solid #eee;
 
@@ -117,10 +118,10 @@ table.table-recruit {
                 align-items: center;
                 display: flex;
                 justify-content: space-around;
-                
-                span {
-                    display: none;
+                &--column {
+                    
                 }
+                
             }
 
             &.left-padding {
@@ -128,11 +129,16 @@ table.table-recruit {
                 height: auto;
 
                 .ico_provider {
-                    padding: 1.7rem 1.3rem 0.7rem;
-                    border-radius: 1.6rem;
-                    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.08);
-                    border: solid 1px #eee;
-                    background-color: #fff;
+                    
+                    img {
+                        width: 48px;
+                        height: 48px;
+                        padding: 1.7rem 1.3rem 1.6rem;
+                        border-radius: 1.6rem;
+                        box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.08);
+                        border: solid 1px #eee;
+                        background-color: #fff;
+                    }
 
                 }
             }
