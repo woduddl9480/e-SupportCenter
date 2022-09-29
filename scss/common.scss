@@ -324,8 +324,8 @@
     flex-wrap: wrap;
     &__inp {
         margin-right: 0.5rem;
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 2rem;
+        height: 2rem;
     }
     &__label {
         @extend %radio-chkbox-ft;
