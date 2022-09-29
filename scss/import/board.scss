@@ -836,11 +836,12 @@
 .listType-header .article-main .artile-section1 .right .right-content p {
   color: #222;
   font-size: 1.8rem;
-  line-height: 0.8;
+  line-height: 1.56;
   letter-spacing: -0.072rem;
   font-family: "Pretendard";
 }
-.listType-header .article-main .artile-section1 .right .right-content p a {
+.listType-header .article-main .artile-section1 .right .right-content a {
+  line-height: 1;
   overflow: hidden;
   word-break: break-all;
   font-size: 1.6rem;
@@ -970,5 +971,361 @@
     li
     span {
     width: 11rem;
+  }
+}
+// end-boardinfo //
+
+// start-boardDetail //
+
+.icon-box-btn {
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+
+.listType-header .detail-main-title {
+  border-top: 2px solid #2a2a2a;
+}
+
+.listType-header .detail-main-title .main-title-detail {
+  padding-left: 2.4rem;
+  padding-top: 2.2rem;
+  padding-bottom: 4.2rem;
+  font-family: "Pretendard";
+  line-height: 1.5;
+  letter-spacing: -0.048rem;
+  font-size: 2.4rem;
+  color: #222;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+.listType-header .detail-main-title .main-title-detail p {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.026rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+.listType-header .detail-main-title .main-title-detail strong {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #35f;
+  margin-right: 1.2rem;
+}
+
+.listType-header .detail-main-title .detail-container {
+  margin: 4rem auto;
+
+  width: 100%;
+  max-width: 115.2rem;
+}
+
+.listType-header .detail-main-title .detail-container .detail-content {
+  width: 66.5%;
+}
+
+.listType-header .detail-main-title .detail-container .detail-content p {
+  word-break: break-all;
+  margin-bottom: 2.5rem;
+  line-height: 1.88;
+  letter-spacing: -0.032rem;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.listType-header .detail-main-title .detail-container .detail-img {
+  position: relative;
+  width: 100%;
+  height: 32rem;
+  background-color: #666;
+}
+
+.listType-header .detail-main-title .detail-container .detail-img img {
+  width: 100%;
+  max-width: 96rem;
+  height: 32rem;
+  position: absolute;
+  background-color: #888;
+}
+
+.listType-header .detail-main-title .detail-container .detail-img p {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.listType-header .detail-main-title .detail-container .detail-content2 p {
+  margin-top: 4rem;
+  width: 52%;
+  word-break: break-all;
+  margin-bottom: 2.5rem;
+  line-height: 1.88;
+  letter-spacing: -0.032rem;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.listType-header .detail-main-title .detail-container .detail-file {
+  border-radius: 0.4rem;
+  border: solid 0.2rem #e5e5e5;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 11.2rem;
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+
+.listType-header .detail-main-title .detail-container .detail-file h3 {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+}
+
+.listType-header .detail-main-title .detail-container .detail-file span {
+  width: 0.1rem;
+  height: 8rem;
+  background-color: #e5e5e5;
+}
+
+.listType-header .detail-main-title .detail-container .detail-file .mob-line {
+  display: none;
+}
+.listType-header
+  .detail-main-title
+  .detail-container
+  .detail-file
+  ul
+  li:nth-child(1) {
+  margin-bottom: 0.5rem;
+}
+
+.listType-header
+  .detail-main-title
+  .detail-container
+  .detail-file
+  ul
+  li:nth-child(2) {
+  margin-bottom: 0.5rem;
+}
+
+.listType-header .detail-main-title .detail-container .detail-file ul li {
+  color: #666;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  font-size: 1.5rem;
+}
+
+.listType-header
+  .detail-main-title
+  .detail-container
+  .detail-file
+  ul
+  li::before {
+  margin-right: 0.8rem;
+  content: url(../img/file.png);
+}
+
+.listType-header .detail-main-title .be-af .before a {
+  align-items: center;
+  height: 6.4rem;
+  width: 100%;
+  border-top: 0.1rem solid #eee;
+  border-bottom: 0.1rem solid #eee;
+  display: flex;
+}
+
+.listType-header .detail-main-title .be-af .before h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #aaa;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+}
+
+.listType-header .detail-main-title .be-af .before h3::before {
+  content: url(../img/before.png);
+  margin-right: 0.8rem;
+  margin-left: 2.4rem;
+}
+
+.listType-header .detail-main-title .be-af .before a p {
+  margin-left: 2.4rem;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1.8rem;
+  color: #222;
+  letter-spacing: -0.072rem;
+  line-height: 1.19;
+  font-weight: 500;
+}
+
+.listType-header .detail-main-title .be-af .after a {
+  align-items: center;
+  height: 6.4rem;
+  height: 6.4rem;
+  width: 100%;
+  border-top: 0.1rem solid #eee;
+  border-bottom: 0.1rem solid #eee;
+  display: flex;
+}
+
+.listType-header .detail-main-title .be-af .after a p {
+  margin-left: 2.4rem;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1.8rem;
+  color: #222;
+  letter-spacing: -0.072rem;
+  line-height: 1.19;
+  font-weight: 500;
+}
+.listType-header .detail-main-title .be-af .after h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #aaa;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+}
+.listType-header .detail-main-title .be-af .after a h3::before {
+  content: url(../img/after.png);
+  margin-right: 0.8rem;
+  margin-left: 2.4rem;
+}
+.listType-header .detail-main-title .go-list {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+.listType-header .detail-main-title .go-list button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 9.4rem;
+  height: 4.8rem;
+  color: #fff;
+  padding: 15px 20px 14px;
+  border-radius: 2px;
+  background-color: #18297a;
+  letter-spacing: -0.06rem;
+}
+
+@media screen and (max-width: 768px) {
+  .listType-header .detail-main-title .detail-container .detail-content {
+    width: 100%;
+  }
+  .listType-header .detail-main-title .detail-container .detail-content2 p {
+    width: 100%;
+  }
+  .listType-header .detail-main-title .detail-container .detail-img {
+    max-width: 76.8rem;
+    height: 9.5rem;
+  }
+
+  .listType-header .detail-main-title .detail-container .detail-img img {
+    display: none;
+  }
+  .listType-header .detail-main-title .detail-container .detail-file {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .listType-header .detail-main-title .detail-container .detail-file span {
+    display: none;
+  }
+  .listType-header .detail-main-title .detail-container .detail-file h3 {
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+  }
+  .listType-header .detail-main-title .detail-container .detail-file ul {
+    margin-left: 2rem;
+    margin-bottom: 1.6rem;
+  }
+  .listType-header .detail-main-title .detail-container .detail-file .mob-line {
+    display: block;
+    width: 100%;
+    max-width: 31rem;
+    height: 0.1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+  }
+  .listType-header .detail-main-title .main-title-detail {
+    padding-left: 2.4rem;
+    padding-top: 1.8rem;
+    padding-bottom: 2.2rem;
+    font-family: "Pretendard";
+    line-height: 1.5;
+    letter-spacing: -0.048rem;
+    font-size: 2rem;
+    color: #222;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+  }
+  .listType-header .detail-main-title .main-title-detail p {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.026rem;
+    font-size: 1.3rem;
+    color: #666;
+  }
+  .listType-header .detail-main-title .main-title-detail strong {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #35f;
+    margin-right: 1.2rem;
+  }
+}
+// end-boardDetail //
+
+.listType-header .detail-main-title .detail-container .Article-detail-img {
+  position: relative;
+  width: 100%;
+  max-width: 96rem;
+  height: 54rem;
+  background-color: #888;
+}
+
+.listType-header .detail-main-title .detail-container .Article-detail-img p {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  opacity: 0.4;
+  font-size: 2rem;
+}
+
+.listType-header .detail-main-title .detail-container .detail-content3 p {
+  margin-top: 4rem;
+  width: 52%;
+  word-break: break-all;
+  margin-bottom: 8rem;
+  line-height: 1.88;
+  letter-spacing: -0.032rem;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .listType-header .detail-main-title .detail-container .detail-content3 p {
+    width: 100%;
   }
 }
