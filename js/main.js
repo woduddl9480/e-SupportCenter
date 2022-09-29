@@ -1,3 +1,5 @@
+// 탭
+
 const tabBtn = document.querySelectorAll('.tab li a');
 
 const tabOn = (tabClick) => {
@@ -25,6 +27,8 @@ for(let i = 0; i < tabBtn.length; i++) {
     tabBtn[i].addEventListener('click', tabOn);
 }
 
+// 모바일 gnb 2뎁스 여닫기
+
 const navBtn = document.querySelectorAll('.nav-list>li>a');
 
 const navOn = (tabClick) => {
@@ -36,6 +40,8 @@ const navOn = (tabClick) => {
 for(let i = 0; i < navBtn.length; i++) {
     navBtn[i].addEventListener('click', navOn);
 }
+
+// 모바일 gnb 여닫기
 
 const navOpen = document.querySelector('.hamburger');
 const navClose = document.querySelector('.nav-header .close');
@@ -50,5 +56,29 @@ navClose.addEventListener('click',() => {
 navOpen.addEventListener('click',() => {
     for(let i = 0; i < navRight.length; i++) {
         navRight[i].classList.add('active')
+    }
+});
+
+//main 페이지 헤더에 main 클래스 추가
+
+window.addEventListener('load', () => {
+    const container = document.querySelector('.container')
+    const header = document.querySelector('header')
+
+    if(container.classList.contains('main') && window.innerWidth > 1000) {
+        header.classList.add('main')
+    }
+});
+
+// 브라우저 창 1000px 이하 main 클래스 제거
+
+window.addEventListener('resize', () => {
+    const width = window.innerWidth;
+    const header = document.querySelector('header')
+
+    if(width < 1000) {
+        header.classList.remove('main')
+    } else {
+        header.classList.add('main')
     }
 });
