@@ -427,6 +427,15 @@
     }
 }
 
+@media all and (max-width: 390px) {
+  .pagination-list {
+    li.mo-none {
+        display: none!important;
+    }
+  }
+}
+
+
 
 
 
