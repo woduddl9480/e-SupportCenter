@@ -1,10 +1,81 @@
 <!-- header include -->
 @@include('../../include/header.html')
 <!-- header include -->
-
-
-
-
-<!-- footer include -->
-@@include('../../include/footer.html')
-<!-- footer include -->
+<div class="container">
+  <!--
+      container-top
+      notice recruit counseledu join welfare 클래스로 배경 변경
+  -->
+  <div class="container-top notice">
+    <h1>게시판</h1>
+    <div class="lnb-wrap">
+      <ul class="lnb">
+        <li class="home">
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">게시판</a>
+          <ul>
+            <li><a href="">상담 및 교육</a></li>
+            <li><a href="">채용정보</a></li>
+            <li><a href="">스포츠복지</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="">센터 안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">질의응답</a>
+          <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">질의응답</a></li>
+            <li><a href="">보도홍보자료</a></li>
+            <li><a href="">정보자료실</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-bottom">
+    <div class="contents">
+      <div class="contents-title">
+        <button class="icon-box-btn">
+          <img src="../img/arrow_left.png" alt="뒤로가기" />
+        </button>
+        <p>질의응답</p>
+      </div>
+      <div class="listType-header">
+        <div class="detail-main">
+          <div class="detail-main-title">
+            <div class="qna-title">
+              <h3>제목</h3>
+              <input type="text" placeholder="글 제목을 입력하세요" />
+            </div>
+            <div class="qna-content">
+              <h3>내용</h3>
+              <input type="text" />
+            </div>
+            <div class="secure-text">
+              <div class="left">
+                <span></span>
+                <p>왼쪽에 보이는 숫자를 입력해주세요</p>
+              </div>
+              <div class="secure-box">
+                <p>왼쪽에 보이는 숫자를 입력해주세요</p>
+                <input type="number" />
+                <button type="reset">새로고침</button>
+                <button type="button">음성듣기</button>
+              </div>
+            </div>
+            <div class="qna-registration">
+              <button type="reset">취소</button>
+              <button type="submit">등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer include -->
+    @@include('../../include/footer.html')
+    <!-- footer include -->
+  </div>
+</div>

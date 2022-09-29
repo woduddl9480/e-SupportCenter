@@ -1457,3 +1457,190 @@
     display: none;
   }
 }
+// end-boardQnaDetail //
+
+// start-boardQnaWrite //
+
+.listType-header .detail-main .detail-main-title .qna-title h3 {
+  font-family: "ONE-Mobile-Title";
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  color: #222;
+  margin-top: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.listType-header .detail-main .detail-main-title .qna-title input {
+  width: 100%;
+  height: 6.4rem;
+}
+
+.listType-header .detail-main .detail-main-title .qna-content h3 {
+  font-family: "ONE-Mobile-Title";
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  color: #222;
+  margin-top: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.listType-header .detail-main .detail-main-title .qna-content input {
+  width: 100%;
+  height: 48rem;
+}
+
+.listType-header .detail-main .detail-main-title .secure-text {
+  align-items: center;
+  margin-top: 2.4rem;
+  display: flex;
+}
+
+.listType-header .detail-main .detail-main-title .secure-text span {
+  display: block;
+  width: 16rem;
+  height: 8rem;
+  margin: 0 1.6rem 0 0;
+  border-radius: 0.2rem;
+  border: solid 0.1rem #666;
+  background-color: #aaa;
+}
+
+.listType-header .detail-main .detail-main-title .secure-text .left p {
+  display: none;
+}
+
+.listType-header .detail-main .detail-main-title .secure-text .secure-box p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.026;
+  color: #35f;
+}
+
+.listType-header
+  .detail-main
+  .detail-main-title
+  .secure-text
+  .secure-box
+  input {
+  width: 12rem;
+  height: 4.8rem;
+  margin: 0.6rem 0.4rem 0 0;
+  border-radius: 0.2rem;
+  border: solid 0.1rem #ccc;
+  background-color: #fff;
+}
+
+.listType-header
+  .detail-main
+  .detail-main-title
+  .secure-text
+  .secure-box
+  button {
+  cursor: pointer;
+  width: 9.4rem;
+  height: 4.8rem;
+  margin: 0.6rem 0.4rem 0 0;
+  border-radius: 0.2rem;
+  border: solid 0.1rem #ccc;
+  background-color: #f2f2f2;
+  font-size: 1.6rem;
+  letter-spacing: -0.064rem;
+  line-height: 1.19;
+}
+
+.listType-header .detail-main .detail-main-title .qna-registration {
+  display: flex;
+  width: 100%;
+  margin-top: 6.7rem;
+  justify-content: center;
+}
+
+.listType-header
+  .detail-main
+  .detail-main-title
+  .qna-registration
+  button:nth-child(1) {
+  cursor: pointer;
+  width: 100%;
+  max-width: 24rem;
+  height: 5.6rem;
+  margin: 0 0.8rem 0 0;
+  border-radius: 0.2rem;
+  border: solid 0.1rem #35f;
+  background-color: #fff;
+  font-size: 1.8rem;
+  color: #35f;
+  line-height: 1.17;
+  letter-spacing: -0.072rem;
+  font-weight: 600;
+}
+
+.listType-header
+  .detail-main
+  .detail-main-title
+  .qna-registration
+  button:nth-child(2) {
+  cursor: pointer;
+  width: 100%;
+  max-width: 24rem;
+  height: 5.6rem;
+  margin: 0 0.8rem 0 0;
+  border-radius: 0.2rem;
+  background-color: #35f;
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 1.17;
+  letter-spacing: -0.072rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .listType-header .detail-main .detail-main-title .secure-text .left {
+    align-items: center;
+    display: flex;
+  }
+  .listType-header .detail-main .detail-main-title .secure-text .left p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: -0.05rem;
+    color: #35f;
+    display: block;
+  }
+  .listType-header .detail-main .detail-main-title .secure-text .secure-box p {
+    display: none;
+  }
+  .listType-header .detail-main .detail-main-title .secure-text {
+    display: block;
+  }
+
+  .listType-header .detail-main .detail-main-title .secure-text span {
+    display: block;
+    width: 12rem;
+    height: 6rem;
+    margin: 0 1.6rem 0 0;
+    border-radius: 0.2rem;
+    border: solid 0.1rem #666;
+    background-color: #aaa;
+  }
+  .listType-header
+    .detail-main
+    .detail-main-title
+    .qna-registration
+    button:nth-child(1) {
+    max-width: 17.2rem;
+    height: 5.6rem;
+  }
+
+  .listType-header
+    .detail-main
+    .detail-main-title
+    .qna-registration
+    button:nth-child(2) {
+    max-width: 17.2rem;
+    height: 5.6rem;
+  }
+}
