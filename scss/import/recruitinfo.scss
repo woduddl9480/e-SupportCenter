@@ -1,7 +1,6 @@
 // 채용정보알림신청
 .txt-blue {
     font-size: 1.5rem;
-    text-align: center;
     color: #4766ff;
 }
 
@@ -163,3 +162,27 @@ table.table-recruit {
     letter-spacing: -0.06rem;
 }
 
+@media all and (max-width: 768px) {
+    
+    table.table-recruit {
+        .checkbox__label, 
+        .radio__label {
+            font-size: 1.3rem;
+        }
+        .txt-blue {
+            font-size: 1.4rem;
+        }
+        tbody {
+            tr {
+                th {
+                    font-size: 1.3rem;
+                    width: 30%;
+                    padding: 0 2.4rem 0 1.2rem;
+                }
+                td {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
