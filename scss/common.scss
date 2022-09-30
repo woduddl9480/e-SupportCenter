@@ -341,7 +341,7 @@
     &__inp {
         margin-right: 0.6rem;
         width: 2rem;
-        height: 2rem;
+        height: 2rem !important;
         &:disabled {
             background-color: #eee;
             border: 1px solid #ccc;
