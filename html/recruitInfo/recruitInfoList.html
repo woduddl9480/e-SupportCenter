@@ -1,8 +1,264 @@
 <!-- header include -->
 @@include('../../include/header.html')
 <!-- header include -->
+<div class="container">
+    <!--
+        container-top
+        notice recruit counseledu join welfare 클래스로 배경 변경
+    -->
+    <div class="container-top notice">
+        <h1>채용정보</h1>
+        <div class="lnb-wrap">
+            <ul class="lnb">
+                <li class="home">
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href="">게시판</a>
+                    <ul>
+                        <li><a href="">상담 및 교육</a></li>
+                        <li><a href="">채용정보</a></li>
+                        <li><a href="">스포츠복지</a></li>
+                        <li><a href="">게시판</a></li>
+                        <li><a href="">센터 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">보도/홍보자료</a>
+                    <ul>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">질의응답</a></li>
+                        <li><a href="">보도홍보자료</a></li>
+                        <li><a href="">정보자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-bottom">
+        <div class="contents">
+            <div class="contents-title">
+                <div class="icon-box">
+                    <img src="/img/ico_srch.svg" alt="채용정보 대표 아이콘">
+                </div>
+                <p >채용정보 검색</p>
+                
+            </div>
+            <div class="contents_detail">
+                <div class="contents_detail--tit">
+                    <p class="srch-filter" id="toc-toggle" onclick="openCloseToc()">검색필터</p>
+                    <img id="srch-img" src="/img/ico_arrow--top.svg" class="srch-img"/>
+                </div>
+                <ol id="toc-content" class="contents_detail--open">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </div>
+            <div class="contents-box">
+                <div class="tab-wrap">
+                    
+                    <div class="tab-con active">
+                        <div class="listType-header">
+                            <div class="board_top">
+                                <span class="board_top--total"><strong>204</strong> 개의 글이 등록되어 있습니다.</span>
+                                <div class="board_top--srch">
+                                    <select class="w-130">
+                                        <option value="ALL">5건씩 보기</option>
+                                    </select>
+                                    <select class="w-160">
+                                        <option value="ALL">최근 등록일 순</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="free-main2">
+                                <ol>
+                                    <li class="free-title">
+                                        <div class="left-free2">
+                                            <b>채용정보</b>
+                                        </div>
+                                        <div class="right-free2">
+                                            <b>학력</b>
+                                            <b>경력</b>
+                                            <b>등록일</b>
+                                            <b>지원마감일</b>
+                                            <b>제공처</b>
+                                        </div>
+                                    </li>
+                                    <li class="left-padding bg-white">
+                                        <div class="left-free2">
+                                            <div class="left-free--title">
+                                                <strong class="announ2 m-b-2">한국마사회시설관리(주)</strong>
+                                                <h4 class="w-a m-b-2">
+                                                    <a href="#">[한국마사회시설관리(주)] 제주경마공원 / 경주로직 (현장직 채용 공고)</a>
+                                                </h4>
+                                                <div class="tag_blue">
+                                                    <span class="label">월급 240</span>
+                                                    <span class="label">서울 강북구</span>
+                                                    <span class="label">주5일근무</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-free2">
+                                            <p>대졸(2,3년)</p>
+                                            <p>관계없음</p>
+                                            <p>2022-09-02</p>
+                                            <p>2022-09-02</p>
+                                            <div class="ico_provider">
+                                                <img src="/img/ico_provider.png" alt="제공처 아이콘 이미지" width="22px" height="15px" class="">
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="left-padding bg-white">
+                                        <div class="left-free2">
+                                            <div class="left-free--title">
+                                                <strong class="announ2 m-b-2">정우건축사사무소</strong>
+                                                <h4 class="w-a m-b-2">
+                                                    <a href="#">건축사무소 건축설계 경력직원 모집합니다</a>
+                                                </h4>
+                                                <div class="tag_blue">
+                                                    <span class="label">연봉 3000</span>
+                                                    <span class="label">서울 강북구</span>
+                                                    <span class="label">주5일근무</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-free2">
+                                            <p>대졸(2,3년)</p>
+                                            <p>관계없음</p>
+                                            <p>2022-09-02</p>
+                                            <p>2022-09-02</p>
+                                            <div class="ico_provider">
+                                                <img src="/img/ico_provider.png" alt="제공처 아이콘 이미지" width="22px" height="15px" class="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left-padding bg-white">
+                                        <div class="left-free2">
+                                            <div class="left-free--title">
+                                                <strong class="announ2 m-b-2">최창용법무사사무소</strong>
+                                                <h4 class="w-a m-b-2">
+                                                    <a href="#">법무사무원 모집</a>
+                                                </h4>
+                                                <div class="tag_blue">
+                                                    <span class="label">시급 12,000</span>
+                                                    <span class="label">경기 수원시 영통구</span>
+                                                    <span class="label">주5일근무</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-free2">
+                                            <p>대졸(2,3년)</p>
+                                            <p>관계없음</p>
+                                            <p>2022-09-02</p>
+                                            <p>2022-09-02</p>
+                                            <div class="ico_provider">
+                                                <img src="/img/ico_provider.png" alt="제공처 아이콘 이미지" width="22px" height="15px" class="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left-padding bg-white">
+                                        <div class="left-free2">
+                                            <div class="left-free--title">
+                                                <strong class="announ2 m-b-2">(주)카카오패밀리</strong>
+                                                <h4 class="w-a m-b-2">
+                                                    <a href="#">[카카오패밀리] 초콜릿 제조 생산직 모집</a>
+                                                </h4>
+                                                <div class="tag_blue">
+                                                    <span class="label">월급 240</span>
+                                                    <span class="label">서울 강북구</span>
+                                                    <span class="label">주5일근무</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-free2">
+                                            <p>대졸(2,3년)</p>
+                                            <p>관계없음</p>
+                                            <p>2022-09-02</p>
+                                            <p>2022-09-02</p>
+                                            <div class="ico_provider">
+                                                <img src="/img/ico_provider.png" alt="제공처 아이콘 이미지" width="22px" height="15px" class="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left-padding bg-white">
+                                        <div class="left-free2">
+                                            <div class="left-free--title">
+                                                <strong class="announ2 m-b-2">(주)카카오패밀리</strong>
+                                                <h4 class="w-a m-b-2">
+                                                    <a href="#">인쇄회로기판(PCB) 제조업 구인</a>
+                                                </h4>
+                                                <div class="tag_blue">
+                                                    <span class="label">월급 240</span>
+                                                    <span class="label">경기 안산시 단원구</span>
+                                                    <span class="label">주5일근무</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-free2">
+                                            <p>대졸(2,3년)</p>
+                                            <p>관계없음</p>
+                                            <p>2022-09-02</p>
+                                            <p>2022-09-02</p>
+                                            <div class="ico_provider">
+                                                <img src="/img/ico_provider.png" alt="제공처 아이콘 이미지" width="22px" height="15px" class="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <div class="pagination-control--prev">
+                    <button type="button">
+                        <i class="icon icon-pagination--d"></i>
+                    </button>
+                    <button type="button" class="prev">
+                        <i class="icon icon-pagination"></i>
+                    </button>
+                </div>
+                <ol class="pagination-list">
+                    <li class="is_active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="mo-none"><a href="#">4</a></li>
+                    <li class="mo-none"><a href="#">5</a></li>
+                    <li class="mo-none"><a href="#">6</a></li>
+                </ol>
+                <div class="pagination-control--next">
+                    <button type="button" class="next">
+                        <i class="icon icon-pagination reverse"></i>
+                    </button>
+                    <button type="button">
+                        <i class="icon icon-pagination--d reverse"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- //페이지네이션 -->
+        </div>
+    </div>
+</div>
+
+<!-- 페이지 여닫기 -->
+<script>
+    function openCloseToc() {
+      if(document.getElementById('toc-content').style.display === 'block') {
+        document.getElementById('toc-content').style.display = 'none';
+        document.getElementById("srch-img").src = "/img/ico_arrow--top.svg";
+      } else {
+        document.getElementById('toc-content').style.display = 'block';
+        document.getElementById("srch-img").src = "/img/ico_arrow--down.svg";
+      }
+    }
+  </script>
 
 
 <!-- footer include -->

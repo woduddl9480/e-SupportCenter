@@ -172,7 +172,6 @@ table.table-recruit {
     }
 }
 
-
 // 채용정보사이트
 .title_info--mo {
     display: none;
@@ -266,6 +265,41 @@ table.table-recruit {
             height: auto;
 
         }
+    }
+}
+
+// 채용정보 검색
+.contents {
+    .contents_detail {
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+        &--tit {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+            p {
+                padding-bottom: 0.8rem;
+                font-size: 2rem;
+                font-family: "ONE-Mobile-Title";
+                color: #222;
+                line-height: 1; 
+            }
+            img {
+                margin-left: 1rem;
+            }
+        }
+        &--open {
+            display: none;
+        }
+        // &--tit::after {
+        //     content: '';
+        //     // background-image: url(/img/ico_arrow--top.svg);
+        //     width: 16px;
+        //     height: 9px;
+        //     display: inline-block;
+        //     vertical-align: middle;
+        //     margin-left: 1rem;
+        // }
     }
 }
 
