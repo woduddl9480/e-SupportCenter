@@ -4,6 +4,30 @@
     color: #4766ff;
 }
 
+.w-130 {
+    min-width: 13rem;
+}
+
+.w-160 {
+    min-width: 16rem;
+}
+
+.w-a {
+    width: auto !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.announ2 {
+    color: #35f;
+    width: 12%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.06rem;
+}
 table.table-recruit {
     border-top: 1px solid #18297a;
 
@@ -119,9 +143,6 @@ table.table-recruit {
                 align-items: center;
                 display: flex;
                 justify-content: space-around;
-
-                &--column {}
-
             }
 
             &.left-padding {
@@ -150,30 +171,6 @@ table.table-recruit {
     }
 }
 
-.w-130 {
-    min-width: 13rem;
-}
-
-.w-160 {
-    min-width: 16rem;
-}
-
-.w-a {
-    width: auto !important;
-}
-
-.bg-white {
-    background-color: #fff !important;
-}
-
-.announ2 {
-    color: #35f;
-    width: 12%;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: -0.06rem;
-}
 
 // 채용정보사이트
 .free-main3 {
@@ -184,9 +181,10 @@ table.table-recruit {
 
     ol {
         li {
+            display: flex;
             border-bottom: 1px solid #eee;
             padding: 8px 0;
-
+            align-items: center;
             .left-free3 {
                 width: 282px;
                 height: 158px;
@@ -201,10 +199,48 @@ table.table-recruit {
             }
 
             .right-free3 {
+                padding: 1.3rem 2.5rem;
                 color: #666;
                 line-height: 1.6;
                 letter-spacing: -0.06rem;
                 font-size: 1.5rem;
+                h4 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: -0.4px;
+                    text-align: left;
+                    color: #222;
+                    margin-bottom: 1.2rem;
+                }
+                h4::after {
+                    content: '';
+                    background: url(/img/ico_link.svg);
+                    display: inline-block;
+                    margin-left: 0.8rem;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: initial;
+                }
+                .title_info {
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+                    font-weight: normal;
+                    line-height: 1.63;
+                    letter-spacing: -0.64px;
+                    text-align: left;
+                    color: #666;
+                }
+                .title_link {
+                    color: #3355ff;
+                    font-size: 1.4rem;
+                    font-weight: normal;
+                    line-height: 1.14;
+                    letter-spacing: normal;
+                    text-align: left;
+                }
             }
         }
 
@@ -215,6 +251,8 @@ table.table-recruit {
     }
 }
 
+
+// 모바일 시작
 @media all and (max-width: 768px) {
     input[type=text] {
         height: 4rem;
