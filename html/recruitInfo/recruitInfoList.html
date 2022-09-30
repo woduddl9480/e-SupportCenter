@@ -44,15 +44,157 @@
                 <p >채용정보 검색</p>
                 
             </div>
-            <div class="contents_detail">
+            <div class="contents_detail" id="contents_detail">
                 <div class="contents_detail--tit">
                     <p class="srch-filter" id="toc-toggle" onclick="openCloseToc()">검색필터</p>
                     <img id="srch-img" src="/img/ico_arrow--top.svg" class="srch-img"/>
                 </div>
                 <ol id="toc-content" class="contents_detail--open">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            검색필터
+                        </p>
+                        <div class="filter-input">
+                            <input type="text" placeholder="지역찾기 버튼을 눌러주세요" class="pc-wd-320">
+                            <button type="button" class="btn btn--size-m btn--bg-secondary">지역찾기</button>
+                            <button type="button" class="btn btn--size-m btn--border-secondary">지우기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            희망직종
+                        </p>
+                        <div class="filter-input">
+                            <input type="text" placeholder="지역찾기 버튼을 눌러주세요" class="pc-wd-320">
+                            <button type="button" class="btn btn--size-m btn--bg-secondary">지역찾기</button>
+                            <button type="button" class="btn btn--size-m btn--border-secondary">지우기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            희망임금
+                        </p>
+                        <div class="radio mo-m-b-15">
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">관계없음</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">연봉</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">월급</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">일급</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">시급</label>
+                            <input type="text" disabled="" class="pc-wd-120 mo-wd-49">
+                            <span class="td_span m-l-1 m-r-3">만원 이상</span>
+                            <input type="text" disabled="" class="pc-wd-120 mo-wd-49 mo-m-t-5">
+                            <span class="td_span m-l-1 mo-m-t-4">만원 이하</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            학력
+                        </p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">전체</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">초졸이하</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">중졸</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">고졸</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">대졸(2~3년)</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">대졸(4년)</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">석사</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">박사</label>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            경력
+                        </p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">전체</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">관계없음</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">신입</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">경력</label>
+                            <input type="text" class="pc-wd-120 mo-wd-49">
+                            <span class="td_span m-l-1 m-r-3">개월~</span>
+                            <input type="text" class="pc-wd-120 mo-wd-49 mo-m-t-5">
+                            <span class="td_span m-l-1 mo-m-t-4">개월</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            등록기간
+                        </p>
+                        <div class="radio mo-m-b-15">
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">전체</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">오늘</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">3일</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">1주 이내</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">2주 이내</label>
+                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15">
+                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">한달</label>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            검색키워드
+                        </p>
+                        <div class="input_keyword">
+                            <input type="text" class="pc-wd-160 mo-wd-47">
+                            <input type="text" class="pc-wd-160 mo-wd-47">
+                            <input type="text" class="pc-wd-160 mo-wd-47">
+                            <input type="text" class="pc-wd-160 mo-wd-47">
+                            <input type="text" class="pc-wd-160 mo-wd-47">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            고용형태
+                        </p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">정규직</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">계약직</label>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="filter-tit m-b-2">
+                            정보제공처
+                        </p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">전체</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">워크넷</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">사람인</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">잡스포이즈</label>
+                            <input type="checkbox" id="" class="checkbox__inp">
+                            <label for="" class="checkbox__label m-r-5">잡매칭</label>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn--size-m btn--bg-secondary pc-wd-140">필터적용 및 검색</button>
+                    </li>
                 </ol>
             </div>
             <div class="contents-box">
@@ -256,6 +398,7 @@
       } else {
         document.getElementById('toc-content').style.display = 'block';
         document.getElementById("srch-img").src = "/img/ico_arrow--down.svg";
+        document.getElementById("contents_detail").style = "border-bottom: none!important";
       }
     }
   </script>

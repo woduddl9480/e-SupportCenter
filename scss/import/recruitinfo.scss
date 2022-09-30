@@ -283,23 +283,37 @@ table.table-recruit {
                 font-family: "ONE-Mobile-Title";
                 color: #222;
                 line-height: 1; 
+                cursor: pointer;
             }
             img {
                 margin-left: 1rem;
+                cursor: pointer;
             }
         }
         &--open {
+            // 작업완료되면 display:none으로 바꾸기
             display: none;
+            border-radius: 4px;
+            border: solid 1px #e5e5e5;
+            background-color: #f9f9f9;
+            li {
+                padding: 25px 40px 24px;
+                border-bottom: 1px solid #eee;
+                .filter-tit {
+                    font-family: "ONE-Mobile-Title";
+                    font-size: 15px;
+                    line-height: 1.13;
+                    letter-spacing: -0.6px;
+                    text-align: left;
+                    color: #222;
+                }
+            }
+            li:last-child {
+                display: flex;
+                justify-content: center;
+                border-bottom: none!important;
+            }
         }
-        // &--tit::after {
-        //     content: '';
-        //     // background-image: url(/img/ico_arrow--top.svg);
-        //     width: 16px;
-        //     height: 9px;
-        //     display: inline-block;
-        //     vertical-align: middle;
-        //     margin-left: 1rem;
-        // }
     }
 }
 
@@ -358,7 +372,9 @@ table.table-recruit {
                             padding: 0 3rem 0 1rem;
                             border-color: #ccc;
                         }
-
+                    }
+                    td.notifyCheck {
+                        display: block;
                     }
 
                     td.input_keyword {

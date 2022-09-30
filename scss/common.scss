@@ -344,10 +344,11 @@
         margin-right: 0.6rem;
         width: 2rem;
         height: 2rem !important;
+        border-radius: 4px!important;
         &:disabled {
             background-color: #eee;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            
         }
     }
     &__label {
