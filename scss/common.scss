@@ -226,6 +226,7 @@
     cursor: pointer;
     &--size {
         &-m {
+            display: inline-block;
             width: 9.4rem;
             height: 4.8rem;
             font: {
@@ -235,6 +236,7 @@
             letter-spacing: -0.064rem;
         }
         &-l {
+            display: inline-block;
             width: 17.2rem;
             height: 5.6rem;
             font: {
