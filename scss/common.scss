@@ -400,9 +400,13 @@
         border-color: #aaa;
         color: map-get($color, primary);
     }
-    &--completion {
+    &--apply {
         border-color: #00a9ff;
         color: #00a9ff;
+    }
+    &--completion {
+        border-color: #aaa;
+        color: #ccc;
     }
 }
 

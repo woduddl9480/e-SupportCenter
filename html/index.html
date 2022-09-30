@@ -151,25 +151,27 @@
             <br>
             <br> -->
             <!-- //폰트 -->
-            
-            <!-- 버튼 -->
             <div>
-                <div style="font-weight: 700; font-size: 4rem; color: red;">버튼</div>
-                <br>
+                <select>
+                    <option value="ALL">셀렉트내용</option>
+                </select>
+            </div>
+            <div>
+                <div style="font-weight: 700; font-size: 4rem; color: red;">인풋</div>
+                <input type="text" placeholder="플레이스홀더">
+                <input type="text" placeholder="플레이스홀더" disabled>
+            </div>
+
+            <!-- 버튼 -->
+            <div style="font-weight: 700; font-size: 4rem; color: red;">버튼</div>
+            <div style="display: flex; justify-content: space-between;">
                 <button type="button" class="btn btn--size-m btn--bg-primary">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-m btn--bg-secondary">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-m btn--bg-info">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-m btn--border-primary">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-m btn--border-dark">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-m btn--border-secondary">버튼내용</button>
-                <br>
                 <button type="button" class="btn btn--size-l btn--border-primary">취소</button>
-                <br>
                 <button type="button" class="btn btn--size-l btn--bg-primary">저장</button>
             </div>
             <!-- //버튼 -->
@@ -237,7 +239,8 @@
             <br>
 
             <span class="state state--waiting">답변대기</span>
-            <span class="state state--completion">답변완료</span>
+            <span class="state state--apply">접수가능</span>
+            <span class="state state--completion">교육종료</span>
 
             <br>
 
