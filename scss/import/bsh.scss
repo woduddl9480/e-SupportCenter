@@ -569,6 +569,7 @@ header {
         &:last-child {
             a {
                 border: none;
+                width: calc(100% + 0.1rem);
             }
         }
 
