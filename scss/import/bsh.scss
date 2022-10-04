@@ -485,6 +485,13 @@ header {
                 }
             }
         }
+        &.none {
+            a {
+                &::after {
+                    display: none;
+                }
+            }
+        }
     }
 
     &-wrap {
@@ -534,6 +541,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+        display: flex;
+    }
 }
 
 .tab {
@@ -590,6 +601,10 @@ header {
             display: block;
         }
     }
+}
+
+.vertical-top {
+    vertical-align: top;
 }
 
 /* header용 미디어 쿼리 */
