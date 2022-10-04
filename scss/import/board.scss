@@ -1,3 +1,16 @@
+// 푸터 여백 없애는 용도
+.container-bottom2 {
+  padding: 4rem 0 0;
+}
+.contents2 {
+  margin: 0 auto;
+  background: #fff;
+  max-width: 128rem;
+  width: 100%;
+  border-radius: 1.6rem;
+  padding: 4.3rem 4rem 8rem;
+  margin-bottom: 8rem;
+}
 // start-boardList //
 .list {
   width: 100%;
@@ -815,6 +828,19 @@
   color: #222;
 }
 
+.listType-header .article-main-title .main-title3-info {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.listType-header .article-main-title .main-title3-info p {
+  font-family: "ONE-Mobile-Title";
+  line-height: 1.5;
+  letter-spacing: -0.048rem;
+  font-size: 2.4rem;
+  color: #222;
+}
+
 .listType-header .article-main .artile-section1 {
   width: 100%;
   display: flex;
@@ -1087,6 +1113,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .listType-header .article-main-title .main-title3-info {
+    display: block;
+  }
   .listType-header .article-main .section-part {
     height: 0.8rem;
   }
