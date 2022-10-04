@@ -1,11 +1,30 @@
-#daumRoughmapContainer1664859198327 {
-  display: none;
+#map {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+}
 
-  width: 100%;
+#map .map-btn {
+  top: 45%;
+  right: 1%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
-#daumRoughmapContainer1664849100308 {
-  width: 100%;
+
+#map button {
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  padding: 0.1rem;
+  background-color: #000;
+
+  width: 4rem;
+  height: 4rem;
+  z-index: 2;
 }
+
 .listType-header .centerinfo-main-title {
   margin-top: 4.3rem;
   font-size: 1.6rem;
@@ -106,6 +125,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #map {
+    height: 26.2rem;
+  }
   .listType-header .info-main .info-right .info-right-content {
     margin: 4.2rem auto;
     width: 100%;

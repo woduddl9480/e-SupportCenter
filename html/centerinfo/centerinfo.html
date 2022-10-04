@@ -1,6 +1,7 @@
 <!-- header include -->
 @@include('../../include/header.html')
 <!-- header include -->
+
 <div class="container">
   <!--
       container-top
@@ -45,60 +46,68 @@
           <h1 class="main-title-info">진로지원센터(서울)</h1>
         </div>
         <div class="info-main">
-          <div class="daum-map">
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div
-              id="daumRoughmapContainer1664849100308"
-              class="root_daum_roughmap root_daum_roughmap_landing"
-            ></div>
-
-            <!--
-              2. 설치 스크립트
-              * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-            -->
-            <script
-              charset="UTF-8"
-              class="daum_roughmap_loader_script"
-              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-            ></script>
-
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-              new daum.roughmap.Lander({
-                timestamp: "1664849100308",
-                key: "2bwj3",
-
-                mapHeight: "600",
-              }).render();
-            </script>
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div
-              id="daumRoughmapContainer1664859198327"
-              class="root_daum_roughmap root_daum_roughmap_landing"
-            ></div>
-
-            <!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-            <script
-              charset="UTF-8"
-              class="daum_roughmap_loader_script"
-              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-            ></script>
-
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-              new daum.roughmap.Lander({
-                timestamp: "1664859198327",
-                key: "2bwn6",
-
-                mapHeight: "262",
-              }).render();
-            </script>
+          <div id="map">
+            <div class="map-btn">
+              <button onclick="zoomIn()">-</button>
+              <button onclick="zoomOut()">+</button>
+            </div>
           </div>
+          <script
+            type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2e8b39ad1a606cd2b0e618f9063b2ea8"
+          ></script>
+          <script>
+            var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+              mapOption = {
+                center: new kakao.maps.LatLng(37.5186072, 127.1163604), // 지도의 중심좌표
+                level: 3, // 지도의 확대 레벨
+              };
+
+            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+
+            function zoomIn() {
+              // 현재 지도의 레벨을 얻어옵니다
+              var level = map.getLevel();
+
+              // 지도를 1레벨 내립니다 (지도가 확대됩니다)
+              map.setLevel(level - 1);
+
+              // 지도 레벨을 표시합니다
+              displayLevel();
+            }
+
+            function zoomOut() {
+              // 현재 지도의 레벨을 얻어옵니다
+              var level = map.getLevel();
+
+              // 지도를 1레벨 올립니다 (지도가 축소됩니다)
+              map.setLevel(level + 1);
+
+              // 지도 레벨을 표시합니다
+              displayLevel();
+            }
+            var markerPosition = new kakao.maps.LatLng(37.5186072, 127.1163604);
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+              position: markerPosition,
+            });
+            marker.setMap(map);
+
+            var iwContent =
+                '<div style="width:18rem; height:6rem; color:#000; text-align:center;"  >대한체육회 진로지원센터 <br><a href="https://map.kakao.com/link/map/대한체육회 진로지원센터,37.5186072, 127.1163604" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/대한체육회 진로지원센터,37.5186072, 127.1163604" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+              iwPosition = new kakao.maps.LatLng(37.5186072, 127.1163604); //인포윈도우 표시 위치입니다
+
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+              position: iwPosition,
+              content: iwContent,
+            });
+
+            // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+            infowindow.open(map, marker);
+          </script>
           <div class="info-right">
             <div class="info-right-content">
               <h1 class="main-info">대한체육회 진로지원센터</h1>
