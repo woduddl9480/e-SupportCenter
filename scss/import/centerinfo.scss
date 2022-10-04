@@ -121,4 +121,19 @@
     letter-spacing: -0.052rem;
     font-size: 1.3rem;
   }
+  .listType-header .info-main .info-right {
+    border: 0rem solid #e5e5e5;
+  }
+  .listType-header
+    .info-main
+    .info-right
+    .info-tb
+    tbody
+    tr:nth-child(5)
+    .color-box {
+    height: 8.1rem;
+  }
+  .listType-header .info-main .info-right .info-tb tbody tr {
+    height: 5.7rem;
+  }
 }
