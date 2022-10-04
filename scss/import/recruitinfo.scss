@@ -268,8 +268,9 @@ table.table-recruit {
     }
 }
 
-// 채용정보 검색
+
 .contents {
+    // 채용정보 검색
     .contents_detail {
         width: 100%;
         border-bottom: 1px solid #e5e5e5;
@@ -313,6 +314,112 @@ table.table-recruit {
                 justify-content: center;
                 border-bottom: none!important;
             }
+        }
+    }
+
+    //채용정보 검색 상세페이지
+    .detail_underline {
+        width: 100%;
+        border-bottom: 2px solid #1a1a1a;
+    }
+    .contents-title--detail {
+        margin-bottom: 2.4rem;
+        .recruit-srchbtn {
+            font-size: 3.2rem;
+            font-family: "ONE-Mobile-Title";
+            color: #222;
+            line-height: 1;
+            cursor: pointer;
+        }
+        .recruit-srchbtn::before {
+            content: '';
+                    background: url(/img/ico_detail.svg);
+                    display: inline-block;
+                    margin-right: 1.6rem;
+                    width: 14px;
+                    height: 24px;
+                    vertical-align: initial;
+        }
+        ul.detail-title {
+            margin-top: 2.4rem;
+            border-top: 2px solid #1a1a1a;
+            li {
+                padding: 2.5rem 2.4rem 1.8rem 2.4rem;
+                border-bottom: 1px solid #eee;
+                p {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.21;
+                    letter-spacing: -0.96px;
+                    text-align: left;
+                    color: #222;
+                }
+                .detail-contents {
+                    display: flex;
+                    width: 100%;
+                    &--all {
+                        width: 33.3%;
+                        margin-right: 0.6rem;
+                        p {
+                            margin-bottom: 0.8rem;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 1.17;
+                            letter-spacing: -0.72px;
+                            text-align: left;
+                            color: #222;
+                        }
+                        .content-box {
+                            padding: 25px 24px;
+                            border-radius: 4px;
+                            border: solid 1px #e5e5e5;
+                            background-color: #f9f9f9;
+                            dl {
+                                display: flex;
+                                justify-content: flex-start;
+                                dt {
+                                    margin-right: 1.6rem;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 1.2;
+                                    letter-spacing: -0.6px;
+                                    text-align: left;
+                                    color: #222;
+                                }
+                                dd {
+                                    font-size: 16px;
+                                    font-weight: normal;
+                                    line-height: 1.19;
+                                    letter-spacing: -0.64px;
+                                    text-align: left;
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                    &--all:last-child {
+                        margin-right: 0 !important;
+                    }
+                }
+                .detail-btn {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2.4rem;
+                }
+            }
+            li:last-child {
+                border-bottom: none!important;
+            }
+        }
+    }
+    .contents-box {
+        h5 {
+        font-family: "ONE-Mobile-Title";
+        font-size: 2rem;
+        line-height: 1.1;
+        letter-spacing: -0.8px;
+        text-align: left;
+        color: #18297a;
         }
     }
 }
