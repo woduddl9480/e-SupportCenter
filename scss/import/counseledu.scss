@@ -394,12 +394,240 @@
             border-bottom: 1px solid #d8e4ec;
         }
     }
+
+    &-lesson {
+        border-top: 2px solid #1a1a1a;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        padding: 4rem 0;
+
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            letter-spacing: -0.144rem;
+            color: map-get($color, primary);
+            line-height: 1.17;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            letter-spacing: -0.064rem;
+            color: #666;
+            line-height: 1;
+        }
+
+        em {
+            color: map-get($color, primary);
+            font-weight: 500;
+            padding-right: 0.8rem;
+            margin-right: 0.8rem;
+            border-right: 1px solid #e5e5e5;
+        }
+    }
+
+    &-table {
+        &-title {
+            font-size: 2rem;
+            letter-spacing: -0.08rem;
+            line-height: 1.1;
+            font-family: map-get($ftStyle, secondary);
+            color: #18297a;
+            margin: 2.4rem 0 0.8rem;
+
+            &.b {
+                margin-top: 6.6rem;
+            }
+        }
+
+        &-section {
+            font-size: 2.4rem;
+            letter-spacing: -0.096rem;
+            font-family: map-get($ftStyle, secondary);
+            color: map-get($color, primary);
+            margin: 8.3rem 0 2.6rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        input, select {
+            width: 100%;
+        }
+    }
+
+    &-edu {
+        margin-bottom: 2.4rem;
+        .top {
+            display: flex;
+            border-top: 2px solid #1a1a1a;
+            border-bottom: 1px solid #eee;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            font-weight: 600;
+
+            .right {
+                p {
+                    padding-left: 4rem;
+                    &:first-child {
+                        width: 58%;
+                    }
+                    &:nth-child(2) {
+                        width: 20%;
+                    }
+                    &:last-child {
+                        width: 22%;
+                    }
+                }
+            }
+        }
+        .bottom {
+            li {
+                display: flex;
+                padding: 2.4rem 0;
+                border-bottom: 1px solid #eee;
+
+                .left {
+                    p {
+                        font-size: 1.8rem;
+                        color: map-get($color, primary);
+                        font-weight: 500;
+                        letter-spacing: -0.072rem;
+                        margin: 0.5rem 0 0.9rem;
+                    }
+
+                    span:not(.badge) {
+                        font-size: 1.5rem;
+                        color: #666;
+                        letter-spacing: -0.064rem;
+
+                        em {
+                            color: map-get($color, primary);
+                            font-weight: 500;
+                            padding-right: 0.8rem;
+                            margin-right: 0.8rem;
+                            border-right: 1px solid #e5e5e5;
+                        }
+                    }
+                }
+
+                .right {
+                    div {
+                        font-size: 1.5rem;
+                        color: #666;
+                        padding-left: 4rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        &:first-child {
+                            width: 58%;
+                        }
+                        &:nth-child(2) {
+                            width: 20%;
+                        }
+                        &:last-child {
+                            width: 22%;
+                        }
+
+                        p {
+                            margin: 0.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+        .left {
+            width: 50.8%;
+            padding-left: 2.4rem;
+        }
+        .right {
+            width: 49.2%;
+            display: flex;
+        }
+    }
+
+    .table-recruit {
+        th {
+            width: 16.67%;
+            padding: 2.5rem 0 2.5rem 2.5rem;
+            font-size: 1.5rem;
+            line-height: 1;
+
+            .required {
+                display: inline-block;
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                background: #35f;
+                margin: 0.3rem 0 0 0.4rem;
+            }
+        }
+        td {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            color: #444;
+
+            &.pd-16 {
+                padding: 1.6rem 0 1.6rem 2.4rem;
+            }
+
+            p {
+                line-height: 1.88;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin: 0 0.4rem;
+                }
+            }
+
+            em {
+                font-weight: 500;
+                color: map-get($color, primary);
+            }
+
+            button:not(.btn) {
+                display: block;
+                padding-left: 2.4rem;
+                background: url(../img/file.png) no-repeat left center;
+                font-size: 1.5rem;
+                color: #666;
+                margin-bottom: 1.3rem;
+                cursor: pointer;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .btn-area {
+        text-align: center;
+        margin: 4rem 0 0.9rem;
+
+        &-middle {
+            text-align: center;
+            margin: 2.4rem 0 2.6rem;
+        }
+
+        &.b {
+            margin: 6.4rem 0 3.3rem;
+        }
+    }
 }
 
 .video {
     &-list {
         overflow: hidden;
         .item {
+            display: block;
             float: left;
             width: calc(33.3% - 1.53rem);
 
@@ -637,10 +865,42 @@
     &-full {
         width: 100%;
     }
+    &-80 {
+        max-width: 8rem;
+    }
     &-90 {
         width: 9rem;
     }
+    &-100 {
+        max-width: 10rem !important;
+    }
     &-120 {
         width: 12rem !important;
+    }
+    &-140 {
+        width: 14rem;
+    }
+    &-160 {
+        max-width: 14rem;
+    }
+    &-240 {
+        max-width: 24rem;
+    }
+    &-320 {
+        max-width: 32rem;
+    }
+    &-560 {
+        max-width: 56rem;
+    }
+    &-828 {
+        max-width: 82.8rem;
+    }
+}
+
+button {
+    &.w {
+        &-240 {
+            width: 24rem;
+        }
     }
 }
