@@ -394,7 +394,21 @@ table.table-recruit {
 
 }
 
-@media all and (max-width: 390px) {
+@media all and (max-width: 768px) {
+    .checkbox__label,
+    .radio__label {
+        font-size: 1.5rem!important;
+    }
+    .radio {
+        span {
+            font-size: 1.5rem!important;
+        }
+    }
+    .checkbox {
+        span {
+            font-size: 1.5rem!important;
+        }
+    }
 
     /*분야별채용공고*/
     .listType-header {
@@ -565,7 +579,27 @@ table.table-recruit {
                 }
             }
         }
+    }
 
+    // 채용정보 검색
+    input::placeholder {
+        display: none!important;
+    }
+    .contents {
+        .contents_detail {
+            &--open {
+                li {
+                    padding: 25px 20px;
+                    .filter-input {
+                        
+                        button {
+                            height: 4rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 
 }
