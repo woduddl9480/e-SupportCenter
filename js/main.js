@@ -74,9 +74,12 @@ window.addEventListener('load', () => {
 
 window.addEventListener('resize', () => {
     const width = window.innerWidth;
+    const container = document.querySelector('.container')
     const header = document.querySelector('header')
 
-    if(width < 1000) {
+    if(width < 1000 && container.classList.contains('main')) {
+        header.classList.remove('main')
+    } else if (!container.classList.contains('main')) {
         header.classList.remove('main')
     } else {
         header.classList.add('main')
