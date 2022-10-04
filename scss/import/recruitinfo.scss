@@ -424,18 +424,28 @@ table.table-recruit {
                                     letter-spacing: -0.6px;
                                     text-align: left;
                                     color: #222;
+                                    
                                 }
 
                                 dd {
-                                    font-size: 16px;
+                                    font-size: 1.6rem;
                                     font-weight: normal;
-                                    line-height: 1.19;
-                                    letter-spacing: -0.64px;
+                                    line-height: 1.2;
+                                    letter-spacing: -0.9px;
                                     text-align: left;
                                     color: #666;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    /* word-wrap: break-word; */
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    max-width: 264px;
+                                    word-break: break-all;
                                 }
                             }
                         }
+                        
                     }
 
                     &--all:last-child {
@@ -456,6 +466,7 @@ table.table-recruit {
         }
     }
 
+
     .contents-box {
         h5 {
             font-family: "ONE-Mobile-Title";
@@ -465,6 +476,63 @@ table.table-recruit {
             text-align: left;
             color: #18297a;
         }
+    }
+
+    .prev-next {
+        margin-top: 4rem;
+        dl {
+            display: flex;
+            width: 100%;
+            padding: 2rem 2.4rem;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            dt {
+                font-size: 15px;
+                font-weight: 500;
+                margin-right: 2.4rem;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 24px;
+                letter-spacing: -0.6px;
+                text-align: left;
+                color: #aaa;
+            }
+            .tit-prev {
+                a::before {
+                content: "";
+                background: url(/img/ico-prev--gray.svg);
+                display: inline-block;
+                margin-right: 1.6rem;
+                width: 16px;
+                height: 14px;
+                vertical-align: initial;
+                }
+            } 
+            .tit-next {
+                a::before {
+                content: "";
+                background: url(/img/ico-next--gray.svg);
+                display: inline-block;
+                margin-right: 1.6rem;
+                width: 16px;
+                height: 14px;
+                vertical-align: initial;
+                }
+            } 
+            dd {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.17;
+                letter-spacing: -0.72px;
+                text-align: left;
+                color: #222;
+            }
+        }
+        dl:first-child {
+            border-bottom: none;
+        }
+        
+        
     }
 }
 
