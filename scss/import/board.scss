@@ -45,7 +45,7 @@
   display: flex;
 }
 
-.list .list-right select {
+.list .list-right .select {
   color: #222;
   border-radius: 0.2rem;
   width: 100%;
@@ -297,13 +297,11 @@
     margin-bottom: 2rem;
     justify-content: center;
   }
-  .list select {
-    border: 0rem;
-
-    width: 30%;
+  .list .list-right .select {
+    width: 38.5%;
     max-width: 12rem;
     height: 4.8rem;
-    padding: 1.5rem;
+
     margin-right: 1rem;
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
@@ -610,9 +608,9 @@
   border: 0rem;
   border-radius: 0.2rem;
   border: solid 0.1rem #ccc;
-  width: 100%;
-  max-width: 13rem;
-  padding: 1rem;
+
+  width: 13rem;
+
   margin-right: 0.4rem;
 }
 
@@ -623,9 +621,8 @@
   border: 0rem;
   border-radius: 0.2rem;
   border: solid 0.1rem #ccc;
-  width: 100%;
-  max-width: 16rem;
-  padding: 1rem;
+
+  width: 16rem;
 }
 
 .listType-header .article-main {
