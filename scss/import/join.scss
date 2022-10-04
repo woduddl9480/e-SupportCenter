@@ -1,0 +1,19 @@
+.lnb li p {
+  color: #fff;
+  display: flex;
+  width: 24rem;
+  height: 100%;
+  position: relative;
+  padding-left: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  border-right: 1px solid #3952cc;
+  align-items: center;
+}
+
+.contents-box .contents-title {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+}
