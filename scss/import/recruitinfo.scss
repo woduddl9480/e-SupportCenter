@@ -47,9 +47,14 @@ table.table-recruit {
             }
 
             td {
-                border: none;
                 padding: 2.4rem 0 2.4rem 2.4rem;
-
+                color: #444;
+                font-size: 1.6rem;
+                border: none;
+                font-weight: normal;
+                line-height: 1.88;
+                letter-spacing: -0.64px;
+                text-align: left;
                 input[type=text] {
                     height: 4.8rem;
                     line-height: 4.8rem;
@@ -75,6 +80,14 @@ table.table-recruit {
             }
         }
     }
+}
+.submit-info {
+    display: flex;
+    margin-bottom: 2.4rem;
+    justify-content: center;
+    line-height: 1.6;
+    letter-spacing: -0.6px;
+    text-align: center;
 }
 
 .btn_area {
