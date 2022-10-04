@@ -55,6 +55,7 @@ table.table-recruit {
                 line-height: 1.88;
                 letter-spacing: -0.64px;
                 text-align: left;
+
                 input[type=text] {
                     height: 4.8rem;
                     line-height: 4.8rem;
@@ -81,16 +82,19 @@ table.table-recruit {
         }
     }
 }
+
 .submit-info {
     display: flex;
-    margin-bottom: 2.4rem;
+    margin: 0 auto;
     justify-content: center;
+    max-width: 468px;
     line-height: 1.6;
     letter-spacing: -0.6px;
     text-align: center;
 }
 
 .btn_area {
+    margin-top: 2.4rem;
     display: flex;
     justify-content: center;
 }
@@ -189,9 +193,11 @@ table.table-recruit {
 .title_info--mo {
     display: none;
 }
+
 .title_link--mo {
     display: none;
 }
+
 .free-main3 {
     border-top: 0.2rem solid #000;
     width: 100%;
@@ -283,36 +289,43 @@ table.table-recruit {
 
 
 .contents {
+  
     // 채용정보 검색
     .contents_detail {
         width: 100%;
         border-bottom: 1px solid #e5e5e5;
+
         &--tit {
             display: flex;
             align-items: baseline;
             width: 100%;
+
             p {
                 padding-bottom: 0.8rem;
                 font-size: 2rem;
                 font-family: "ONE-Mobile-Title";
                 color: #222;
-                line-height: 1; 
+                line-height: 1;
                 cursor: pointer;
             }
+
             img {
                 margin-left: 1rem;
                 cursor: pointer;
             }
         }
+
         &--open {
             // 작업완료되면 display:none으로 바꾸기
             display: none;
             border-radius: 4px;
             border: solid 1px #e5e5e5;
             background-color: #f9f9f9;
+
             li {
                 padding: 25px 40px 24px;
                 border-bottom: 1px solid #eee;
+
                 .filter-tit {
                     font-family: "ONE-Mobile-Title";
                     font-size: 15px;
@@ -322,10 +335,11 @@ table.table-recruit {
                     color: #222;
                 }
             }
+
             li:last-child {
                 display: flex;
                 justify-content: center;
-                border-bottom: none!important;
+                border-bottom: none !important;
             }
         }
     }
@@ -335,8 +349,10 @@ table.table-recruit {
         width: 100%;
         border-bottom: 2px solid #1a1a1a;
     }
+
     .contents-title--detail {
         margin-bottom: 2.4rem;
+
         .recruit-srchbtn {
             font-size: 3.2rem;
             font-family: "ONE-Mobile-Title";
@@ -344,21 +360,25 @@ table.table-recruit {
             line-height: 1;
             cursor: pointer;
         }
+
         .recruit-srchbtn::before {
             content: '';
-                    background: url(/img/ico_detail.svg);
-                    display: inline-block;
-                    margin-right: 1.6rem;
-                    width: 14px;
-                    height: 24px;
-                    vertical-align: initial;
+            background: url(/img/ico_detail.svg);
+            display: inline-block;
+            margin-right: 1.6rem;
+            width: 14px;
+            height: 24px;
+            vertical-align: initial;
         }
+
         ul.detail-title {
             margin-top: 2.4rem;
             border-top: 2px solid #1a1a1a;
+
             li {
                 padding: 2.5rem 2.4rem 1.8rem 2.4rem;
                 border-bottom: 1px solid #eee;
+
                 p {
                     font-size: 24px;
                     font-weight: 500;
@@ -367,12 +387,15 @@ table.table-recruit {
                     text-align: left;
                     color: #222;
                 }
+
                 .detail-contents {
                     display: flex;
                     width: 100%;
+
                     &--all {
                         width: 33.3%;
                         margin-right: 0.6rem;
+
                         p {
                             margin-bottom: 0.8rem;
                             font-size: 18px;
@@ -382,14 +405,17 @@ table.table-recruit {
                             text-align: left;
                             color: #222;
                         }
+
                         .content-box {
                             padding: 25px 24px;
                             border-radius: 4px;
                             border: solid 1px #e5e5e5;
                             background-color: #f9f9f9;
+
                             dl {
                                 display: flex;
                                 justify-content: flex-start;
+
                                 dt {
                                     margin-right: 1.6rem;
                                     font-size: 15px;
@@ -399,6 +425,7 @@ table.table-recruit {
                                     text-align: left;
                                     color: #222;
                                 }
+
                                 dd {
                                     font-size: 16px;
                                     font-weight: normal;
@@ -410,29 +437,33 @@ table.table-recruit {
                             }
                         }
                     }
+
                     &--all:last-child {
                         margin-right: 0 !important;
                     }
                 }
+
                 .detail-btn {
                     display: flex;
                     justify-content: center;
                     margin-top: 2.4rem;
                 }
             }
+
             li:last-child {
-                border-bottom: none!important;
+                border-bottom: none !important;
             }
         }
     }
+
     .contents-box {
         h5 {
-        font-family: "ONE-Mobile-Title";
-        font-size: 2rem;
-        line-height: 1.1;
-        letter-spacing: -0.8px;
-        text-align: left;
-        color: #18297a;
+            font-family: "ONE-Mobile-Title";
+            font-size: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.8px;
+            text-align: left;
+            color: #18297a;
         }
     }
 }
@@ -481,9 +512,14 @@ table.table-recruit {
                         width: 30%;
                         padding: 0 2.4rem 0 1.2rem;
                     }
+                    th.th-detail {
+                        padding-right: 1.5rem;
+                    }
 
                     td {
-                        font-size: 1.3rem;
+                        font-size: 1.4rem;
+                        line-height: 1.71;
+                        letter-spacing: -0.56px;
                         padding: 2rem 1rem;
 
                         input[type=text] {
@@ -493,6 +529,7 @@ table.table-recruit {
                             border-color: #ccc;
                         }
                     }
+
                     td.notifyCheck {
                         display: block;
                     }
@@ -515,18 +552,21 @@ table.table-recruit {
 }
 
 @media all and (max-width: 768px) {
+
     .checkbox__label,
     .radio__label {
-        font-size: 1.5rem!important;
+        font-size: 1.5rem !important;
     }
+
     .radio {
         span {
-            font-size: 1.5rem!important;
+            font-size: 1.5rem !important;
         }
     }
+
     .checkbox {
         span {
-            font-size: 1.5rem!important;
+            font-size: 1.5rem !important;
         }
     }
 
@@ -642,9 +682,11 @@ table.table-recruit {
             .title_link {
                 display: none;
             }
+
             .title_info {
-                display: none!important;
+                display: none !important;
             }
+
             .title_link--mo {
                 color: #35f;
                 width: 16rem;
@@ -656,6 +698,7 @@ table.table-recruit {
                 -webkit-box-orient: vertical;
                 word-break: break-all;
             }
+
             .title_info--mo {
                 margin-top: 1.2rem;
                 font-size: 1.4rem;
@@ -671,22 +714,27 @@ table.table-recruit {
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
             }
+
             ol {
                 li {
                     display: flex;
                     flex-wrap: wrap;
+
                     .left-free3 {
                         width: 16rem;
                         height: 9rem;
+
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                         }
                     }
+
                     .right-free3 {
                         padding: 0 1rem;
                         width: calc(100% - 16rem);
+
                         h4 {
                             font-size: 1.8rem;
                             font-weight: 600;
@@ -695,7 +743,7 @@ table.table-recruit {
                             margin-bottom: 0.5rem;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -703,21 +751,73 @@ table.table-recruit {
 
     // 채용정보 검색
     input::placeholder {
-        display: none!important;
+        display: none !important;
     }
+
     .contents {
         .contents_detail {
             &--open {
                 li {
                     padding: 25px 20px;
+
                     .filter-input {
-                        
+
                         button {
                             height: 4rem;
                         }
                     }
-                    
+
                 }
+            }
+        }
+
+        // 채용정보 검색 상세페이지
+
+    }
+
+    .contents {
+        .submit-info {
+            font-size: 1.4rem;
+        }
+        .contents-title--detail {
+            .recruit-srchbtn {
+                font-size: 2.8rem !important;
+            }
+
+            ul.detail-title {
+                li {
+                    padding: 2.2rem 0;
+
+                    .detail-contents {
+                        flex-wrap: wrap;
+
+                        &--all {
+                            width: 100%;
+                            margin-bottom: 1.6rem;
+
+                            .content-box {
+                                padding: 2rem 2rem;
+
+                                dl {
+                                    dd {
+                                        width: 75%;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        word-wrap: break-word;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contents-box {
+            h5 {
+                font-size: 2.2rem;
             }
         }
     }
