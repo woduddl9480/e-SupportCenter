@@ -1,3 +1,8 @@
+// qna작성용 컨테이너 바텀
+.container-bottom2 {
+  padding: 0 0 8rem;
+}
+
 // start-boardList //
 .list {
   width: 100%;
@@ -815,6 +820,19 @@
   color: #222;
 }
 
+.listType-header .article-main-title .main-title3-info {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.listType-header .article-main-title .main-title3-info p {
+  font-family: "ONE-Mobile-Title";
+  line-height: 1.5;
+  letter-spacing: -0.048rem;
+  font-size: 2.4rem;
+  color: #222;
+}
+
 .listType-header .article-main .artile-section1 {
   width: 100%;
   display: flex;
@@ -1087,6 +1105,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .listType-header .article-main-title .main-title3-info {
+    display: block;
+  }
   .listType-header .article-main .section-part {
     height: 0.8rem;
   }
