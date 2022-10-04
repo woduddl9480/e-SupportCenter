@@ -1,8 +1,16 @@
-// qna작성용 컨테이너 바텀
+// qna작성용 컨테이너 바텀,콘텐츠
 .container-bottom2 {
-  padding: 0 0 8rem;
+  padding: 4rem 0 0;
 }
-
+.contents2 {
+  margin: 0 auto;
+  background: #fff;
+  max-width: 128rem;
+  width: 100%;
+  border-radius: 1.6rem;
+  padding: 4.3rem 4rem 8rem;
+  margin-bottom: 8rem;
+}
 // start-boardList //
 .list {
   width: 100%;
