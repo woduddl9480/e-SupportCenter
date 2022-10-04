@@ -1,9 +1,122 @@
 <!-- header include -->
 @@include('../../include/header.html')
 <!-- header include -->
+<div class="container">
+  <!--
+      container-top
+      notice recruit counseledu join welfare 클래스로 배경 변경
+  -->
+  <div class="container-top notice">
+    <h1>게시판</h1>
+    <div class="lnb-wrap">
+      <ul class="lnb">
+        <li class="home">
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">게시판</a>
+          <ul>
+            <li><a href="">상담 및 교육</a></li>
+            <li><a href="">채용정보</a></li>
+            <li><a href="">스포츠복지</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="">센터 안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">정보자료실</a>
+          <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">질의응답</a></li>
+            <li><a href="">보도홍보자료</a></li>
+            <li><a href="">정보자료실</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-bottom">
+    <div class="contents">
+      <div class="contents-title">
+        <div class="icon-box">
+          <img src="../img/ping.png" alt="위치 및 연락처" />
+        </div>
+        <p>위치 및 연락처</p>
+      </div>
+      <div class="listType-header">
+        <div class="centerinfo-main-title">
+          <h1 class="main-title-info">진로지원센터(서울)</h1>
+        </div>
+        <div class="info-main">
+          <div class="daum-map">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1664849100308"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+            ></div>
 
+            <!--
+              2. 설치 스크립트
+              * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
 
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1664849100308",
+                key: "2bwj3",
 
+                mapHeight: "600",
+              }).render();
+            </script>
+          </div>
+          <div class="info-right">
+            <div class="info-right-content">
+              <h1 class="main-info">대한체육회 진로지원센터</h1>
+              <table class="info-tb">
+                <colgroup>
+                  <col style="width: 30%" />
+                  <col style="width: 70%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="color-box">전화</td>
+                    <td>02-1588-3011</td>
+                  </tr>
+                  <tr>
+                    <td class="color-box">카카오톡</td>
+                    <td>대한체육회 진로지원센터</td>
+                  </tr>
+                  <tr>
+                    <td class="color-box">메일</td>
+                    <td>career@sports.or.kr</td>
+                  </tr>
+                  <tr>
+                    <td class="color-box">웹사이트</td>
+                    <td>welfare.sports.or.kr</td>
+                  </tr>
+                  <tr>
+                    <td class="color-box">주소</td>
+                    <td>
+                      서울 송파구 올림픽로 424 올림픽공원 평화의광장 편익시설
+                      A-1동 (지번) 방이동 88-1
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- footer include -->
 @@include('../../include/footer.html')

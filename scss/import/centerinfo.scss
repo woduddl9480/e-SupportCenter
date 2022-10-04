@@ -1,0 +1,124 @@
+#daumRoughmapContainer1664849100308 {
+  width: 100%;
+}
+.listType-header .centerinfo-main-title {
+  margin-top: 4.3rem;
+  font-size: 1.6rem;
+  color: #888;
+  font-stretch: normal;
+  font-style: normal;
+  align-items: center;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.listType-header .centerinfo-main-title .main-title-info {
+  font-family: "ONE-Mobile-Title";
+  line-height: 1.5;
+  letter-spacing: -0.048rem;
+  font-size: 2.4rem;
+  color: #222;
+}
+
+.listType-header .info-main {
+  display: flex;
+  border-top: 0.2rem solid #000;
+  width: 100%;
+  max-width: 128rem;
+  margin-top: 0.8rem;
+  padding-top: 1.6rem;
+}
+
+.listType-header .info-main .daum-map {
+  width: 100%;
+}
+
+.listType-header .info-main .info-right {
+  margin: 0 auto;
+  border: 0.1rem solid #e5e5e5;
+
+  width: 100%;
+  max-width: 40rem;
+}
+
+.listType-header .info-main .info-right .main-info {
+  font-family: "ONE-Mobile-Title";
+  line-height: 1.1;
+  letter-spacing: -0.08rem;
+  font-size: 2rem;
+  color: #18297a;
+}
+
+.listType-header .info-main .info-right .info-right-content {
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 35.2rem;
+}
+
+.listType-header .info-main .info-right .info-tb {
+  border-top: 0.1rem solid #18297a;
+
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.listType-header .info-main .info-right .info-tb tbody tr {
+  height: 6.8rem;
+}
+
+.listType-header .info-main .info-right .info-tb tbody tr td {
+  line-height: 1.19;
+  color: #444;
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid #e4e6ee;
+  padding-left: 2.4rem;
+}
+
+.listType-header .info-main .info-right .info-tb tbody tr .color-box {
+  background-color: #f5f7ff;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #18297a;
+}
+
+.listType-header
+  .info-main
+  .info-right
+  .info-tb
+  tbody
+  tr:nth-child(5)
+  .color-box {
+  height: 11.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .listType-header .info-main {
+    display: block;
+  }
+
+  #daumRoughmapContainer1664849100308 {
+    width: 100%;
+    height: 26.2rem;
+  }
+
+  .listType-header .info-main .info-right .info-tb tbody tr td {
+    line-height: 2;
+    letter-spacing: -0.052rem;
+    font-size: 1.4rem;
+  }
+
+  .listType-header .info-main .info-right .info-tb tbody tr .color-box {
+    line-height: 1.15;
+    letter-spacing: -0.052rem;
+    font-size: 1.3rem;
+  }
+}
