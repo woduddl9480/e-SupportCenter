@@ -1,3 +1,8 @@
+#daumRoughmapContainer1664859198327 {
+  display: none;
+
+  width: 100%;
+}
 #daumRoughmapContainer1664849100308 {
   width: 100%;
 }
@@ -135,5 +140,12 @@
   }
   .listType-header .info-main .info-right .info-tb tbody tr {
     height: 5.7rem;
+  }
+
+  #daumRoughmapContainer1664859198327 {
+    display: block;
+  }
+  #daumRoughmapContainer1664849100308 {
+    display: none;
   }
 }
