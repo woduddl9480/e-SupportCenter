@@ -1,5 +1,7 @@
-#daumRoughmapContainer1664849100308 {
+#map {
+  position: relative;
   width: 100%;
+  height: 60rem;
 }
 .listType-header .centerinfo-main-title {
   margin-top: 4.3rem;
@@ -101,6 +103,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  #map {
+    height: 26.2rem;
+  }
+  .listType-header .info-main .info-right .info-right-content {
+    margin: 4.2rem auto;
+    width: 100%;
+    max-width: 100%;
+  }
   .listType-header .info-main {
     display: block;
   }
@@ -120,5 +130,28 @@
     line-height: 1.15;
     letter-spacing: -0.052rem;
     font-size: 1.3rem;
+  }
+  .listType-header .info-main .info-right {
+    border: 0rem solid #e5e5e5;
+    max-width: 100%;
+  }
+  .listType-header
+    .info-main
+    .info-right
+    .info-tb
+    tbody
+    tr:nth-child(5)
+    .color-box {
+    height: 8.1rem;
+  }
+  .listType-header .info-main .info-right .info-tb tbody tr {
+    height: 5.7rem;
+  }
+
+  #daumRoughmapContainer1664859198327 {
+    display: block;
+  }
+  #daumRoughmapContainer1664849100308 {
+    display: none;
   }
 }
