@@ -567,6 +567,18 @@ header {
     }
 }
 
+
+
+@media screen and (max-width: 784px) {
+    .lnb {
+        li {
+            &.none {
+                display: none;
+            }
+        }
+    }
+}
+
 @include mobile {
     .container {
         &.main {

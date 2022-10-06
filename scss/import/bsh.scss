@@ -743,6 +743,7 @@ header {
         &-top {
             height: 12rem;
             padding-top: 0;
+            background-size: cover !important;
 
             h1 {
                 font-size: 3.2rem;
@@ -821,6 +822,19 @@ header {
 
     .contents {
         padding: 3.9rem 2rem 0 !important;
+
+        &-title {
+            align-items: center;
+            p {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    .icon-box {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 1rem;
     }
 
     .tab {
