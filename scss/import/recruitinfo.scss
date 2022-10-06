@@ -905,6 +905,21 @@ table.table-recruit {
                     font-style: normal;
                     line-height: 1.15;
                     letter-spacing: -0.52px;
+                    a::before {
+                        margin-right: 0.6rem!important;
+                    }
+                }
+                dd {
+                    width: 75%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.19;
+                    letter-spacing: -0.64px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
