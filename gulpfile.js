@@ -14,9 +14,9 @@ var paths = {
     js: "./js/**",
   },
   dist: {
-    css: "./dist/css/",
-    js: "./dist/js/",
-    html: "./dist/",
+    css: "./dist/markup/css/",
+    js: "./dist/markup/js/",
+    html: "./dist/markup/",
   },
 };
 
@@ -67,7 +67,7 @@ gulp.task("gulp_js", function () {
 
 // browser-sync
 gulp.task("browserSync", function () {
-  return browserSync.init({ port: 5000, server: { baseDir: "./dist" } });
+  return browserSync.init({ port: 5000, server: { baseDir: "./dist/markup/" } });
 });
 
 // gulp.watch(['html/**', 'js/**', 'scss/**', 'include/**'],
