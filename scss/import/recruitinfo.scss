@@ -289,7 +289,7 @@ table.table-recruit {
 
 
 .contents {
-  
+
     // 채용정보 검색
     .contents_detail {
         width: 100%;
@@ -424,7 +424,7 @@ table.table-recruit {
                                     letter-spacing: -0.6px;
                                     text-align: left;
                                     color: #222;
-                                    
+
                                 }
 
                                 dd {
@@ -445,7 +445,7 @@ table.table-recruit {
                                 }
                             }
                         }
-                        
+
                     }
 
                     &--all:last-child {
@@ -480,12 +480,14 @@ table.table-recruit {
 
     .prev-next {
         margin-top: 4rem;
+
         dl {
             display: flex;
             width: 100%;
             padding: 2rem 2.4rem;
             border-top: 1px solid #eee;
             border-bottom: 1px solid #eee;
+
             dt {
                 font-size: 15px;
                 font-weight: 500;
@@ -497,28 +499,31 @@ table.table-recruit {
                 text-align: left;
                 color: #aaa;
             }
+
             .tit-prev {
                 a::before {
-                content: "";
-                background: url(/img/ico-prev--gray.svg);
-                display: inline-block;
-                margin-right: 1.6rem;
-                width: 16px;
-                height: 14px;
-                vertical-align: initial;
+                    content: "";
+                    background: url(/img/ico-prev--gray.svg);
+                    display: inline-block;
+                    margin-right: 1.6rem;
+                    width: 16px;
+                    height: 14px;
+                    vertical-align: initial;
                 }
-            } 
+            }
+
             .tit-next {
                 a::before {
-                content: "";
-                background: url(/img/ico-next--gray.svg);
-                display: inline-block;
-                margin-right: 1.6rem;
-                width: 16px;
-                height: 14px;
-                vertical-align: initial;
+                    content: "";
+                    background: url(/img/ico-next--gray.svg);
+                    display: inline-block;
+                    margin-right: 1.6rem;
+                    width: 16px;
+                    height: 14px;
+                    vertical-align: initial;
                 }
-            } 
+            }
+
             dd {
                 font-size: 18px;
                 font-weight: 500;
@@ -528,11 +533,12 @@ table.table-recruit {
                 color: #222;
             }
         }
+
         dl:first-child {
             border-bottom: none;
         }
-        
-        
+
+
     }
 }
 
@@ -580,6 +586,7 @@ table.table-recruit {
                         width: 30%;
                         padding: 0 2.4rem 0 1.2rem;
                     }
+
                     th.th-detail {
                         padding-right: 1.5rem;
                     }
@@ -838,15 +845,13 @@ table.table-recruit {
                 }
             }
         }
-
-        // 채용정보 검색 상세페이지
-
     }
-
+     // 채용정보 검색 상세페이지
     .contents {
         .submit-info {
             font-size: 1.4rem;
         }
+
         .contents-title--detail {
             .recruit-srchbtn {
                 font-size: 2.8rem !important;
@@ -883,9 +888,23 @@ table.table-recruit {
                 }
             }
         }
+
         .contents-box {
             h5 {
                 font-size: 2.2rem;
+            }
+        }
+        .prev-next {
+            dl {
+                padding: 2.3rem 1rem;
+                dt {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.15;
+                    letter-spacing: -0.52px;
+                }
             }
         }
     }
