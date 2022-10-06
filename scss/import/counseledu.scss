@@ -31,6 +31,10 @@
             opacity: 0.8;
             margin: 0.4rem 0 1.8rem;
             line-height: 1.56;
+
+            span {
+                display: block;
+            }
         }
 
         button {
@@ -43,6 +47,7 @@
             background: #fff;
             border-radius: 0.2rem;
             cursor: pointer;
+            letter-spacing: -0.064rem;
         }
 
         &.edu {
@@ -112,6 +117,14 @@
                     justify-content: space-between;
                     flex-wrap: wrap;
                 }
+
+                &.start {
+                    justify-content: flex-start;
+
+                    div {
+                        margin-right: 4rem;
+                    }
+                }
             }
 
             .way {
@@ -131,6 +144,10 @@
                 div {
                     display: flex;
                     align-items: center;
+
+                    &.mobile {
+                        display: none;
+                    }
                 }
 
                 .search-box {
@@ -712,6 +729,7 @@
 
         div {
             width: 100%;
+            font-size: 1.5rem;
         }
     }
     &-box {
@@ -733,6 +751,7 @@
             color: map-get($color, primary);
             font-weight: 500;
             cursor: pointer;
+            font-size: 1.5rem;
 
             &:nth-child(7n+1) {
                 border-left: none;
@@ -901,6 +920,450 @@ button {
     &.w {
         &-240 {
             width: 24rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .counselEdu-apply  {
+        .left, .right {
+            padding: 2rem;
+        }
+    }
+    .apply-select {
+        select {
+            &.w-90 {
+                width: 7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .counselEdu-list {
+        .counselEdu-item {
+            height: auto !important;
+            pad
+
+            h5 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .item {
+            .process {
+                li {
+                    padding: 0 0.8rem 0 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .counselEdu {
+        .tab {
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        &-title {
+            height: 35rem;
+            padding: 4rem 0 0 2rem;
+            background-size: cover !important;
+            justify-content: flex-start;
+
+            h1 {
+                font-size: 3.2rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                max-width: 77.4%;
+                margin: 0.8rem 0 1.1rem;
+
+                span {
+                    display: inline;
+                }
+            }
+
+            &.edu {
+                background: url(../img/counseledu_edu_m.png) no-repeat center;
+            }
+            &.counsel {
+                background: url(../img/counseledu_counsel_m.png) no-repeat center;
+            }
+            &.mentor {
+                background: url(../img/counseledu_mentor_m.png) no-repeat center;
+            }
+            &.video {
+                background: url(../img/counseledu_video_m.png) no-repeat center;
+            }
+            &.student {
+                background: url(../img/counseledu_student_m.png) no-repeat center;
+            }
+        }
+
+        &-list {
+            .item {
+                .left {
+                    width: 9rem;
+                    height: 3.2rem;
+                    padding: 1rem 0 0 1rem;
+                    font-size: 1.6rem;
+                    margin-right: 2rem;
+
+                    &.long {
+                        height: 5.2rem;
+                    }
+
+                    span {
+                        display: block;
+                        margin-top: 0.4rem;
+                    }
+                }
+
+                .right {
+                    padding-top: 1.2rem;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+
+                    &.flex {
+                        flex-direction: column;
+                    }
+
+                    &.start {
+                        div {
+                            margin: 0 0 0.9rem;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .process, .way {
+                    width: 100%;
+                }
+
+                .way {
+                    background-size: 1.8rem 1.8rem;
+                    padding-left: 2.6rem;
+                    margin: 0 0 2.4rem 0;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 1.8rem;
+                        margin-bottom: 0.2rem;
+                    }
+
+                    div {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        &.pc {
+                            display: none;
+                        }
+                        &.mobile {
+                            display: flex;
+                        }
+                        &.flex-none {
+                            display: block;
+                        }
+                    }
+
+                    .search-box {
+                        display: inline-block;
+                        margin: 0.2rem 0 0;
+                    }
+                }
+
+                .process {
+                    margin-bottom: 2rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        height: 4rem;
+                        line-height: 4rem;
+                        font-size: 1.8rem;
+                        margin-bottom: 0.9rem;
+                    }
+
+                    li {
+                        font-size: 1.4rem;
+                        color: #444;
+                    }
+                }
+
+                &:last-child {
+                    .right {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            .counselEdu-item {
+                h5 {
+                    margin-top: 1.6rem !important;
+                }
+            }
+        }
+
+        &-item {
+            width: 100%;
+            margin-bottom: 0.4rem;
+            padding: 2rem 1rem !important;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .img-area {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+
+            .bottom {
+                li {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .board_top--total {
+            height: auto;
+            line-height: 1;
+            margin-bottom: 1.6rem;
+        }
+
+        .pagination {
+            margin-bottom: 0;
+        }
+
+        &-teacher {
+            thead, colgroup {
+                display: none;
+            }
+
+            td {
+                display: block;
+                height: auto;
+                border: 0;
+                padding-left: 11.1rem;
+                font-size: 1.4rem !important;
+                font-weight: normal !important;
+                color: #666 !important;
+                margin-bottom: 1rem;
+                position: relative;
+                line-height: 1.14;
+
+                &:first-child {
+                    margin-top: 2rem;
+
+                    &::before {
+                        content: '신청년도';
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 2rem;
+
+                    &::before {
+                        content: '강사';
+                    }
+                }
+                &:nth-child(2) {
+                    &::before {
+                        content: '학교명';
+                    }
+                }
+                &:nth-child(3) {
+                    &::before {
+                        content: '학교급';
+                    }
+                }
+                &:nth-child(4) {
+                    &::before {
+                        content: '지역';
+                    }
+                }
+                &:nth-child(5) {
+                    &::before {
+                        content: '종목';
+                    }
+                }
+                &:nth-child(6) {
+                    &::before {
+                        content: '인원';
+                    }
+                }
+                &:nth-child(7) {
+                    &::before {
+                        content: '담당자';
+                    }
+                }
+                &::before {
+                    position: absolute;
+                    left: 1rem;
+                    font-size: 1.4rem;
+                    color: #1a1a1a;
+                    font-weight: bold;
+                }
+                &::after {
+                    content: '';
+                    width: 0.1rem;
+                    height: 1.4rem;
+                    position: absolute;
+                    top: 0;
+                    left: 10rem;
+                    background: #eee;
+                }
+            }
+
+            tr {
+                padding: 2rem 0;
+                border-bottom: 1px solid #eee;
+            }
+        }
+
+        &-apply {
+            flex-wrap: wrap;
+            border: 0;
+
+            .left, .right {
+                width: 100%;
+                border-top: 2px solid #1a1a1a !important;
+            }
+
+            .left {
+                padding: 2.5rem 0 8rem;
+                border-right: 0;
+                margin-top: 5.8rem;
+                position: relative;
+
+                &::after {
+                    content: '날짜선택';
+                    font-family: map-get($ftStyle, secondary);
+                    font-size: 2.4rem;
+                    color: #222;
+                    position: absolute;
+                    top: -4.2rem;
+                    left: 0;
+                }
+            }
+
+            .right {
+                padding: 2.5rem 2rem 4rem;
+                margin-top: 3.8rem;
+                position: relative;
+                border: 1px solid #e5e5e5;
+                border-radius: 0 0 0.5rem 0.5rem;
+
+                &::after {
+                    content: '신청서 작성';
+                    font-family: map-get($ftStyle, secondary);
+                    font-size: 2.4rem;
+                    color: #222;
+                    position: absolute;
+                    top: -4.2rem;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .video {
+        &-list {
+            .item {
+                width: 100%;
+                margin-bottom: 1.6rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(3n+2) {
+                    margin: 0 0 1.6rem;
+                }
+            }
+
+            .bottom {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .calendar {
+        .top {
+            p {
+                font-size: 2.2rem;
+            }
+            margin-bottom: 2.4rem;
+        }
+        &-week {
+            div {
+                font-size: 1.4rem;
+            }
+        }
+        &-box {
+            div {
+                font-size: 1.4rem;
+            }
+        }
+        &-ex {
+            justify-content: center;
+        }
+    }
+
+    .apply {
+        &-item {
+            
+            &.wrap {
+                flex-wrap: wrap;
+
+                .section {
+                    margin: 0;
+    
+                    &:nth-child(2) {
+                        margin-top: 2.4rem;
+                    }
+                }
+            }
+
+            .select {
+                height: 4rem;
+                line-height: 4rem;
+                font-size: 1.5rem;
+            }
+
+            input[type="text"] {
+                font-size: 1.5rem;
+                letter-spacing: -0.06rem;
+                padding-left: 1rem;
+            }
+        }
+
+        &-save {
+            margin-bottom: 0;
+            p {
+                font-size: 1.4rem;
+                line-height: 1.57;
+                word-break: keep-all;
+            }
         }
     }
 }
