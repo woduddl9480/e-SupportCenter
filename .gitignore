@@ -1,8 +1,9 @@
 node_modules
 dist/**
-!dist/markup/
-!dist/markup/img/
-!dist/markup/img/**
+!dist/WELFARE_REPO/
+!dist/WELFARE_REPO/markup/
+!dist/WELFARE_REPO/markup/img/
+!dist/WELFARE_REPO/markup/img/**
 scss/test.css.map
 package-lock.json
 package.json
