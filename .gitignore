@@ -1,7 +1,8 @@
 node_modules
 dist/**
-!dist/img/
-!dist/img/**
+!dist/markup/
+!dist/markup/img/
+!dist/markup/img/**
 scss/test.css.map
 package-lock.json
 package.json
