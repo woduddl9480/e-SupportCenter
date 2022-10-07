@@ -705,18 +705,29 @@ header {
             max-width: 50rem;
         }
 
+        &-bg {
+            top: 6rem;
+        }
+
         >li {
             >a {
                 font-size: 1.6rem;
+            }
+
+            ul {
+                top: 6rem;
+
+                li {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 1000px) {
-    header {
-        height: 6rem;
-    }
     
     .header {
         &-login {
