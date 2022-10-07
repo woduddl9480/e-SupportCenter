@@ -1,3 +1,26 @@
+// 로그인 페이지 start 
+.contents-box {
+  .login-cont {
+    border-top: 2px solid #1a1a1a;
+    padding: 184px 392px 80px;
+    .idPw {
+      display: block;
+    }
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      height: 4.8rem;
+      border-bottom: 1px solid #222;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      margin-bottom: 2.4rem;
+      padding-left: 1rem;
+    }
+  }
+}
+
 // 마이페이지 start
 .contents-box .contents-title {
   width: 100%;
@@ -204,6 +227,7 @@
   color: #35f;
   border: solid 0.1rem #4766ff;
 }
+
 .m-t-8 .free-main ol li .left-free b {
   font-size: 1.5rem;
   font-weight: 600;
@@ -229,19 +253,19 @@
 .m-t-8 .free-main ol li .right-free2 b:nth-child(1) {
   margin-left: 2rem;
 }
+
 .m-t-8 .free-main ol li .right-free2 b:nth-child(2) {
   margin-left: 3rem;
 }
+
 .m-t-8 .free-main ol li .right-free2 b:nth-child(3) {
   margin-left: 7rem;
 }
+
 .m-t-8 .free-main ol li .right-free2 b:nth-child(4) {
   margin-left: 7rem;
 }
 
-// 마이페이지 end
-
-// 회원가입 가입선택
 
 .join {
   &.contents {
@@ -429,6 +453,75 @@
     background: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 0.4rem;
+
+    &.flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-contents {
+    .checkbox {
+      &__inp {
+        margin-right: 1rem;
+      }
+
+      &__label {
+
+        span {
+          font-size: 1.5rem;
+          color: #3355ff;
+          margin-left: 0.6rem;
+          font-weight: 500;
+        }
+      }
+
+      &-all {
+        font-size: 2rem;
+        letter-spacing: -0.08rem;
+        color: map-get($color, primary);
+        font-weight: 600;
+      }
+    }
+
+    .btn-area {
+      display: flex;
+      justify-content: center;
+      margin: 4rem 0 2.4rem;
+
+      .btn {
+        width: 24rem;
+        height: 5.6rem;
+        line-height: 5.6rem;
+        margin: 0 0.4rem;
+      }
+    }
+  }
+
+  &-agree {
+    li {
+      border: 1px solid #e5e5e5;
+      border-radius: 0.4rem;
+      margin-top: 0.4rem;
+
+      a {
+        display: flex;
+        padding: 2rem 2.4rem;
+        align-items: center;
+        background: #f9f9f9;
+      }
+
+      div {
+        width: 100%;
+        height: 24rem;
+        padding: 2.4rem;
+        overflow-y: auto;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -498,6 +591,50 @@
           margin-left: 2rem;
         }
       }
+    }
+
+    &-nav {
+      .img-box {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.8rem;
+      }
+
+      li {
+        margin-right: 3.3rem;
+
+        &::after {
+          right: -2.6rem;
+        }
+      }
+    }
+
+    &-title {
+      align-items: flex-start;
+    }
+
+    &-contents {
+      .checkbox {
+
+        &-all {
+          font-size: 1.8rem;
+        }
+
+        &__label {
+          span {
+            font-size: 1.4rem;
+          }
+        }
+
+        &__inp {
+          width: 1.8rem;
+          height: 1.8rem !important;
+        }
+      }
+    }
+
+    .gray-box {
+      padding: 2.5rem 0 2.5rem 1.6rem;
     }
   }
 }
