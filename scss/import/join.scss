@@ -38,19 +38,14 @@
 }
 
 .join .lecture form {
-  justify-content: center;
-  width: 100%;
-  gap: 2%;
   display: flex;
   align-items: center;
 }
 
 .join .lecture form .classification {
-  display: flex;
-  align-items: center;
 }
 
-.join .lecture .classification label {
+.join .lecture .classification p {
   margin-right: 0.8rem;
 }
 
