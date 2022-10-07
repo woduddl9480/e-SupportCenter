@@ -100,13 +100,15 @@
         width: 100%;
         border-top: 2px solid #1a1a1a;
         padding: 8rem 2rem 4rem;
+
         .login-contents {
             max-width: 416px;
             margin: 0 auto;
+
             .idPw {
                 display: block;
             }
-    
+
             input[type=text],
             input[type=password] {
                 width: 100%;
@@ -119,11 +121,12 @@
                 margin-bottom: 2.4rem;
                 padding-left: 1rem;
             }
-    
+
             .btn-login {
                 width: 100%;
                 margin-top: 4rem;
             }
+
             .btn-find {
                 display: flex;
                 width: 100%;
@@ -135,6 +138,7 @@
                 letter-spacing: -0.64px;
                 text-align: center;
                 color: #35f;
+
                 a::after {
                     content: "";
                     background: url(/img/arrow-blue--s.svg);
@@ -143,17 +147,20 @@
                     width: 8px;
                     height: 14px;
                     vertical-align: initial;
-    
+
                 }
+
                 &--id {
                     width: 50%;
                 }
+
                 &--pw {
                     width: 50%;
                     border-left: 1px solid #eee;
                 }
-                
+
             }
+
             .btn-join {
                 width: 100%;
                 display: flex;
@@ -162,20 +169,164 @@
                 margin-top: 2.4rem;
             }
         }
-        
+
     }
 }
+
+.required {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #35f;
+    margin: 0.3rem 0 0 0.4rem;
+}
+
+.input-dot {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #000e52;
+    margin: 0 0.8rem 0.2rem 0 ;
+    vertical-align: middle;
+}
+
+.join {
+    .join-contents {
+        .gray-box2 {
+            width: 100%;
+            padding: 2.4rem;
+            background: #f9f9f9;
+            border: 1px solid #e5e5e5;
+            border-radius: 0.4rem;
+    
+            ul {
+                li {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                    line-height: 1.73;
+                    letter-spacing: -0.6px;
+                    text-align: left;
+                    color: #444;
+                }
+            }
+        }
+        .search2 {
+            min-height: 16.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+    }
+    .join-table {
+        tbody {
+            tr {
+                th {
+                    width: 16.67%;
+                    padding: 2.5rem 0 2.5rem 2.5rem;
+                    font-size: 1.5rem;
+                    line-height: 1;
+                }
+    
+                td {
+                    div {
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    input[type=text] {
+                        height: 4.8rem;
+                        line-height: 4.8rem;
+                        padding: 0 3rem 0 1rem;
+                        border-color: #ccc;
+                    }
+    
+                    input.w-560-2 {
+                        width: 57.5%;
+                    }
+    
+                    input.w-100p {
+                        width: 84.8%;
+                    }
+                    .confirmed {
+                        display: inline-flex;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: #ccc;
+                        letter-spacing: -0.056rem;
+                        height: 4.8rem;
+                        align-items: center;
+                        margin-left: 1rem;
+                    }
+                    .p-gray {
+                        margin-top: 1.2rem;
+                        font-size: 14px;
+                        font-style: normal;
+                        line-height: 1.14;
+                        letter-spacing: -0.56px;
+                        text-align: left;
+                        color: #666;
+                    }
+                    .hyphen {
+                        margin: 0 0.4rem;
+                    }
+                    .send-check {
+                        font-size: 1.5rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.2;
+                        letter-spacing: -0.3px;
+                        text-align: left;
+                        color: #444;
+                        margin-bottom: 1rem;
+                    }
+                    .td-name {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.2;
+                        letter-spacing: -0.8px;
+                        text-align: left;
+                        color: #222;
+                    }
+                    .td-birth {
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.6;
+                        letter-spacing: -0.32px;
+                        text-align: left;
+                        color: #444;
+                        margin-left: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
 
 // 로그인 페이지 모바일 start 
 @media all and (max-width: 768px) {
     .contents-box {
         .login-border {
             padding: 4rem 2rem;
+
             .login-contents {
                 .btn-join {
                     span {
                         width: 69%;
                     }
+
                     button {
                         width: 9.4rem;
                     }
