@@ -147,31 +147,7 @@
   color: #666;
 }
 
-.m-t-8 .free-main ol li .right-free {
-  color: #666;
-  line-height: 1.6;
-  letter-spacing: -0.06rem;
-  font-size: 1.5rem;
-  width: 576px;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.m-t-8 .free-main ol li .right-free2 {
-  white-space: nowrap;
-
-  color: #666;
-  line-height: 1.6;
-  letter-spacing: -0.06rem;
-  font-size: 1.5rem;
-  width: 576px;
-  align-items: center;
-  display: flex;
-  justify-content: start;
-}
-
-.m-t-8 .free-main ol li .right-free span {
+.m-t-8 .free-main ol li .contents span {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.87;
@@ -184,13 +160,19 @@
   border-radius: 0.4rem;
   border: solid 0.1rem #00a9ff;
   background-color: #fff;
+  position: absolute;
+  top: 3.6rem;
+  left: 75.3rem;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn {
+.m-t-8 .free-main ol li .contents .lecture-btn {
+  position: absolute;
+  top: 2.6rem;
+  left: 98.4rem;
   display: flex;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn button:nth-child(1) {
+.m-t-8 .free-main ol li .contents .lecture-btn button:nth-child(1) {
   cursor: pointer;
   width: 9.4rem;
   height: 4.8rem;
@@ -205,7 +187,7 @@
   margin-right: 0.4rem;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn button:nth-child(2) {
+.m-t-8 .free-main ol li .contents .lecture-btn button:nth-child(2) {
   cursor: pointer;
   width: 9.4rem;
   height: 4.8rem;
