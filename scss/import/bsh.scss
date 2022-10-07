@@ -705,18 +705,29 @@ header {
             max-width: 50rem;
         }
 
+        &-bg {
+            top: 6rem;
+        }
+
         >li {
             >a {
                 font-size: 1.6rem;
+            }
+
+            ul {
+                top: 6rem;
+
+                li {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 1000px) {
-    header {
-        height: 6rem;
-    }
     
     .header {
         &-login {
@@ -737,12 +748,23 @@ header {
 
 /* header용 미디어 쿼리 끝 */
 
+@media screen and (max-width: 784px) {
+    .lnb {
+        li {
+            &:nth-child(n+3) {
+                display: none;
+            }
+        }
+    }
+}
+
 @include mobile {
 
     .container {
         &-top {
             height: 12rem;
             padding-top: 0;
+            background-size: cover !important;
 
             h1 {
                 font-size: 3.2rem;
@@ -821,6 +843,19 @@ header {
 
     .contents {
         padding: 3.9rem 2rem 0 !important;
+
+        &-title {
+            align-items: center;
+            p {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    .icon-box {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 1rem;
     }
 
     .tab {

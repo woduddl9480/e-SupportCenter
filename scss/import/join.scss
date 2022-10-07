@@ -22,20 +22,6 @@
 }
 
 // 마이페이지 start
-
-.lnb li p {
-  color: #fff;
-  display: flex;
-  width: 24rem;
-  height: 100%;
-  position: relative;
-  padding-left: 2.4rem;
-  font-size: 1.8rem;
-  line-height: 1;
-  border-right: 1px solid #3952cc;
-  align-items: center;
-}
-
 .contents-box .contents-title {
   width: 100%;
   margin-bottom: 2.4rem;
@@ -97,6 +83,7 @@
 }
 
 .m-t-8 .free-main ol li {
+  width: 100%;
   height: 10rem;
   display: flex;
   justify-content: space-between;
@@ -126,51 +113,64 @@
   color: #35f;
 }
 
-.m-t-8 .free-main ol li .left-free h4 {
-  font-size: 1.8rem;
-  font-weight: 500;
+.m-t-8 .free-main ol li .mycontents {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+
+.m-t-8 .free-main ol li .mycontents .blue {
+  font-size: 1.5rem;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #35f;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.4rem;
+}
+
+.m-t-8 .free-main ol li .mycontents h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+
   line-height: 1.17;
   letter-spacing: -0.072rem;
   text-align: left;
   color: #222;
+  position: absolute;
+  top: 5.3rem;
+  left: 2.4rem;
 }
 
-.m-t-8 .free-main ol li .right-free {
-  color: #666;
-  line-height: 1.6;
-  letter-spacing: -0.06rem;
-  font-size: 1.5rem;
-  width: 48%;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.m-t-8 .free-main ol li .right-free2 {
-  color: #666;
-  line-height: 1.6;
-  letter-spacing: -0.06rem;
-  font-size: 1.5rem;
-  width: 48%;
-  align-items: center;
-  display: flex;
-  justify-content: start;
-}
-
-.m-t-8 .free-main ol li .right-free p {
+.m-t-8 .free-main ol li .mycontents p {
   font-size: 1.6rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  position: absolute;
+  top: 4.1rem;
+  left: 55.25%;
   line-height: 1.19;
   letter-spacing: -0.064rem;
   text-align: left;
   color: #666;
 }
 
-.m-t-8 .free-main ol li .right-free span {
+.m-t-8 .free-main ol li .mycontents .day {
+  font-size: 1.6rem;
+  font-weight: normal;
+  position: absolute;
+  top: 4.1rem;
+  left: 71.9%;
+  line-height: 1.19;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+}
+
+.m-t-8 .free-main ol li .mycontents span {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.87;
@@ -183,13 +183,19 @@
   border-radius: 0.4rem;
   border: solid 0.1rem #00a9ff;
   background-color: #fff;
+  position: absolute;
+  top: 3.6rem;
+  left: 75.3rem;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn {
+.m-t-8 .free-main ol li .mycontents .lecture-btn {
+  position: absolute;
+  top: 2.6rem;
+  left: 98.4rem;
   display: flex;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn button:nth-child(1) {
+.m-t-8 .free-main ol li .mycontents .lecture-btn button:nth-child(1) {
   cursor: pointer;
   width: 9.4rem;
   height: 4.8rem;
@@ -204,7 +210,7 @@
   margin-right: 0.4rem;
 }
 
-.m-t-8 .free-main ol li .right-free .lecture-btn button:nth-child(2) {
+.m-t-8 .free-main ol li .mycontents .lecture-btn button:nth-child(2) {
   cursor: pointer;
   width: 9.4rem;
   height: 4.8rem;
@@ -255,4 +261,270 @@
 
 .m-t-8 .free-main ol li .right-free2 b:nth-child(4) {
   margin-left: 7rem;
+<<<<<<< HEAD
+=======
+}
+
+// 마이페이지 end
+
+// 회원가입 가입선택
+
+.join {
+  &.contents {
+    padding-top: 4rem;
+  }
+
+  &-choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      width: calc(33.3% - 1.6rem);
+      border: 1px solid #eee;
+      border-radius: 1.6rem;
+      margin: 0 2.4rem 2.4rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 0;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(n+4) {
+        margin-bottom: 0;
+      }
+
+      h5 {
+        font-size: 2rem;
+        color: map-get($color, primary);
+        letter-spacing: -0.08rem;
+        font-family: map-get($ftStyle, secondary);
+        margin: 1.5rem 0 0.7rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+        letter-spacing: -0.064rem;
+        line-height: 1.63;
+
+        span {
+          color: #3355ff;
+          font-weight: 600;
+        }
+      }
+
+      button {
+        width: 18rem;
+        height: 4.8rem;
+        color: #fff;
+        line-height: 4.8rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-radius: 0.2rem;
+        margin-top: 1.9rem;
+
+        &.skyblue {
+          background: #00a9ff;
+        }
+        &.blue {
+          background: #3355ff;
+        }
+        &.green {
+          background: #00a388;
+        }
+        &.purple {
+          background: #8548fe;
+        }
+      }
+
+      .img-box {
+        width: 12rem;
+        height: 12rem;
+        background: #f0f6fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 6.4rem;
+          max-height: 6.4rem;
+        }
+      }
+
+      .bottom {
+        text-align: center;
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.9rem;
+
+    .img-box {
+      width: 4.8rem;
+      height: 4.8rem;
+      margin-bottom: 0.7rem;
+
+      .active {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: map-get($ftStyle, secondary);
+      color: #aaa;
+      letter-spacing: -0.06rem;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 5.1rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 0.9rem;
+        height: 1.6rem;
+        background: url(/img/join_nav_arrow.png) no-repeat center;
+        position: absolute;
+        top: 50%;
+        right: -3.4rem;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &.active {
+        p {
+          color: map-get($color, primary);
+        }
+
+        .active {
+          display: block;
+        }
+
+        .none {
+          display: none;
+        }
+
+        &::after {
+          background-image: url(/img/join_nav_arrow_on.png);
+        }
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 1.6rem;
+
+    .icon-box {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      letter-spacing: -0.096rem;
+      color: map-get($color, primary);
+      font-family: map-get($ftStyle, secondary);
+    }
+  }
+
+  .gray-box {
+    width: 100%;
+    padding: 2.4rem;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .join {
+    &-choose {
+      .item {
+        width: calc(50% - 1.2rem);
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:nth-child(4) {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .join {
+    &-choose {
+      .item {
+        width: 100%;
+        margin: 0 0 0.4rem !important;
+        padding: 1.6rem 2.4rem;
+        flex-direction: row;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        p {
+          display: none;
+        }
+
+        h5 {
+          font-size: 1.8rem;
+          margin: 0;
+        }
+
+        button {
+          width: 9rem;
+          height: 4rem;
+          line-height: 4rem;
+          margin-top: 0.8rem;
+
+          span {
+            display: none;
+          }
+        }
+
+        .img-box {
+          width: 8rem;
+          height: 8rem;
+
+          img {
+            max-width: 4.8rem;
+            max-height: 4.8rem;
+          }
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+>>>>>>> 02d3b3961a1e1fc528ac90596f7329a4ad04088a
 }

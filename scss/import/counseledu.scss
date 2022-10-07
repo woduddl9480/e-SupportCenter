@@ -425,6 +425,11 @@
             color: map-get($color, primary);
             line-height: 1.17;
             margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical
         }
 
         p {
@@ -467,16 +472,16 @@
             border-bottom: 2px solid #1a1a1a;
         }
 
-        input, select {
+        input[type="text"], select {
             width: 100%;
         }
     }
 
     &-edu {
         margin-bottom: 2.4rem;
+        border-top: 2px solid #1a1a1a;
         .top {
             display: flex;
-            border-top: 2px solid #1a1a1a;
             border-bottom: 1px solid #eee;
             height: 4.5rem;
             line-height: 4.5rem;
@@ -551,6 +556,7 @@
 
                         p {
                             margin: 0.5rem 0;
+                            letter-spacing: -0.028rem;
                         }
                     }
                 }
@@ -604,9 +610,13 @@
                 }
             }
 
-            em {
+            em, .point {
                 font-weight: 500;
                 color: map-get($color, primary);
+            }
+
+            .point {
+                margin-right: 0.8rem;
             }
 
             button:not(.btn) {
@@ -621,6 +631,10 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+
+            .w-560 {
+                width: calc(100% - 27rem);
             }
         }
     }
@@ -649,7 +663,7 @@
             width: calc(33.3% - 1.53rem);
 
             &:nth-child(3n+2) {
-                margin: 0 2.35rem;
+                margin: 0 2.34rem;
             }
             &:nth-child(n+4) {
                 margin-top: 2.4rem;
@@ -940,25 +954,61 @@ button {
 }
 
 @media screen and (max-width: 1150px) {
-    .counselEdu-list {
-        .counselEdu-item {
-            height: auto !important;
-            pad
-
-            h5 {
-                font-size: 1.6rem;
+    .counselEdu {
+        &-list {
+            .counselEdu-item {
+                height: auto !important;
+                pad
+    
+                h5 {
+                    font-size: 1.6rem;
+                }
+            }
+    
+            .item {
+                .process {
+                    li {
+                        padding: 0 0.8rem 0 1.2rem;
+                    }
+                }
             }
         }
 
-        .item {
-            .process {
-                li {
-                    padding: 0 0.8rem 0 1.2rem;
-                }
+        &-edu {
+            .top {
+                line-height: 1;
+                height: auto;
+                min-height: 4.5rem;
+            }
+            .right {
+                align-items: center;
             }
         }
     }
 }
+
+@media screen and (max-width: 1105px) {
+    /*gd*/
+}
+
+@media screen and (max-width: 945px) {
+    .video-list  {
+        .item {
+            width: 100%;
+            margin-bottom: 1.6rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(3n+2) {
+                margin: 0 0 1.6rem;
+            }
+        }
+    }
+}
+
+
 
 @include mobile {
     .counselEdu {
@@ -1055,7 +1105,7 @@ button {
 
                 .way {
                     background-size: 1.8rem 1.8rem;
-                    padding-left: 2.6rem;
+                    padding-left: 0;
                     margin: 0 0 2.4rem 0;
 
                     &:last-child {
@@ -1117,13 +1167,16 @@ button {
 
             .counselEdu-item {
                 h5 {
-                    margin-top: 1.6rem !important;
+                    margin: 1.6rem 0 0.6rem !important;
+                    font-size: 1.6rem;
+                    word-break: keep-all;
+                    text-align: center;
                 }
             }
         }
 
         &-item {
-            width: 100%;
+            width: 100% !important;
             margin-bottom: 0.4rem;
             padding: 2rem 1rem !important;
 
@@ -1282,23 +1335,233 @@ button {
                 }
             }
         }
+
+        &-lesson {
+            padding: 3rem 1rem;
+            h2 {
+                font-size: 2.4rem;
+                line-height: 1.33;
+                margin-bottom: 1.3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            em {
+                font-size: 1.6rem;
+                margin: 0 0.8rem 0.1rem 0.4rem;
+                height: 1.6rem;
+                display: inline-block;
+            }
+        }
+
+        &-table {
+            &.table-recruit {
+                tbody {
+                    tr {
+                        th {
+                            width: 26% !important;
+                            padding-right: 0 !important;
+                            letter-spacing: -0.052rem;
+
+                            &.vertical-top {
+                                padding-top: 2rem !important;
+                            }
+                        }
+
+                        td {
+                            .point {
+                                font-size: 1.5rem;
+                            }
+
+                            &.pd-16 {
+                                padding-left: 1.2rem;
+                            }
+
+                            &.wrap {
+                                div {
+                                    flex-wrap: wrap;
+
+                                    input {
+                                        width: calc(100% - 2.6rem);
+                                        margin-bottom: 0.8rem;
+                                    }
+                                }
+                            }
+                            button {
+                                &.w-140 {
+                                    width: 11.8rem;
+                                    margin-bottom: 0.8rem;
+                                }
+                            }
+                            input {
+                                &.w-120 {
+                                    width: calc(100% - 12.3rem) !important;
+                                    margin-bottom: 0.8rem;
+                                }
+                            }
+                            .w-560 {
+                                width: 100%;
+                                margin-bottom: 0.4rem;
+                            }
+                        }
+                    }
+
+                    &.thin {
+                        tr {
+                            th {
+                                width: 20% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .label {
+                margin-bottom: 0.4rem;
+            }
+        }
+
+        &-edu {
+            .bottom {
+                li {
+                    flex-wrap: wrap;
+                    padding: 2.6rem 1rem 2rem;
+                    position: relative;
+
+                    .left {
+                        li {
+                            word-break: keep-all;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+
+                    .right {
+                        div {
+                            padding-left: 0;
+                            width: 100% !important;
+
+                            &:last-child {
+                                position: absolute;
+                                right: 1rem;
+                                top: 2rem;
+                                width: auto !important;
+                            }
+
+                            p {
+                                font-size: 1.4rem;
+                                line-height: 1;
+                                margin: 0 0 1.5rem;
+
+                                span {
+                                    padding-right: 0.6rem;
+                                    margin-right: 0.6rem !important;
+                                    border-right: 1px solid #ddd;
+                                    color: #666;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                p {
+                                    margin-bottom: 0;
+
+                                    &::before {
+                                        content: '인원';
+                                        font-size: 1.4rem;
+                                        line-height: 1;
+                                        padding-right: 0.6rem;
+                                        margin-right: 0.6rem !important;
+                                        border-right: 1px solid #ddd;
+                                        color: #666;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .top {
+                display: none;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .left {
+                padding-left: 0;
+                margin-bottom: 1rem;
+            }
+
+            .right {
+                flex-wrap: wrap;
+                padding: 1.6rem;
+                background: #f6f6f6;
+                border-radius: 0.4rem;
+            }
+        }
+
+        .list {
+            padding: 2.4rem 2rem;
+            margin-bottom: 4rem !important;
+
+            .list-right {
+                margin-left: 0;
+                max-width: unset;
+                .select {
+                    font-size: 1.6rem;
+                    padding-right: 2rem;
+                    margin-right: 0.4rem;
+                    width: 34%;
+                    max-width: unset;
+
+                    &:nth-child(3) {
+                        margin-right: 0;
+                    }
+                    &.w-100 {
+                        max-width: 9rem !important;
+                    }
+                }
+
+                .search-box {
+                    max-width: unset;
+                    width: calc(100% - 7rem);
+                }
+            }
+        }
+
+        .btn-area {
+            &-middle {
+                display: none;
+            }
+
+            &.b {
+                width: 100%;
+                button {
+                    width: calc(50% - 0.3rem);
+                    max-width: unset;
+                    
+                    &.m-r-2 {
+                        margin-right: 0.6rem !important;
+                    }
+                }
+            }
+        }
     }
 
     .video {
         &-list {
-            .item {
-                width: 100%;
-                margin-bottom: 1.6rem;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                &:nth-child(3n+2) {
-                    margin: 0 0 1.6rem;
-                }
-            }
-
             .bottom {
                 p {
                     font-size: 1.8rem;

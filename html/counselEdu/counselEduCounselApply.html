@@ -95,7 +95,7 @@
                             </tr>
                             <tr>
                                 <th>이메일<span class="required"></span></th>
-                                <td class="pd-16">
+                                <td class="pd-16 wrap">
                                     <div>
                                         <input type="text" class="w-240"><span>@</span>
                                         <select class="select w-160">
@@ -125,7 +125,7 @@
                     <h4 class="counselEdu-table-title m-t-8">
                         희망근무 정보 입력
                     </h4>
-                    <table class="table table-recruit">
+                    <table class="counselEdu-table table-recruit">
                         <caption>채용알림신청 2단계</caption>
                         <tbody>
                             <tr>
@@ -139,8 +139,8 @@
                             <tr>
                                 <th scope="row">희망직종</th>
                                 <td class="pd-16">
-                                    <input type="text" name="" id="" placeholder="지역찾기 버튼을 눌러주세요" class="pc-wd-320 mo-wd-100">
-                                    <button type="button" class="btn btn--size-m btn--bg-secondary mo-m-t-5">지역찾기</button>
+                                    <input type="text" name="" id="" placeholder="직종찾기 버튼을 눌러주세요" class="pc-wd-320 mo-wd-100">
+                                    <button type="button" class="btn btn--size-m btn--bg-secondary mo-m-t-5">직종찾기</button>
                                     <button type="button" class="btn btn--size-m btn--border-secondary mo-m-t-5">지우기</button>
                                 </td>
                             </tr>
@@ -148,20 +148,34 @@
                                 <th scope="row">희망임금</th>
                                 <td class="pd-16">
                                     <div class="radio mo-m-b-15">
-                                        <input type="radio" id="radio01" class="radio__inp mo-m-b-15" name="hopeWage">
-                                        <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">관계없음</label>
-                                        <input type="radio" id="radio02" class="radio__inp mo-m-b-15" name="hopeWage">
-                                        <label for="radio02" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">연봉</label>
-                                        <input type="radio" id="radio03" class="radio__inp mo-m-b-15" name="hopeWage">
-                                        <label for="radio03" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">월급</label>
-                                        <input type="radio" id="radio04" class="radio__inp mo-m-b-15" name="hopeWage">
-                                        <label for="radio04" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">일급</label>
-                                        <input type="radio" id="radio05" class="radio__inp mo-m-b-15" name="hopeWage">
-                                        <label for="radio05" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">시급</label>
-                                        <input type="text" disabled class="pc-wd-120 mo-wd-49">
-                                        <span class="td_span m-l-1 m-r-3">만원 이상</span>
-                                        <input type="text" disabled class="pc-wd-120 mo-wd-49 mo-m-t-5">
-                                        <span class="td_span m-l-1 mo-m-t-4">만원 이하</span>
+                                        <div>
+                                            <input type="radio" id="radio01" class="radio__inp mo-m-b-15" name="hopeWage">
+                                            <label for="radio01" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">관계없음</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="radio02" class="radio__inp mo-m-b-15" name="hopeWage">
+                                            <label for="radio02" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">연봉</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="radio03" class="radio__inp mo-m-b-15" name="hopeWage">
+                                            <label for="radio03" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">월급</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="radio04" class="radio__inp mo-m-b-15" name="hopeWage">
+                                            <label for="radio04" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">일급</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="radio05" class="radio__inp mo-m-b-15" name="hopeWage">
+                                            <label for="radio05" class="radio__label m-r-5 mo-m-r-20 mo-m-b-15">시급</label>
+                                        </div>
+                                        <div>
+                                            <input type="text" disabled class="pc-wd-120 mo-wd-49">
+                                            <span class="td_span m-l-1 m-r-3">만원 이상</span>
+                                        </div>
+                                        <div>
+                                            <input type="text" disabled class="pc-wd-120 mo-wd-49 mo-m-t-5">
+                                            <span class="td_span m-l-1 mo-m-t-4">만원 이하</span>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -169,15 +183,18 @@
                                 <th scope="row">고용형태</th>
                                 <td class="pd-16">
                                     <div class="radio">
-                                        <input type="radio" id="employmentType01" class="radio__inp" name="
-                                        employmentType">
-                                        <label for="employmentType01" class="radio__label m-r-5 mo-m-r-15">관계없음</label>
-                                        <input type="radio" id="employmentType02" class="radio__inp" name="
-                                        employmentType">
-                                        <label for="employmentType02" class="radio__label m-r-5 mo-m-r-15">정규직</label>
-                                        <input type="radio" id="employmentType03" class="radio__inp" name="
-                                        employmentType">
-                                        <label for="employmentType03" class="radio__label m-r-5 mo-m-r-15">계약직</label>
+                                        <div>
+                                            <input type="radio" id="employmentType01" class="radio__inp" name="employmentType">
+                                            <label for="employmentType01" class="radio__label m-r-5 mo-m-r-15">관계없음</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="employmentType02" class="radio__inp" name="employmentType">
+                                            <label for="employmentType02" class="radio__label m-r-5 mo-m-r-15">정규직</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="employmentType03" class="radio__inp" name="employmentType">
+                                            <label for="employmentType03" class="radio__label m-r-5 mo-m-r-15">계약직</label>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
