@@ -261,13 +261,8 @@
 
 .m-t-8 .free-main ol li .right-free2 b:nth-child(4) {
   margin-left: 7rem;
-<<<<<<< HEAD
-=======
 }
 
-// 마이페이지 end
-
-// 회원가입 가입선택
 
 .join {
   &.contents {
@@ -455,6 +450,75 @@
     background: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 0.4rem;
+
+    &.flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-contents {
+    .checkbox {
+      &__inp {
+        margin-right: 1rem;
+      }
+
+      &__label {
+
+        span {
+          font-size: 1.5rem;
+          color: #3355ff;
+          margin-left: 0.6rem;
+          font-weight: 500;
+        }
+      }
+
+      &-all {
+        font-size: 2rem;
+        letter-spacing: -0.08rem;
+        color: map-get($color, primary);
+        font-weight: 600;
+      }
+    }
+
+    .btn-area {
+      display: flex;
+      justify-content: center;
+      margin: 4rem 0 2.4rem;
+
+      .btn {
+        width: 24rem;
+        height: 5.6rem;
+        line-height: 5.6rem;
+        margin: 0 0.4rem;
+      }
+    }
+  }
+
+  &-agree {
+    li {
+      border: 1px solid #e5e5e5;
+      border-radius: 0.4rem;
+      margin-top: 0.4rem;
+
+      a {
+        display: flex;
+        padding: 2rem 2.4rem;
+        align-items: center;
+        background: #f9f9f9;
+      }
+
+      div {
+        width: 100%;
+        height: 24rem;
+        padding: 2.4rem;
+        overflow-y: auto;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -525,6 +589,49 @@
         }
       }
     }
+
+    &-nav {
+      .img-box {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.8rem;
+      }
+
+      li {
+        margin-right: 3.3rem;
+
+        &::after {
+          right: -2.6rem;
+        }
+      }
+    }
+
+    &-title {
+      align-items: flex-start;
+    }
+
+    &-contents {
+      .checkbox {
+
+        &-all {
+          font-size: 1.8rem;
+        }
+
+        &__label {
+          span {
+            font-size: 1.4rem;
+          }
+        }
+
+        &__inp {
+          width: 1.8rem;
+          height: 1.8rem !important;
+        }
+      }
+    }
+
+    .gray-box {
+      padding: 2.5rem 0 2.5rem 1.6rem;
+    }
   }
->>>>>>> 02d3b3961a1e1fc528ac90596f7329a4ad04088a
 }
