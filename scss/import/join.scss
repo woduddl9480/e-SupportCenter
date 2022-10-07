@@ -17,9 +17,12 @@
   gap: 2%;
 }
 
-.join .lecture .classification {
+.join .lecture form {
   display: flex;
   align-items: center;
+}
+
+.join .lecture form .classification {
 }
 
 .join .lecture .classification p {
@@ -263,7 +266,7 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
-      &:nth-child(n+4) {
+      &:nth-child(n + 4) {
         margin-bottom: 0;
       }
 
@@ -362,7 +365,7 @@
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         width: 0.9rem;
         height: 1.6rem;
         background: url(/img/join_nav_arrow.png) no-repeat center;

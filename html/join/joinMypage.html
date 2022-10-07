@@ -25,7 +25,7 @@
       <div class="contents-box">
         <div class="contents-title">
           <div class="icon-box">
-            <img src="../img/mypage.png" alt="마이페이지" />
+            <img src="../img/mypage.png" alt="" />
           </div>
           <p>마이페이지</p>
         </div>
@@ -45,21 +45,23 @@
           <div class="tab-con active">
             <div class="contents-list m-t-8">
               <div class="lecture">
-                <div class="classification">
-                  <p>강좌분류</p>
-                  <select class="select">
-                    <option>전체</option>
-                  </select>
-                </div>
-                <div class="course">
-                  <p>수강강좌</p>
-                  <select class="select">
-                    <option>전체</option>
-                  </select>
-                </div>
-                <button type="submit" tabindex="2">
-                  <img src="../img/search.png" alt="검색버튼" />
-                </button>
+                <form action="" method="">
+                  <div class="classification">
+                    <label for="강좌분류">강좌분류</label>
+                    <select class="select" id="강좌분류" name="">
+                      <option value="">전체</option>
+                    </select>
+                  </div>
+                  <div class="course">
+                    <label for="수강강좌">수강강좌</label>
+                    <select class="select" id="수강강좌" name="">
+                      <option>전체</option>
+                    </select>
+                  </div>
+                  <button type="submit" tabindex="2">
+                    <img src="../img/search.png" alt="검색버튼" />
+                  </button>
+                </form>
               </div>
               <div class="free-main">
                 <ol>
@@ -76,16 +78,20 @@
                   </li>
                   <li>
                     <div class="mycontents">
-                      <p class="blue">스포츠 지도사필기대비반</p>
-                      <h4>
-                        <a href="#"
-                          >스포츠 필기 특강 강의명이 한줄까지 들어갑니다</a
-                        >
-                      </h4>
-                      <p>50분</p>
-                      <span>수강완료</span>
-                      <p class="day">2022-09-02</p>
-                      <div class="lecture-btn">
+                      <div class="mycontents-title">
+                        <p class="blue">스포츠 지도사필기대비반</p>
+                        <h4>
+                          <a href="#"
+                            >스포츠 필기 특강 강의명이 한줄까지 들어갑니다</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="mycontents-info">
+                        <p>50분</p>
+                        <span>수강완료</span>
+                        <p class="day">2022-09-02</p>
+                      </div>
+                      <div class="mycontents-btn">
                         <button type="button">강의보기</button>
                         <button type="button">수료증출력</button>
                       </div>
