@@ -114,16 +114,23 @@
 }
 
 .free-box ol li .free-box-right2 ul li:nth-child(1) {
-  width: 321px;
+  width: 8.5rem;
+}
+
+.free-box ol li .free-box-right2 ul li strong {
+  width: 8.5rem;
 }
 
 .free-box ol li .free-box-right2 ul li:nth-child(2) {
+  width: 150px;
 }
 
 .free-box ol li .free-box-right2 ul li:nth-child(3) {
+  width: 341px;
 }
 
 .free-box ol li .free-box-right2 ul li:nth-child(4) {
+  width: 341px;
 }
 
 .free-box ol li .mycontents {
@@ -164,6 +171,7 @@
 }
 
 .free-box ol li .mycontents .mycontents-info .info1 {
+  white-space: nowrap;
   line-height: 1;
   width: 90px;
 }
@@ -173,6 +181,7 @@
 }
 
 .free-box ol li .mycontents .mycontents-info .info3 {
+  white-space: nowrap;
   line-height: 1;
   width: 121px;
 }
