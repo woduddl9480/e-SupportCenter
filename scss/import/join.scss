@@ -241,6 +241,10 @@
 // 회원가입 가입선택
 
 .join {
+  &.contents {
+    padding-top: 4rem;
+  }
+
   &-choose {
     display: flex;
     flex-wrap: wrap;
@@ -326,6 +330,102 @@
         text-align: center;
       }
     }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.9rem;
+
+    .img-box {
+      width: 4.8rem;
+      height: 4.8rem;
+      margin-bottom: 0.7rem;
+
+      .active {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: map-get($ftStyle, secondary);
+      color: #aaa;
+      letter-spacing: -0.06rem;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 5.1rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 0.9rem;
+        height: 1.6rem;
+        background: url(/img/join_nav_arrow.png) no-repeat center;
+        position: absolute;
+        top: 50%;
+        right: -3.4rem;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &.active {
+        p {
+          color: map-get($color, primary);
+        }
+
+        .active {
+          display: block;
+        }
+
+        .none {
+          display: none;
+        }
+
+        &::after {
+          background-image: url(/img/join_nav_arrow_on.png);
+        }
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 1.6rem;
+
+    .icon-box {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      letter-spacing: -0.096rem;
+      color: map-get($color, primary);
+      font-family: map-get($ftStyle, secondary);
+    }
+  }
+
+  .gray-box {
+    width: 100%;
+    padding: 2.4rem;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.4rem;
   }
 }
 

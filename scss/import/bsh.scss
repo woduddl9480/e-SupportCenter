@@ -748,6 +748,16 @@ header {
 
 /* header용 미디어 쿼리 끝 */
 
+@media screen and (max-width: 784px) {
+    .lnb {
+        li {
+            &:nth-child(n+3) {
+                display: none;
+            }
+        }
+    }
+}
+
 @include mobile {
 
     .container {
