@@ -40,12 +40,9 @@
   gap: 2%;
 }
 
-.join .lecture form {
+.join .lecture .classification {
   display: flex;
   align-items: center;
-}
-
-.join .lecture form .classification {
 }
 
 .join .lecture .classification p {
@@ -290,7 +287,7 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
-      &:nth-child(n + 4) {
+      &:nth-child(n+4) {
         margin-bottom: 0;
       }
 
@@ -389,7 +386,7 @@
       position: relative;
 
       &::after {
-        content: "";
+        content: '';
         width: 0.9rem;
         height: 1.6rem;
         background: url(/img/join_nav_arrow.png) no-repeat center;
@@ -457,6 +454,25 @@
     &.flex {
       display: flex;
       align-items: center;
+    }
+
+    ul {
+      li {
+        font-size: 1.5rem;
+        letter-spacing: -0.06rem;
+        color: #444;
+        margin-bottom: 1.6rem;
+        line-height: 1.73;
+        padding-left: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before{
+          
+        }
+      }
     }
   }
 
