@@ -60,6 +60,7 @@
 }
 
 .m-t-8 .free-main ol li {
+  width: 100%;
   height: 10rem;
   display: flex;
   justify-content: space-between;
@@ -89,15 +90,61 @@
   color: #35f;
 }
 
-.m-t-8 .free-main ol li .left-free h4 {
-  font-size: 1.8rem;
-  font-weight: 500;
+.m-t-8 .free-main ol li .contents {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+
+.m-t-8 .free-main ol li .contents .blue {
+  font-size: 1.5rem;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #35f;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.4rem;
+}
+
+.m-t-8 .free-main ol li .contents h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+
   line-height: 1.17;
   letter-spacing: -0.072rem;
   text-align: left;
   color: #222;
+  position: absolute;
+  top: 5.3rem;
+  left: 2.4rem;
+}
+
+.m-t-8 .free-main ol li .contents p {
+  font-size: 1.6rem;
+  font-weight: normal;
+  position: absolute;
+  top: 4.1rem;
+  left: 66.3rem;
+  line-height: 1.19;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+}
+
+.m-t-8 .free-main ol li .contents .day {
+  font-size: 1.6rem;
+  font-weight: normal;
+  position: absolute;
+  top: 4.1rem;
+  left: 86.3rem;
+  line-height: 1.19;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
 }
 
 .m-t-8 .free-main ol li .right-free {
@@ -105,32 +152,23 @@
   line-height: 1.6;
   letter-spacing: -0.06rem;
   font-size: 1.5rem;
-  width: 48%;
+  width: 576px;
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
 
 .m-t-8 .free-main ol li .right-free2 {
+  white-space: nowrap;
+
   color: #666;
   line-height: 1.6;
   letter-spacing: -0.06rem;
   font-size: 1.5rem;
-  width: 48%;
+  width: 576px;
   align-items: center;
   display: flex;
   justify-content: start;
-}
-
-.m-t-8 .free-main ol li .right-free p {
-  font-size: 1.6rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.19;
-  letter-spacing: -0.064rem;
-  text-align: left;
-  color: #666;
 }
 
 .m-t-8 .free-main ol li .right-free span {
@@ -239,7 +277,7 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
-      &:nth-child(n+4) {
+      &:nth-child(n + 4) {
         margin-bottom: 0;
       }
 
