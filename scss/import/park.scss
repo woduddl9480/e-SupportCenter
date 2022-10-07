@@ -98,7 +98,7 @@
 .contents-box {
     .login-cont {
         border-top: 2px solid #1a1a1a;
-        padding: 184px 392px 80px;
+        padding: 8rem 39.2rem 4rem;
 
         .idPw {
             display: block;
@@ -115,6 +115,47 @@
             border-radius: 0;
             margin-bottom: 2.4rem;
             padding-left: 1rem;
+        }
+        .btn-login {
+            width: 100%;
+            margin-top: 4rem;
+        }
+        .btn-find {
+            display: flex;
+            width: 100%;
+            padding: 19px 0 17px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.63;
+            letter-spacing: -0.64px;
+            text-align: center;
+            color: #35f;
+            a::after {
+                content: "";
+                background: url(/img/arrow-blue--s.svg);
+                display: inline-block;
+                margin: 0px 0 -1px 8px;
+                width: 8px;
+                height: 14px;
+                vertical-align: initial;
+
+            }
+            &--id {
+                width: 50%;
+            }
+            &--pw {
+                width: 50%;
+                border-left: 1px solid #eee;
+            }
+            
+        }
+        .btn-join {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.4rem;
         }
     }
 }
