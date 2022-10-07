@@ -626,6 +626,7 @@ table.table-recruit {
 
 }
 
+
 @media all and (max-width: 768px) {
 
     .checkbox__label,
@@ -860,7 +861,9 @@ table.table-recruit {
             ul.detail-title {
                 li {
                     padding: 2.2rem 0;
-
+                    p {
+                        font-size: 2rem;
+                    }
                     .detail-contents {
                         flex-wrap: wrap;
 
