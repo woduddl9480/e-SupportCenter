@@ -3,14 +3,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &-control {
         font-size: 0;
+
         &--prev {
             margin-right: 0.5rem;
             margin-left: -0.5rem;
         }
+
         &--next {
             margin-left: 0.5rem;
+
             i {
                 transform: rotate(180deg);
             }
@@ -25,19 +29,23 @@
         text-align: center;
         line-height: 4rem;
         position: relative;
+
         i {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+
             &.reverse {
                 transform: rotate(180deg) translate(50%, 50%);
             }
         }
+
         &.prev {
             margin-left: -0.5rem;
             border-left: none;
         }
+
         &.next {
             margin-right: -0.5rem;
             border-right: none;
@@ -47,12 +55,14 @@
 
     &-list {
         display: flex;
+
         li {
             border: none;
             text-align: center;
             line-height: 4rem;
             position: relative;
             color: #666;
+
             a {
                 display: block;
                 width: 4rem;
@@ -82,4 +92,29 @@
     height: 1rem;
     background: url(/img/icon-pagination--d.svg)no-repeat center / 100%;
     display: inline-block;
+}
+
+// 로그인 페이지 start 
+.contents-box {
+    .login-cont {
+        border-top: 2px solid #1a1a1a;
+        padding: 184px 392px 80px;
+
+        .idPw {
+            display: block;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            height: 4.8rem;
+            border-bottom: 1px solid #222;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            margin-bottom: 2.4rem;
+            padding-left: 1rem;
+        }
+    }
 }
