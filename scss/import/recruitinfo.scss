@@ -898,12 +898,28 @@ table.table-recruit {
             dl {
                 padding: 2.3rem 1rem;
                 dt {
+                    margin-right: 1.2rem;
                     font-size: 1.3rem;
                     font-weight: 500;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: 1.15;
                     letter-spacing: -0.52px;
+                    a::before {
+                        margin-right: 0.6rem!important;
+                    }
+                }
+                dd {
+                    width: 75%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.19;
+                    letter-spacing: -0.64px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
