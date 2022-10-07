@@ -169,8 +169,18 @@
 // 로그인 페이지 모바일 start 
 @media all and (max-width: 768px) {
     .contents-box {
-        .login-cont {
+        .login-border {
             padding: 4rem 2rem;
+            .login-contents {
+                .btn-join {
+                    span {
+                        width: 69%;
+                    }
+                    button {
+                        width: 9.4rem;
+                    }
+                }
+            }
         }
     }
 }
