@@ -219,6 +219,13 @@
             justify-content: center;
             position: relative;
         }
+        .search3 {
+            min-height: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
     }
     .join-table {
         tbody {
