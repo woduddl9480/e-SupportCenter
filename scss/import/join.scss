@@ -1,4 +1,48 @@
 // 마이페이지 start
+
+.tab-my {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-flow: inherit;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+
+.tab-my li {
+  width: 100%;
+}
+
+.tab-my li.active a {
+  background: #3355ff;
+  color: #fff;
+}
+.tab-my li.half strong {
+  font-weight: normal;
+  display: flex;
+}
+.tab-my li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #cccccc;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-family: "ONE-Mobile-Title";
+  color: #444;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.tab-my li.half strong p {
+  margin-left: 0.5rem;
+}
+
+.tab-my li:nth-child(3) a {
+  border-right: none;
+}
 .contents-box .contents-title {
   width: 100%;
   margin-bottom: 2.4rem;
@@ -22,16 +66,44 @@
   justify-content: center;
 }
 
+.join .lecture form .lecture-center {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .join .lecture form .classification {
   display: flex;
   align-items: center;
 }
 
 .join .lecture .classification label {
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #444;
+  font-size: 1.5rem;
   margin-right: 0.8rem;
 }
 
+.join .lecture .course label {
+  margin-right: 0.7rem;
+  width: 5rem;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #444;
+  font-size: 1.5rem;
+}
+
 .join .lecture .classification .select {
+  width: 16rem;
+  height: 4.8rem;
+}
+.join .lecture .course .select {
   width: 16rem;
   height: 4.8rem;
 }
@@ -41,16 +113,8 @@
   align-items: center;
 }
 
-.join .lecture .course label {
-  margin-right: 0.8rem;
-}
-
-.join .lecture .course .select {
-  width: 16rem;
-  height: 4.8rem;
-}
-
 .join .lecture button {
+  margin-left: 0.4rem;
   cursor: pointer;
   width: 4.8rem;
   height: 4.8rem;
@@ -62,6 +126,7 @@
   border-top: 0.2rem solid #000;
   width: 100%;
   max-width: 128rem;
+  margin-bottom: 2.4rem;
 }
 
 .free-box ol li {
@@ -75,62 +140,6 @@
 
 .free-box ol li:nth-child(1) {
   height: 4.8rem;
-}
-
-.free-box ol li .free-box-left {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.06rem;
-  text-align: left;
-  color: #1a1a1a;
-  width: 55%;
-  padding-left: 2.4rem;
-}
-
-.free-box ol li .free-box-right2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.06rem;
-  text-align: left;
-  color: #1a1a1a;
-  width: 45%;
-}
-
-.free-box ol li .free-box-right2 ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.free-box ol li .free-box-right2 ul li {
-  border: 0px;
-}
-
-.free-box ol li .free-box-right2 ul li:nth-child(1) {
-  width: 8.5rem;
-}
-
-.free-box ol li .free-box-right2 ul li strong {
-  width: 8.5rem;
-}
-
-.free-box ol li .free-box-right2 ul li:nth-child(2) {
-  width: 150px;
-}
-
-.free-box ol li .free-box-right2 ul li:nth-child(3) {
-  width: 341px;
-}
-
-.free-box ol li .free-box-right2 ul li:nth-child(4) {
-  width: 341px;
 }
 
 .free-box ol li .mycontents {
@@ -156,10 +165,26 @@
 }
 
 .free-box ol li .mycontents .mycontents-title h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: -0.072rem;
+  text-align: left;
+  color: #222;
+}
+
+.free-box ol li:nth-child(1) .mycontents .mycontents-title h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
   text-align: left;
   color: #222;
 }
@@ -176,8 +201,24 @@
   width: 90px;
 }
 
+.free-box ol li .mycontents .mycontents-info .info1 span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.056rem;
+  text-align: left;
+  color: #1a1a1a;
+  display: none;
+}
+
 .free-box ol li .mycontents .mycontents-info .info2 {
+  line-height: 1;
   width: 110px;
+}
+
+.free-box ol li:nth-child(1) .mycontents .mycontents-info .info2 {
+  margin-left: -5.5%;
+  white-space: nowrap;
 }
 
 .free-box ol li .mycontents .mycontents-info .info3 {
@@ -186,10 +227,19 @@
   width: 121px;
 }
 
-.free-box ol li .mycontents .mycontents-info .info3 {
+.free-box ol li .mycontents .mycontents-info .info3 span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.056rem;
+  text-align: left;
+  color: #1a1a1a;
+  display: none;
+  display: none;
 }
-
-.free-box ol li .mycontents .mycontents-info strong:nth-child(1) {
+.free-box ol li .mycontents .mycontents-info .info3 span::after {
+}
+.free-box ol li .mycontents .mycontents-info strong {
   width: 3.2rem;
   font-size: 1.6rem;
   font-weight: normal;
@@ -198,6 +248,16 @@
   letter-spacing: -0.064rem;
   text-align: left;
   color: #666;
+}
+
+.free-box ol li:nth-child(1) .mycontents .mycontents-info strong:nth-child(1) {
+  margin-left: 15%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #222;
 }
 
 .free-box ol li .mycontents .mycontents-info strong:nth-child(3) {
@@ -218,6 +278,19 @@
   padding-left: 2.4rem;
 }
 
+.free-box ol li:nth-child(1) .mycontents .mycontents-btn {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #222;
+  width: 20%;
+  display: flex;
+  justify-content: start;
+}
+.free-box ol li:nth-child(1) .mycontents .mycontents-btn strong {
+  font-weight: 600;
+}
 .free-box ol li .mycontents .mycontents-btn button:nth-child(1) {
   cursor: pointer;
   width: 9.4rem;
@@ -285,6 +358,155 @@
 .free-box ol li .right-free2 b:nth-child(4) {
   margin-left: 7rem;
 }
+
+@media (max-width: 947px) {
+  .tab-my {
+    border-radius: 0;
+  }
+  .tab-my li {
+    height: 5.6rem;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 0.4rem;
+    margin-right: -0.1rem;
+  }
+  .tab-my li.half {
+    width: 50%;
+  }
+  .tab-my li.half strong {
+    display: block;
+  }
+  .tab-my li a {
+    font-size: 1.4rem;
+  }
+  .tab-my li.half strong p {
+    margin-left: 0rem;
+  }
+  .join .lecture {
+    height: 15.2rem;
+  }
+  .join .lecture form {
+    width: 100%;
+    gap: 2%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .join .lecture form .lecture-center {
+    width: 29.2rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .join .lecture form .classification {
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .join .lecture .course {
+    margin-top: 0.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .free-box ol li:nth-child(1) {
+    display: none;
+  }
+  .free-box ol li {
+    height: 27rem;
+  }
+
+  .free-box ol li:nth-child(6) {
+    display: none;
+  }
+
+  .free-box ol li .mycontents {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 27rem;
+  }
+
+  .free-box ol li .mycontents .mycontents-title h4 {
+    -webkit-line-clamp: 2;
+  }
+  .free-box ol li .mycontents .mycontents-title {
+    padding-top: 3.2rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .free-box ol li .mycontents .mycontents-title .blue {
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+  }
+  .free-box ol li .mycontents .mycontents-info {
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
+    padding-left: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .free-box ol li .mycontents .mycontents-btn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+    padding-left: 1rem;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info1 span {
+    display: block;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info1 span:nth-child(2) {
+    color: #eee;
+    display: block;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info3 span {
+    display: block;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info3 span:nth-child(2) {
+    color: #eee;
+    display: block;
+  }
+
+  .free-box ol li .mycontents .mycontents-info strong:nth-child(3) {
+    margin-left: 0%;
+  }
+
+  .join .lecture .classification .select {
+    width: 18rem;
+  }
+  .join .lecture .course .select {
+    width: 18rem;
+  }
+
+  #my-position {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+}
+
+// 마이페이지 끝 //
 
 .join {
   &.contents {
