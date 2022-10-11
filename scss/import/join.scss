@@ -202,8 +202,7 @@
   display: none;
   display: none;
 }
-.free-box ol li .mycontents .mycontents-info .info3 span::after {
-}
+
 .free-box ol li .mycontents .mycontents-info strong {
   width: 3.2rem;
   font-size: 1.6rem;
@@ -324,7 +323,7 @@
   margin-left: 7rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 945px) {
   .tab .right a strong p {
     margin-left: 0rem;
   }
