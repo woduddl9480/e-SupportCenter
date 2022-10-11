@@ -243,23 +243,12 @@
     }
 }
 
-@include mobile {
+@media screen and (max-width: 1280px) {
     .contents-list {
-        .item {
-            display: block;
-            padding-bottom: 4rem;
-        }
-
-        .left {
-            p {
-                margin-bottom: 2rem;
-            }
-        }
-
         .right {
-            
+            overflow: hidden;
             .table-wrap {
-                width: calc(100% + 2rem);
+                width: 100%;
                 padding-right: 2rem;
                 overflow-x: scroll;
                 -ms-overflow-style: none;
@@ -270,7 +259,6 @@
             }
 
             table {
-                width: 87rem;
                 th {
                     font-size: 1.3rem;
                 }
@@ -294,12 +282,38 @@
                     left: -0.2rem;
                 }
             }
+        }
+    }
+}
+
+@include mobile {
+    .contents-list {
+        .item {
+            display: block;
+            padding-bottom: 4rem;
+        }
+
+        .left {
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .right {
+            overflow: visible;
+            .table-wrap {
+                width: calc(100% + 2rem);
+            }
+            table {
+                width: 72rem;
+            }
 
             .caution {
                 display: block;
 
                 button {
                     margin: 1.2rem 0 0 0;
+                    display: flex;
                 }
 
                 &.m {

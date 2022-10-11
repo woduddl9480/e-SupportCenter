@@ -330,12 +330,15 @@
             }
         }
 
-        h5 {
-            font-size: 2rem;
-            line-height: 1;
-            letter-spacing: -0.08rem;
-            margin-top: 2.6rem;
-            font-family: map-get($ftStyle, secondary);
+        .top {
+            h5 {
+                font-size: 2rem;
+                line-height: 1;
+                letter-spacing: -0.08rem;
+                margin-top: 2.6rem;
+                font-family: map-get($ftStyle, secondary);
+                text-align: center;
+            }
         }
 
         .img-area {
@@ -409,6 +412,7 @@
             padding-left: 2.4rem;
             text-align: left;
             border-bottom: 1px solid #d8e4ec;
+            white-space: pre;
         }
     }
 
@@ -958,7 +962,6 @@ button {
         &-list {
             .counselEdu-item {
                 height: auto !important;
-                pad
     
                 h5 {
                     font-size: 1.6rem;
@@ -979,9 +982,25 @@ button {
                 line-height: 1;
                 height: auto;
                 min-height: 4.5rem;
+                align-items: center;
+
+                .right {
+                    p {
+                        padding-left: 2rem;
+                    }
+                }
             }
             .right {
                 align-items: center;
+            }
+            .bottom {
+                li {
+                    .right {
+                        div {
+                            padding-left: 2rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1105,7 +1124,6 @@ button {
 
                 .way {
                     background-size: 1.8rem 1.8rem;
-                    padding-left: 0;
                     margin: 0 0 2.4rem 0;
 
                     &:last-child {
