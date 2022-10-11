@@ -7,7 +7,7 @@
         container-top
         notice recruit counseledu join welfare 클래스로 배경 변경
     -->
-  <div class="container-top welfare">
+  <div class="container-top join">
     <h1>마이페이지</h1>
     <div class="lnb-wrap">
       <ul class="lnb">
@@ -30,12 +30,17 @@
           <p>마이페이지</p>
         </div>
         <div class="tab-wrap">
-          <ul class="tab">
+          <ul class="tab-my">
             <li class="center active">
               <a href="#" onclick="return false;">동영상 교육</a>
             </li>
             <li class="half right">
-              <a href="#" onclick="return false;">프로그램 참여현황</a>
+              <a href="#" onclick="return false;"
+                ><strong
+                  >프로그램
+                  <p>참여현황</p></strong
+                ></a
+              >
             </li>
             <li class="half left">
               <a href="#" onclick="return false;">회원정보변경</a>
@@ -46,21 +51,23 @@
             <div class="contents-list m-t-8">
               <div class="lecture">
                 <form action="" method="">
-                  <div class="classification">
-                    <label for="강좌분류">강좌분류</label>
-                    <select class="select" id="강좌분류" name="">
-                      <option value="">전체</option>
-                    </select>
+                  <div class="lecture-center">
+                    <div class="classification">
+                      <label for="강좌분류">강좌분류</label>
+                      <select class="select" id="강좌분류" name="">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                    <div class="course">
+                      <label for="수강강좌">수강강좌</label>
+                      <select class="select" id="수강강좌" name="">
+                        <option>전체</option>
+                      </select>
+                      <button type="submit" tabindex="2">
+                        <img src="../img/search.png" alt="검색버튼" />
+                      </button>
+                    </div>
                   </div>
-                  <div class="course">
-                    <label for="수강강좌">수강강좌</label>
-                    <select class="select" id="수강강좌" name="">
-                      <option>전체</option>
-                    </select>
-                  </div>
-                  <button type="submit" tabindex="2">
-                    <img src="../img/search.png" alt="검색버튼" />
-                  </button>
                 </form>
               </div>
               <div class="free-box">
@@ -68,21 +75,50 @@
                   <li>
                     <div class="mycontents">
                       <div class="mycontents-title">
+                        <h4>분류 / 교육명</h4>
+                      </div>
+                      <div class="mycontents-info">
+                        <div class="info1">
+                          <strong>시청시간</strong>
+                        </div>
+                        <div class="info2">
+                          <strong>수강상태</strong>
+                        </div>
+                        <div class="info3">
+                          <strong class="day">수강시작일</strong>
+                        </div>
+                      </div>
+                      <div class="mycontents-btn">
+                        <strong>강의보기 / 수료증출력</strong>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="mycontents">
+                      <div class="mycontents-title">
                         <span class="blue">스포츠 지도사필기대비반</span>
                         <h4>
                           <a href="#"
-                            >스포츠 필기 특강 강의명이 한줄까지 들어갑니다</a
+                            >스포츠 필기 특강 강의명이 한줄까지
+                            들어갑니다한줄까지 들어갑니다한줄까지
+                            들어갑니다한줄까지 들어갑니다</a
                           >
                         </h4>
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
+                          >
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -104,12 +140,18 @@
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
+                          >
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -131,12 +173,18 @@
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
+                          >
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -158,12 +206,18 @@
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
+                          >
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -185,12 +239,18 @@
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
+                          >
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -212,39 +272,18 @@
                       </div>
                       <div class="mycontents-info">
                         <div class="info1">
+                          <span>시청시간</span>
+                          <span>｜</span>
                           <strong>50분</strong>
                         </div>
                         <div class="info2">
-                          <span class="state state--apply">수강완료</span>
-                        </div>
-                        <div class="info3">
-                          <strong class="day">2022-09-02</strong>
-                        </div>
-                      </div>
-                      <div class="mycontents-btn">
-                        <button type="button">강의보기</button>
-                        <button type="button">수료증출력</button>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="mycontents">
-                      <div class="mycontents-title">
-                        <span class="blue">스포츠 지도사필기대비반</span>
-                        <h4>
-                          <a href="#"
-                            >스포츠 필기 특강 강의명이 한줄까지 들어갑니다</a
+                          <span class="state state--apply" id="my-position"
+                            >수강완료</span
                           >
-                        </h4>
-                      </div>
-                      <div class="mycontents-info">
-                        <div class="info1">
-                          <strong>50분</strong>
-                        </div>
-                        <div class="info2">
-                          <span class="state state--apply">수강완료</span>
                         </div>
                         <div class="info3">
+                          <span>수강시작일</span>
+                          <span>｜</span>
                           <strong class="day">2022-09-02</strong>
                         </div>
                       </div>
@@ -255,6 +294,33 @@
                     </div>
                   </li>
                 </ol>
+              </div>
+              <!-- 페이지네이션 -->
+              <div class="pagination">
+                <div class="pagination-control--prev">
+                  <button type="button">
+                    <i class="icon icon-pagination--d"></i>
+                  </button>
+                  <button type="button" class="prev">
+                    <i class="icon icon-pagination"></i>
+                  </button>
+                </div>
+                <ol class="pagination-list">
+                  <li class="is_active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                </ol>
+                <div class="pagination-control--next">
+                  <button type="button" class="next">
+                    <i class="icon icon-pagination"></i>
+                  </button>
+                  <button type="button">
+                    <i class="icon icon-pagination--d"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
