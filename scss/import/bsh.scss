@@ -1171,6 +1171,10 @@ header {
             }
         }
 
+        &.search3 {
+            padding-left: 4rem;
+        }
+
         .w-240 {
             width: 100%;
             max-width: 24rem;
@@ -1382,7 +1386,7 @@ header {
     }
 
     &-search {
-        min-height: 16rem;
+        height: 16rem;
         border: 1px solid #e5e5e5;
         border-radius: 0.4rem;
         margin-top: 0.8rem;
@@ -1546,6 +1550,20 @@ header {
                     width: 12.4rem;
                 }
             }
+
+            &.search3 {
+                padding: 4rem 2rem;
+
+                input[type="text"] {
+                    height: 4.8rem;
+                    line-height: 4.8rem;
+                    width: calc(100% - 7.3rem);
+                }
+
+                button {
+                    width: 6.8rem;
+                }
+            }
         }
 
         &-certify {
@@ -1602,6 +1620,10 @@ header {
 
         &-player {
             margin-bottom: 6.4rem;
+        }
+
+        &-search {
+            height: 20rem;
         }
     }
 }
