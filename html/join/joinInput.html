@@ -11,6 +11,7 @@
                     <a href=""></a>
                 </li>
                 <li class="none">
+                    <!-- 학부모/감독용 -->
                     <a href="">회원가입</a>
                 </li>
             </ul>
@@ -55,16 +56,16 @@
                 <h3>회원 정보입력</h3>
             </div>
             <div class="join-contents">
-                <div class="gray-box2 search2">
+                <div class="gray-box2 search3">
                     <ul>
-                        <li>
+                        <!-- <li>
                             <span class="input-dot"></span>
                             개인정보는 입사지원 및 채용알선 시 사용되므로 정확한 정보를 입력해 주시기 바랍니다.
                         </li>
                         <li>
                             <span class="input-dot"></span>
                             신규고용촉진 관련 장려금 대상자가 되기 위해서는 회원가입 후 반드시 구직신청을 하셔야 합니다.
-                        </li>
+                        </li> -->
                         <li>
                             <span class="input-dot"></span>
                             비밀번호는 영대문자(A-Z, 26개), 영소문자(a-z, 26개), 숫자(0-9,10개) 및 특수문자(22개) 중 3개 종류 이상으로 구성해야 합니다.
@@ -91,29 +92,31 @@
                                         <span class="required"></span>
                                     </th>
                                     <td>
-                                        <div><input type="text" placeholder="아이디를 입력하세요">
-                                            <button type="button" class="btn btn--size-m btn--bg-secondary m-l-1">
+                                        <div class="input-id">
+                                            <input type="text" placeholder="아이디를 입력하세요" class="mo-wd-89">
+                                            <button type="button" class="btn btn--size-m btn--bg-secondary m-l-1 mo-m-l-0">
                                                 중복확인
                                             </button>
-                                            <span class="confirmed">인증완료</span>
+                                            <span class="confirmed">확인완료</span>
                                         </div>
-                                        <p class="p-gray">영문과 숫자를 조합하여 6~10자의 이내로 입력하세요.</p>
+                                        <p class="p-gray m-t-2">영문과 숫자를 조합하여 6~10자의 이내로 입력하세요.</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>비밀번호</th>
                                     <td>
-                                        <input type="text" placeholder="비밀번호를 입력하세요" class="pc-wd-320">
-                                        <p class="p-gray">비밀번호는 영문(대/소문자)과 숫자, 특수문자 중 3가지 이상의 종류로 조합하여 8~16자 이내로 입력하세요.
+                                        <input type="text" placeholder="비밀번호를 입력하세요" class="pc-wd-320 mo-wd-73">
+                                        <p class="p-gray m-t-2">비밀번호는 영문(대/소문자)과 숫자, 특수문자 중 3가지 이상의 종류로 조합하여 8~16자 이내로 입력하세요.
                                         </p>
-                                        <p class="p-gray"> (단,^, _, \, ‘, [, ], ’, -, <,> 제외)</p>
+                                        <p class="p-gray m-t-2 mo-m-t-0"> (단,^, _, \, ‘, [, ], ’, -, <,> 제외)</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>비밀번호 확인</th>
                                     <td>
-                                        <input type="text" placeholder="한번 더 입력하세요" class="pc-wd-320">
-                                        <p class="p-gray">비밀번호를 한번 더 입력하세요</p>
+                                        <input type="text" placeholder="한번 더 입력하세요" class="pc-wd-320 mo-wd-73">
+                                        <span class="confirmed">확인완료</span>
+                                        <p class="p-gray m-t-2">비밀번호를 한번 더 입력하세요</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -134,11 +137,12 @@
                                 <tr>
                                     <th>주소<span class="required"></span></th>
                                     <td class="pd-16">
-                                        <input type="text" name="" id="zipCode" disabled class="w-120"> <button
-                                            type="button" class="btn btn--size-m btn--bg-secondary w-140">우편번호
-                                            검색</button>
-                                        <input type="text" name="" id="address" disabled="disabled" class="w-560-2">
-                                        <input type="text" name="" id="addressDetail" class="w-100p m-t-1"
+                                        <input type="text" name="" id="zipCode" class="w-120"> 
+                                        <button type="button" class="btn btn--size-m btn--bg-secondary w-140 mo-wd-47">
+                                            우편번호 검색
+                                        </button>
+                                        <input type="text" name="" id="address" disabled="disabled" class="w-560-2 mo-wd-100 mo-m-t-5">
+                                        <input type="text" name="" id="addressDetail" class="w-100p m-t-1 mo-wd-100"
                                             placeholder="상세주소를 입력하세요">
                                     </td>
                                 </tr>
@@ -146,11 +150,11 @@
                                     <th>휴대전화<span class="required"></span></th>
                                     <td class="pd-16">
                                         <div>
-                                            <input type="text" class="w-80">
+                                            <input type="text" class="w-80 mo-wd-73">
                                             <span class="hyphen">-</span>
-                                            <input type="text" class="w-80">
+                                            <input type="text" class="w-80 mo-wd-73">
                                             <span class="hyphen">-</span>
-                                            <input type="text" class="w-80">
+                                            <input type="text" class="w-80 mo-wd-73">
                                         </div>
                                     </td>
                                 </tr>
@@ -158,24 +162,27 @@
                                     <th>전화번호</th>
                                     <td class="pd-16">
                                         <div>
-                                            <input type="text" class="w-80"><span class="hyphen">-</span><input type="text"
-                                                class="w-80"><span class="hyphen">-</span><input type="text" class="w-80">
+                                            <input type="text" class="w-80 mo-wd-73">
+                                            <span class="hyphen">-</span>
+                                            <input type="text" class="w-80 mo-wd-73">
+                                            <span class="hyphen">-</span>
+                                            <input type="text" class="w-80 mo-wd-73">
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>이메일<span class="required"></span></th>
                                     <td class="pd-16 wrap">
-                                        <div>
-                                            <input type="text" class="w-240"><span class="hyphen">@</span>
-                                            <select class="select w-160">
+                                        <div class="input-email">
+                                            <input type="text" class="w-240 mo-wd-91"><span class="hyphen">@</span>
+                                            <select class="select w-160 mo-m-t-5">
                                                 <option class="select__value" value="gamil">gamil.com</option>
                                                 <option class="select__value" value="naver">naver.com</option>
                                             </select>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th>종목<span class="required"></span></th>
                                     <td class="pd-16">
                                         <div>
@@ -185,7 +192,7 @@
                                             </select>
                                         </div>
                                     </td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                         <h4 class="counselEdu-table-title m-t-8">
@@ -211,7 +218,7 @@
                         <div class="btn-area b">
                             <button type="button"
                                 class="btn btn--size-l btn--border-primary m-r-2 w-240">취소</button><button type="button"
-                                class="btn btn--size-l btn--bg-primary w-240">저장</button>
+                                class="btn btn--size-l btn--bg-primary w-240">확인</button>
                         </div>
                     </div>
                 </form>
