@@ -838,41 +838,30 @@
   margin-top: 0.4rem;
 }
 
-.listType-header
-  .article-main
-  .artile-section1
-  .right
-  .right-content
-  #width-control {
-  width: 69%;
-}
-
 .listType-header .article-main .artile-section1 .right {
   width: 100%;
   margin-top: 2.6rem;
-}
 
-.listType-header .article-main .artile-section1 .right2 {
-  align-items: center;
-  width: 100%;
-  margin-top: 2.6rem;
-  display: flex;
+  &.flex {
+    display: flex;
+    align-items: center;
+
+    .right-content {
+      margin-bottom: 0;
+    }
+
+    a {
+      line-height: 1.57;
+      overflow: hidden;
+      word-break: break-all;
+      font-size: 1.6rem;
+      color: #35f;
+      display: flex;
+    }
+  }
 }
 
 .listType-header .article-main .artile-section1 .right p {
-  color: #222;
-  font-size: 1.8rem;
-  line-height: 1.56;
-  letter-spacing: -0.072rem;
-  font-family: "Pretendard";
-}
-
-.listType-header .article-main .artile-section1 .right3 {
-  width: 100%;
-}
-
-.listType-header .article-main .artile-section1 .right3 p {
-  margin-top: 2.6rem;
   color: #222;
   font-size: 1.8rem;
   line-height: 1.56;
@@ -895,8 +884,46 @@
 
 .listType-header .article-main .artile-section1 .right .right-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2.9rem;
+
+  &.flex-column {
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      margin-top: 1.2rem;
+    }
+
+    li {
+      padding-left: 2.8rem;
+      display: flex;
+      font-size: 1.6rem;
+      letter-spacing: -0.064rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        color: #222;
+        font-weight: 600;
+        min-width: 5.6rem;
+      }
+      div {
+        width: 0.1rem;
+        height: 1.6rem;
+        background: #eee;
+        margin: 0.2rem 0.8rem 0 0;
+      }
+      p {
+        font-size: 1.6rem;
+        letter-spacing: -0.064rem;
+        color: #666;
+      }
+    }
+  }
 }
 
 .listType-header
@@ -905,27 +932,13 @@
   .right
   .right-content
   h3::before {
-  content: url(../img/check_blue.png);
-  margin-right: 0.8rem;
-}
-
-.listType-header
-  .article-main
-  .artile-section1
-  .right2
-  .right-content
-  h3::before {
-  content: url(../img/check_blue.png);
-  margin-right: 0.8rem;
-}
-
-.listType-header .article-main .artile-section1 .right2 .right-content h3 {
-  font-family: "ONE-Mobile-Title";
-  color: #222;
-  font-size: 1.8rem;
-  line-height: 1.56;
-  letter-spacing: -0.072rem;
-  margin-right: 1.2rem;
+  content: '';
+  width: 2rem;
+  height: 1.6rem;
+  background: url(../img/check_blue.png);
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
 }
 
 .listType-header .article-main .artile-section1 .right .right-content h3 {
@@ -936,6 +949,13 @@
   line-height: 1.56;
   letter-spacing: -0.072rem;
   margin-right: 1.2rem;
+  padding-left: 2.8rem;
+  position: relative;
+  flex-shrink: 0;
+
+  &.none {
+    flex-shrink: 1;
+  }
 }
 
 .listType-header .article-main .artile-section1 .right .right-content p {
@@ -944,14 +964,6 @@
   line-height: 1.56;
   letter-spacing: -0.072rem;
   font-family: "Pretendard";
-}
-.listType-header .article-main .artile-section1 .right2 a {
-  line-height: 1.57;
-  overflow: hidden;
-  word-break: break-all;
-  font-size: 1.6rem;
-  color: #35f;
-  display: flex;
 }
 
 .listType-header
@@ -1092,20 +1104,33 @@
   .listType-header .article-main .section-part {
     height: 0.8rem;
   }
-  .listType-header .article-main .artile-section1 .right3 p {
-    font-size: 1.6rem;
+  .listType-header .article-main .artile-section1 .right {
     margin-top: 1.6rem;
-  }
-  .listType-header .article-main .artile-section1 .right2 a {
-    font-size: 1.4rem;
-    margin-left: 2.8rem;
-  }
-  .listType-header .article-main .artile-section1 .right2 {
-    display: block;
-  }
+    .right-content {
+      &.flex-column {
+        flex-direction: column;
+        align-items: flex-start;
+    
+        li {
+          font-size: 1.5rem;
+          span {
+            min-width: 5.2rem;
+          }
+          div {
+            margin-right: 1rem;
+          }
+          p {
+            margin-left: 0;
+            font-size: 1.5rem;
+          }
+        }
+      }
 
-  .listType-header .article-main .artile-section1 .right2 .right-content h3 {
-    margin-bottom: 1.2rem;
+      a {
+        padding-left: 2.8rem;
+        font-size: 1.4rem;
+      }
+    }
   }
 
   .listType-header .article-main .artile-section1 .right .right-content h3 {
@@ -1116,6 +1141,10 @@
   .listType-header .article-main .artile-section1 .right p {
     margin-left: 2.8rem;
     font-size: 1.6rem;
+
+    &.none {
+      margin: 0;
+    }
   }
   .listType-header .article-main .artile-section1 .right .right-content p {
     font-size: 1.6rem;
@@ -1131,24 +1160,22 @@
     font-size: 1.5rem;
   }
 
-  .list-info ol li:nth-child(17) button {
-    display: block;
-  }
-
-  .list-info ol li:nth-child(16) button {
-    display: none;
-  }
-  .list-info ol li:nth-child(18) button {
-    display: none;
-  }
-  .list-info ol li button {
-    font-size: 1.3rem;
-  }
-  .list-info ol li:nth-child(10) button {
-    display: block;
-  }
-  .list-info ol li:nth-child(9) button {
-    display: none;
+  .list-info {
+    padding: 2.4rem 1.1rem;
+    ol {
+      padding: 0;
+      li {
+        button {
+          padding: 0 0.9rem;
+          line-height: 3.2rem;
+          margin: 0 0 0.8rem 0;
+          font-size: 1.3rem;
+        }
+      }
+      .none {
+        display: none;
+      }
+    }
   }
   .listType-header .article-main .artile-section1 {
     display: block;
@@ -1158,14 +1185,6 @@
   }
   .listType-header .article-main .artile-section1 .right .right-content {
     display: block;
-  }
-  .listType-header
-    .article-main
-    .artile-section1
-    .right
-    .right-content
-    #width-control {
-    width: 100%;
   }
   .listType-header .article-main .artile-section1 .right .sign {
     margin-left: 2.8rem;
@@ -1181,7 +1200,7 @@
     font-size: 1.5rem;
     width: 6rem;
   }
-  #mob-blind {
+  .mob-blind {
     display: none;
   }
 }
