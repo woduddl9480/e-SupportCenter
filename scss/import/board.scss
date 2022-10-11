@@ -624,6 +624,12 @@
   margin-top: 0.8rem;
 }
 
+
+.listType-header .article-main ol li {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
 .listType-header .article-main ol li a {
   margin-top: 0.8rem;
   display: flex;
@@ -631,16 +637,17 @@
 }
 
 .listType-header .article-main ol li .article-img {
-  font-size: 1.6rem;
-  color: #e6e6e6;
-  padding-top: 6.2rem;
-  padding-left: 6.2rem;
-  width: 100%;
-  max-width: 28.2rem;
-  height: 15.8rem;
+  width: 28.2rem;
   border-radius: 0.4rem;
   border: solid 0.1rem #e5e5e5;
   margin-right: 2.5rem;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+  }
 }
 
 .listType-header .article-main ol li .article-content h1 {
@@ -656,8 +663,12 @@
   line-height: 1.6;
   letter-spacing: -0.064rem;
   color: #666;
-  margin-top: 1.2rem;
-  margin-bottom: 2rem;
+  margin: 1.2rem 0 2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .listType-header .article-main ol li .article-content span {
@@ -667,50 +678,39 @@
   letter-spacing: -0.06rem;
 }
 
-.listType-header .article-main ol hr {
-  margin-top: 0.8rem;
-  height: 0.1rem;
-  background-color: #eee;
-}
-
 @media screen and (max-width: 768px) {
+  .listType-header .article-main ol li {
+    padding-bottom: 1.2rem;
+
+    &:nth-child(n+6) {
+      display: none;
+    }
+  }
   .listType-header .article-main ol li a {
     margin-top: 0.8rem;
     display: block;
     align-items: center;
   }
   .listType-header .article-main ol li .article-img {
-    font-size: 2.2rem;
-    color: #e6e6e6;
-    padding-top: 7.3rem;
-    padding-left: 7.3rem;
     width: 100%;
-    max-width: 35rem;
-    height: 19.6rem;
     border-radius: 0.4rem;
     border: solid 0.1rem #e5e5e5;
     margin-right: 2.5rem;
   }
+  .listType-header .article-main ol li .article-content {
+    padding: 0 1rem;
+  }
   .listType-header .article-main ol li .article-content p {
     height: 5rem;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
     size: 1.4rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
   .listType-header .article-main ol li .article-content h1 {
     font-size: 1.8rem;
     margin-top: 1.6rem;
     letter-spacing: -0.036rem;
   }
-  .listType-header .article-main ol li:nth-child(-n + 9) a {
-    display: none;
-  }
-  .listType-header .article-main ol hr:nth-child(-n + 10) {
-    display: none;
+  .listType-header .article-main ol li .article-content span {
+    font-size: 1.3rem;
   }
   .listType-header .article-main-title {
     display: block;
@@ -781,14 +781,6 @@
 
 .list-info ol li .blue-btn {
   color: #fff;
-  line-height: 1.14;
-  letter-spacing: -0.056rem;
-  font-size: 1.4rem;
-  width: 100%;
-  height: 3.2rem;
-  margin: 0 0.4rem 1.2rem 0;
-  padding: 0.8rem 1.5rem;
-  border-radius: 2rem;
   background-color: #35f;
 }
 
@@ -846,41 +838,30 @@
   margin-top: 0.4rem;
 }
 
-.listType-header
-  .article-main
-  .artile-section1
-  .right
-  .right-content
-  #width-control {
-  width: 69%;
-}
-
 .listType-header .article-main .artile-section1 .right {
   width: 100%;
   margin-top: 2.6rem;
-}
 
-.listType-header .article-main .artile-section1 .right2 {
-  align-items: center;
-  width: 100%;
-  margin-top: 2.6rem;
-  display: flex;
+  &.flex {
+    display: flex;
+    align-items: center;
+
+    .right-content {
+      margin-bottom: 0;
+    }
+
+    a {
+      line-height: 1.57;
+      overflow: hidden;
+      word-break: break-all;
+      font-size: 1.6rem;
+      color: #35f;
+      display: flex;
+    }
+  }
 }
 
 .listType-header .article-main .artile-section1 .right p {
-  color: #222;
-  font-size: 1.8rem;
-  line-height: 1.56;
-  letter-spacing: -0.072rem;
-  font-family: "Pretendard";
-}
-
-.listType-header .article-main .artile-section1 .right3 {
-  width: 100%;
-}
-
-.listType-header .article-main .artile-section1 .right3 p {
-  margin-top: 2.6rem;
   color: #222;
   font-size: 1.8rem;
   line-height: 1.56;
@@ -903,8 +884,46 @@
 
 .listType-header .article-main .artile-section1 .right .right-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2.9rem;
+
+  &.flex-column {
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      margin-top: 1.2rem;
+    }
+
+    li {
+      padding-left: 2.8rem;
+      display: flex;
+      font-size: 1.6rem;
+      letter-spacing: -0.064rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        color: #222;
+        font-weight: 600;
+        min-width: 5.6rem;
+      }
+      div {
+        width: 0.1rem;
+        height: 1.6rem;
+        background: #eee;
+        margin: 0.2rem 0.8rem 0 0;
+      }
+      p {
+        font-size: 1.6rem;
+        letter-spacing: -0.064rem;
+        color: #666;
+      }
+    }
+  }
 }
 
 .listType-header
@@ -913,27 +932,13 @@
   .right
   .right-content
   h3::before {
-  content: url(../img/check_blue.png);
-  margin-right: 0.8rem;
-}
-
-.listType-header
-  .article-main
-  .artile-section1
-  .right2
-  .right-content
-  h3::before {
-  content: url(../img/check_blue.png);
-  margin-right: 0.8rem;
-}
-
-.listType-header .article-main .artile-section1 .right2 .right-content h3 {
-  font-family: "ONE-Mobile-Title";
-  color: #222;
-  font-size: 1.8rem;
-  line-height: 1.56;
-  letter-spacing: -0.072rem;
-  margin-right: 1.2rem;
+  content: '';
+  width: 2rem;
+  height: 1.6rem;
+  background: url(../img/check_blue.png);
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
 }
 
 .listType-header .article-main .artile-section1 .right .right-content h3 {
@@ -944,6 +949,13 @@
   line-height: 1.56;
   letter-spacing: -0.072rem;
   margin-right: 1.2rem;
+  padding-left: 2.8rem;
+  position: relative;
+  flex-shrink: 0;
+
+  &.none {
+    flex-shrink: 1;
+  }
 }
 
 .listType-header .article-main .artile-section1 .right .right-content p {
@@ -952,14 +964,6 @@
   line-height: 1.56;
   letter-spacing: -0.072rem;
   font-family: "Pretendard";
-}
-.listType-header .article-main .artile-section1 .right2 a {
-  line-height: 1.57;
-  overflow: hidden;
-  word-break: break-all;
-  font-size: 1.6rem;
-  color: #35f;
-  display: flex;
 }
 
 .listType-header
@@ -1100,20 +1104,33 @@
   .listType-header .article-main .section-part {
     height: 0.8rem;
   }
-  .listType-header .article-main .artile-section1 .right3 p {
-    font-size: 1.6rem;
+  .listType-header .article-main .artile-section1 .right {
     margin-top: 1.6rem;
-  }
-  .listType-header .article-main .artile-section1 .right2 a {
-    font-size: 1.4rem;
-    margin-left: 2.8rem;
-  }
-  .listType-header .article-main .artile-section1 .right2 {
-    display: block;
-  }
+    .right-content {
+      &.flex-column {
+        flex-direction: column;
+        align-items: flex-start;
+    
+        li {
+          font-size: 1.5rem;
+          span {
+            min-width: 5.2rem;
+          }
+          div {
+            margin-right: 1rem;
+          }
+          p {
+            margin-left: 0;
+            font-size: 1.5rem;
+          }
+        }
+      }
 
-  .listType-header .article-main .artile-section1 .right2 .right-content h3 {
-    margin-bottom: 1.2rem;
+      a {
+        padding-left: 2.8rem;
+        font-size: 1.4rem;
+      }
+    }
   }
 
   .listType-header .article-main .artile-section1 .right .right-content h3 {
@@ -1124,6 +1141,10 @@
   .listType-header .article-main .artile-section1 .right p {
     margin-left: 2.8rem;
     font-size: 1.6rem;
+
+    &.none {
+      margin: 0;
+    }
   }
   .listType-header .article-main .artile-section1 .right .right-content p {
     font-size: 1.6rem;
@@ -1139,24 +1160,22 @@
     font-size: 1.5rem;
   }
 
-  .list-info ol li:nth-child(17) button {
-    display: block;
-  }
-
-  .list-info ol li:nth-child(16) button {
-    display: none;
-  }
-  .list-info ol li:nth-child(18) button {
-    display: none;
-  }
-  .list-info ol li button {
-    font-size: 1.3rem;
-  }
-  .list-info ol li:nth-child(10) button {
-    display: block;
-  }
-  .list-info ol li:nth-child(9) button {
-    display: none;
+  .list-info {
+    padding: 2.4rem 1.1rem;
+    ol {
+      padding: 0;
+      li {
+        button {
+          padding: 0 0.9rem;
+          line-height: 3.2rem;
+          margin: 0 0 0.8rem 0;
+          font-size: 1.3rem;
+        }
+      }
+      .none {
+        display: none;
+      }
+    }
   }
   .listType-header .article-main .artile-section1 {
     display: block;
@@ -1166,14 +1185,6 @@
   }
   .listType-header .article-main .artile-section1 .right .right-content {
     display: block;
-  }
-  .listType-header
-    .article-main
-    .artile-section1
-    .right
-    .right-content
-    #width-control {
-    width: 100%;
   }
   .listType-header .article-main .artile-section1 .right .sign {
     margin-left: 2.8rem;
@@ -1189,7 +1200,7 @@
     font-size: 1.5rem;
     width: 6rem;
   }
-  #mob-blind {
+  .mob-blind {
     display: none;
   }
 }
@@ -1207,9 +1218,7 @@
 }
 
 .listType-header .detail-main-title .main-title-detail {
-  padding-left: 2.4rem;
-  padding-top: 2.2rem;
-  padding-bottom: 4.2rem;
+  padding: 2.2rem 2.4rem;
   font-family: "Pretendard";
   line-height: 1.5;
   letter-spacing: -0.048rem;
@@ -1218,7 +1227,7 @@
   font-weight: 500;
   border-bottom: 1px solid #eee;
 }
-.listType-header .detail-main-title .main-title-detail p {
+.listType-header .detail-main-title .main-title-detail span {
   margin-top: 1.6rem;
   display: flex;
   align-items: center;
@@ -1234,57 +1243,36 @@
 }
 
 .listType-header .detail-main-title .detail-container {
-  margin: 4rem auto;
-
+  padding: 4rem 2.4rem;
   width: 100%;
-  max-width: 115.2rem;
-}
-
-.listType-header .detail-main-title .detail-container .detail-content {
-  width: 66.5%;
 }
 
 .listType-header .detail-main-title .detail-container .detail-content p {
   word-break: break-all;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.2rem;
   line-height: 1.88;
   letter-spacing: -0.032rem;
   font-size: 1.6rem;
   color: #444;
+  max-width: 79.4rem;
+
+  &:last-child {
+    margin-bottom: 8rem;
+  }
 }
 
-.listType-header .detail-main-title .detail-container .detail-img {
-  position: relative;
-  width: 100%;
-  height: 32rem;
-  background-color: #666;
-}
-
-.listType-header .detail-main-title .detail-container .detail-img img {
+.listType-header .detail-main-title .detail-container .detail-content img {
   width: 100%;
   max-width: 96rem;
-  height: 32rem;
-  position: absolute;
-  background-color: #888;
-}
+  display: block;
+  aspect-ratio: 16/9;
+  background: #888;
+  margin-bottom: 4rem;
 
-.listType-header .detail-main-title .detail-container .detail-img p {
-  opacity: 0.4;
-  color: #fff;
-  position: absolute;
-  top: 45%;
-  left: 40%;
-}
-
-.listType-header .detail-main-title .detail-container .detail-content2 p {
-  margin-top: 4rem;
-  width: 52%;
-  word-break: break-all;
-  margin-bottom: 8rem;
-  line-height: 1.88;
-  letter-spacing: -0.032rem;
-  font-size: 1.6rem;
-  color: #444;
+  &.wide {
+    aspect-ratio: unset;
+    max-width: 115.2rem;
+  }
 }
 
 .listType-header .detail-main-title .detail-container .detail-file {
@@ -1296,11 +1284,11 @@
   display: flex;
   gap: 3%;
   align-items: center;
+  padding: 1.6rem 4rem;
 }
 
 .listType-header .detail-main-title .detail-container .detail-file h3 {
   font-size: 1.5rem;
-  margin-left: 3rem;
   font-weight: 600;
   color: #222;
   line-height: 1.2;
@@ -1309,36 +1297,25 @@
 
 .listType-header .detail-main-title .detail-container .detail-file span {
   width: 0.1rem;
-  height: 8rem;
+  height: 100%;
   background-color: #e5e5e5;
 }
 
 .listType-header .detail-main-title .detail-container .detail-file .mob-line {
   display: none;
 }
-.listType-header
-  .detail-main-title
-  .detail-container
-  .detail-file
-  ul
-  li:nth-child(1) {
-  margin-bottom: 0.5rem;
-}
-
-.listType-header
-  .detail-main-title
-  .detail-container
-  .detail-file
-  ul
-  li:nth-child(2) {
-  margin-bottom: 0.5rem;
-}
 
 .listType-header .detail-main-title .detail-container .detail-file ul li {
-  color: #666;
   line-height: 1.2;
   letter-spacing: -0.06rem;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .listType-header
@@ -1347,8 +1324,13 @@
   .detail-file
   ul
   li::before {
-  margin-right: 0.8rem;
-  content: url(../img/file.png);
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../img/file.png);
+    position: absolute;
+    left: -0.8rem;
+    top: 0;
 }
 
 .listType-header .detail-main-title .be-af .before a img {
@@ -1450,67 +1432,41 @@
   width: 9.4rem;
   height: 4.8rem;
   color: #fff;
-  padding: 15px 20px 14px;
   border-radius: 2px;
   background-color: #18297a;
   letter-spacing: -0.06rem;
 }
 
 @media screen and (max-width: 768px) {
-  .listType-header .detail-main-title .detail-container .detail-content {
-    width: 100%;
-  }
-  .listType-header .detail-main-title .detail-container .detail-content2 p {
-    width: 100%;
-  }
-  .listType-header .detail-main-title .detail-container .detail-img {
-    max-width: 76.8rem;
-    height: 9.5rem;
-  }
 
-  .listType-header .detail-main-title .detail-container .detail-img img {
-    display: none;
+  .listType-header .detail-main-title .detail-container {
+    padding: 4rem 0;
   }
   .listType-header .detail-main-title .detail-container .detail-file {
-    background-color: #f9f9f9;
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding: 1.6rem 2rem;
+
+    ul {
+      padding-left: 1rem;
+    }
   }
   .listType-header .detail-main-title .detail-container .detail-file span {
     display: none;
   }
-  .listType-header .detail-main-title .detail-container .detail-file h3 {
-    margin-top: 1.6rem;
-    margin-left: 2rem;
-  }
-  .listType-header .detail-main-title .detail-container .detail-file ul {
-    margin-left: 2rem;
-    margin-bottom: 1.6rem;
-  }
   .listType-header .detail-main-title .detail-container .detail-file .mob-line {
     display: block;
     width: 100%;
-    max-width: 31rem;
     height: 0.1rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1.6rem;
+    margin: 1rem 0 1.6rem;
   }
 
   .listType-header .detail-main-title .main-title-detail {
-    padding-left: 0.5rem;
-    padding-top: 1.8rem;
-    padding-bottom: 2.2rem;
-    font-family: "Pretendard";
-    line-height: 1.5;
+    padding: 1.8rem 1rem 2rem;
     letter-spacing: -0.09rem;
     font-size: 2rem;
-    color: #222;
-    font-weight: 500;
-    border-bottom: 1px solid #eee;
   }
   .listType-header .detail-main-title .main-title-detail p {
     margin-top: 1.6rem;
@@ -1556,17 +1512,6 @@
   font-size: 2rem;
 }
 
-.listType-header .detail-main-title .detail-container .detail-content3 p {
-  margin-top: 4rem;
-  width: 52%;
-  word-break: break-all;
-  margin-bottom: 8rem;
-  line-height: 1.88;
-  letter-spacing: -0.032rem;
-  font-size: 1.6rem;
-  color: #444;
-}
-
 @media screen and (max-width: 768px) {
   .listType-header .detail-main-title .detail-container .Article-detail-img {
     position: relative;
@@ -1574,9 +1519,6 @@
     max-width: 96rem;
     height: 19.6rem;
     background-color: #888;
-  }
-  .listType-header .detail-main-title .detail-container .detail-content3 p {
-    width: 100%;
   }
 }
 

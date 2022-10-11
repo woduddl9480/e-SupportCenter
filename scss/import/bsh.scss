@@ -763,7 +763,7 @@ header {
 @media screen and (max-width: 784px) {
     .lnb {
         li {
-            &:nth-child(n + 3) {
+            &:nth-child(n + 4) {
                 display: none;
             }
         }

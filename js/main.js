@@ -85,3 +85,19 @@ window.addEventListener('resize', () => {
         header.classList.add('main')
     }
 });
+
+//정보자료실 class
+
+const boardTab = document.querySelectorAll('.list-info button')
+
+for(let i = 0; i < boardTab.length; i++) {
+    boardTab[i].addEventListener('click', (clicked) => {
+        const clickedBtn = clicked.currentTarget;
+        console.log(clickedBtn)
+
+        for(let j = 0; j < boardTab.length; j++) {
+            boardTab[j].classList.remove('blue-btn')
+        }
+        clickedBtn.classList.add('blue-btn')
+    });
+}
