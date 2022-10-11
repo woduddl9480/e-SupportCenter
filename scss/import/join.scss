@@ -1,47 +1,12 @@
 // 마이페이지 start
 
-.tab-my {
-  width: 100%;
-  height: 5.6rem;
-  border-radius: 0.4rem;
+.tab .right a strong {
   display: flex;
-  flex-flow: inherit;
-  border: 1px solid #cccccc;
-  overflow: hidden;
-}
-
-.tab-my li {
-  width: 100%;
-}
-
-.tab-my li.active a {
-  background: #3355ff;
-  color: #fff;
-}
-.tab-my li.half strong {
   font-weight: normal;
-  display: flex;
-}
-.tab-my li a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-right: 1px solid #cccccc;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  font-family: "ONE-Mobile-Title";
-  color: #444;
-  text-align: center;
-  flex-wrap: wrap;
 }
 
-.tab-my li.half strong p {
+.tab .right a strong p {
   margin-left: 0.5rem;
-}
-
-.tab-my li:nth-child(3) a {
-  border-right: none;
 }
 .contents-box .contents-title {
   width: 100%;
@@ -359,28 +324,13 @@
   margin-left: 7rem;
 }
 
-@media (max-width: 947px) {
-  .tab-my {
-    border-radius: 0;
-  }
-  .tab-my li {
-    height: 5.6rem;
-    float: left;
-    width: 33.3%;
-    margin-bottom: 0.4rem;
-    margin-right: -0.1rem;
-  }
-  .tab-my li.half {
-    width: 50%;
-  }
-  .tab-my li.half strong {
-    display: block;
-  }
-  .tab-my li a {
-    font-size: 1.4rem;
-  }
-  .tab-my li.half strong p {
+@media (max-width: 768px) {
+  .tab .right a strong p {
     margin-left: 0rem;
+  }
+
+  .tab .right a strong {
+    display: block;
   }
   .join .lecture {
     height: 15.2rem;
@@ -506,8 +456,162 @@
   }
 }
 
-// 마이페이지 끝 //
+// 마이페이지 학생용 끝 //
 
+// 마이페이지 학부모 시작 //
+.join-sp-tb {
+  margin-bottom: 2.4rem;
+}
+
+.join-sp-tb .tb-mob {
+  display: none;
+}
+
+.join-sp-tb thead tr {
+  border-top: 0.2rem solid #1a1a1a;
+  height: 4.8rem;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.join-sp-tb tbody tr {
+  border-bottom: 0.1rem solid #eee;
+  height: 6.4rem;
+}
+
+.join-sp-tb tbody tr th:nth-child(1) {
+  padding-left: 2.4rem;
+}
+
+.join-sp-tb thead tr th:nth-child(1) {
+  padding-left: 2.4rem;
+}
+
+.join-sp-tb tbody tr th {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.join-sp-tb tbody tr th {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+}
+
+.join-sp-tb thead tr th {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.06rem;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.join-sp-tb tbody tr td {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+}
+
+.join-sp-tb tbody tr td:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.072rem;
+  text-align: left;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .join-sp-tb {
+    flex-wrap: wrap;
+    border-top: 0.2rem solid #1a1a1a;
+    display: flex;
+    width: 100%;
+  }
+  .join-sp-tb .tb-mob {
+    border-bottom: 0.1rem solid #eee;
+    display: flex;
+    width: 5%;
+  }
+
+  .join-sp-tb .tb-mob tr td {
+    font-weight: normal;
+    color: #eee;
+  }
+
+  .join-sp-tb .tb-mob tr td:nth-child(2) {
+    font-weight: normal;
+    color: #eee;
+  }
+
+  .join-sp-tb thead {
+    width: 30%;
+    padding-top: 2rem;
+    border-bottom: 0.1rem solid #eee;
+    height: 24rem;
+  }
+
+  .join-sp-tb thead tr {
+    margin-left: 1rem;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join-sp-tb thead tr th {
+    line-height: 1.17;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .join-sp-tb thead tr th:nth-child(1) {
+    padding-left: 0rem;
+  }
+
+  .join-sp-tb tbody {
+    border-bottom: 0.1rem solid #eee;
+    width: 65%;
+    padding-top: 2rem;
+    height: 24rem;
+    display: flex;
+  }
+
+  .join-sp-tb tbody tr {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .join-sp-tb tbody tr th {
+    line-height: 1.17;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .join-sp-tb tbody tr td {
+    line-height: 1.17;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .join-sp-tb tbody tr th:nth-child(1) {
+    padding-left: 0rem;
+  }
+
+  .join-sp-tb tbody tr td:nth-child(2) {
+    font-size: 1.4rem;
+    color: #666;
+  }
+}
+// 조인시작//
 .join {
   &.contents {
     padding-top: 4rem;
@@ -877,3 +981,4 @@
     }
   }
 }
+// 조인 끝 //
