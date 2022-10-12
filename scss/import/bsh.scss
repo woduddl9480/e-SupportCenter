@@ -204,7 +204,7 @@ header {
         -webkit-transition: 0.1s;
         -o-transition: 0.1s;
         transition: 0.1s;
-        background: url(../img/nav_bg.png) no-repeat right bottom #fff;
+        background: url($imgPath + 'nav_bg.png') no-repeat right bottom #fff;
         padding: 12rem 0 11.3rem;
         overflow-y: auto;
         overflow-x: scroll;
@@ -249,7 +249,7 @@ header {
 
         .login {
             padding-left: 2.6rem;
-            background: url(../img/login_icon.png) left center no-repeat;
+            background: url($imgPath + 'login_icon.png') left center no-repeat;
 
             .name {
                 font-size: 2rem;
@@ -272,7 +272,7 @@ header {
         .close {
             width: 2.4rem;
             height: 2.4rem;
-            background: url(../img/nav_close_icon.png) no-repeat;
+            background: url($imgPath + 'nav_close_icon.png') no-repeat;
             position: absolute;
             right: 1.5rem;
             top: 1.8rem;
@@ -310,7 +310,7 @@ header {
                 width: 100%;
                 padding-bottom: 8px;
                 border-bottom: 2px solid #eee;
-                background: url(../img/nav_open_button.png) no-repeat right center;
+                background: url($imgPath + 'nav_open_button.png') no-repeat right center;
             }
 
             ul {
@@ -338,7 +338,7 @@ header {
             &.active {
                 >a {
                     border-color: #3355ff;
-                    background: url(../img/nav_close_button.png) no-repeat right center;
+                    background: url($imgPath + 'nav_close_button.png') no-repeat right center;
                 }
 
                 ul {
@@ -351,7 +351,7 @@ header {
     &-info {
         width: 35rem;
         height: 11.3rem;
-        background: url(../img/nav_bg.png) no-repeat right bottom #fff;
+        background: url($imgPath + 'nav_bg.png') no-repeat right bottom #fff;
         position: fixed;
         right: -100%;
         bottom: 0;
@@ -373,7 +373,7 @@ header {
 .hamburger {
     width: 2.4rem;
     height: 1.6rem;
-    background: url(../img/hamburger.png) no-repeat;
+    background: url($imgPath + 'hamburger.png') no-repeat;
     position: absolute;
     right: 1.6rem;
     top: 50%;
@@ -404,23 +404,23 @@ header {
         }
 
         &.notice {
-            background: url(../img/sub_w.png) no-repeat center;
+            background: url($imgPath + 'sub_w.png') no-repeat center;
         }
 
         &.recruit {
-            background: url(../img/recruit_sub_w.png) no-repeat center;
+            background: url($imgPath + 'recruit_sub_w.png') no-repeat center;
         }
 
         &.counseledu {
-            background: url(../img/counseledu_sub_w.png) no-repeat center;
+            background: url($imgPath + 'counseledu_sub_w.png') no-repeat center;
         }
 
         &.join {
-            background: url(../img/join_sub_w.png) no-repeat center;
+            background: url($imgPath + 'join_sub_w.png') no-repeat center;
         }
 
         &.welfare {
-            background: url(../img/welfare_sub_w.png) no-repeat center;
+            background: url($imgPath + 'welfare_sub_w.png') no-repeat center;
         }
     }
 
@@ -458,7 +458,7 @@ header {
                 content: "";
                 width: 1.6rem;
                 height: 0.9rem;
-                background: url(../img/arrow-down.png) no-repeat;
+                background: url($imgPath + 'arrow-down.png') no-repeat;
                 position: absolute;
                 top: 50%;
                 right: 1.6rem;
@@ -513,7 +513,7 @@ header {
             a {
                 width: 6.4rem;
                 height: 6.4rem;
-                background: url(../img/home.png) center no-repeat #4766ff;
+                background: url($imgPath + 'home.png') center no-repeat #4766ff;
                 border-radius: 0.4rem;
 
                 &::after {
@@ -838,23 +838,23 @@ header {
             }
 
             &.notice {
-                background: url(../img/sub_m.png) no-repeat center;
+                background: url($imgPath + 'sub_m.png') no-repeat center;
             }
 
             &.recruit {
-                background: url(../img/recruit_sub_m.png) no-repeat center;
+                background: url($imgPath + 'recruit_sub_m.png') no-repeat center;
             }
 
             &.counseledu {
-                background: url(../img/counseledu_sub_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_sub_m.png') no-repeat center;
             }
 
             &.join {
-                background: url(../img/join_sub_m.png) no-repeat center;
+                background: url($imgPath + 'join_sub_m.png') no-repeat center;
             }
 
             &.welfare {
-                background: url(../img/welfare_sub_m.png) no-repeat center;
+                background: url($imgPath + 'welfare_sub_m.png') no-repeat center;
             }
         }
 
@@ -1150,7 +1150,7 @@ header {
                 content: "";
                 width: 0.9rem;
                 height: 1.6rem;
-                background: url(/img/join_nav_arrow.png) no-repeat center;
+                background: url($imgPath + 'join_nav_arrow.png') no-repeat center;
                 position: absolute;
                 top: 50%;
                 right: -3.4rem;
@@ -1181,7 +1181,7 @@ header {
                 }
 
                 &::after {
-                    background-image: url(/img/join_nav_arrow_on.png);
+                    background-image: url($imgPath + 'join_nav_arrow_on.png');
                 }
             }
         }
@@ -1245,7 +1245,7 @@ header {
                 content: "";
                 width: 12rem;
                 height: 10.9rem;
-                background: url(/img/join_player_bg.png) no-repeat;
+                background: url($imgPath + 'join_player_bg.png') no-repeat;
                 position: absolute;
                 right: 4rem;
                 top: 50%;
@@ -1441,7 +1441,7 @@ header {
                 content: "";
                 width: 0.8rem;
                 height: 1.4rem;
-                background: url(/img/join_certify_arrow.png) no-repeat center;
+                background: url($imgPath + 'join_certify_arrow.png') no-repeat center;
                 position: absolute;
                 right: -1.6rem;
                 top: 50%;

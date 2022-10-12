@@ -76,7 +76,7 @@ header {
             display: block;
             width: 2rem;
             height: 2rem;
-            background: url(../img/main_plus.png) no-repeat center;
+            background: url($imgPath + 'main_plus.png') no-repeat center;
             margin-right: 1rem;
         }
     }
@@ -126,7 +126,7 @@ header {
                 .video-badge {
                     width: 4.8rem;
                     height: 4.8rem;
-                    background: url(../img/sns_icon_1.png) no-repeat center rgba(0, 0, 0, 0.72);
+                    background: url($imgPath + 'sns_icon_1.png') no-repeat center rgba(0, 0, 0, 0.72);
                     border-radius: 50%;
                     right: 0.8rem;
                     bottom: 0.8rem;
@@ -209,7 +209,7 @@ header {
                 content: '';
                 width: 1.6rem;
                 height: 1.6rem;
-                background: url(../img/main_service_arrow.png) no-repeat;
+                background: url($imgPath + 'main_service_arrow.png') no-repeat;
                 position: absolute;
                 right: 2rem;
                 top: 1.5rem;
@@ -244,7 +244,7 @@ header {
                 background: #4c6aff;
 
                 &::after {
-                    background-image: url(../img/main_service_arrow_w.png);
+                    background-image: url($imgPath + 'main_service_arrow_w.png');
                 }
 
                 img,
@@ -411,19 +411,19 @@ header {
                     border-radius: 50%;
 
                     &.blog {
-                        background: url(../img/sns_icon_2.png) no-repeat;
+                        background: url($imgPath + 'sns_icon_2.png') no-repeat;
                     }
 
                     &.youtube {
-                        background: url(../img/sns_icon_3.png) no-repeat;
+                        background: url($imgPath + 'sns_icon_3.png') no-repeat;
                     }
 
                     &.facebook {
-                        background: url(../img/sns_icon_4.png) no-repeat;
+                        background: url($imgPath + 'sns_icon_4.png') no-repeat;
                     }
 
                     &.insta {
-                        background: url(../img/sns_icon_5.png) no-repeat;
+                        background: url($imgPath + 'sns_icon_5.png') no-repeat;
                     }
                 }
             }
@@ -440,7 +440,7 @@ header {
                     content: '';
                     width: 3.7rem;
                     height: 5.6rem;
-                    background: url(../img/main_sns.png) no-repeat center;
+                    background: url($imgPath + 'main_sns.png') no-repeat center;
                     right: 2rem;
                     bottom: 2.3rem;
                 }
@@ -544,11 +544,11 @@ header {
 
         .prev {
             border-right: 0;
-            background-image: url(../img/slide_arrow.png);
+            background-image: url($imgPath + 'slide_arrow.png');
         }
 
         .next {
-            background-image: url(../img/slide_arrow.png);
+            background-image: url($imgPath + 'slide_arrow.png');
             -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             transform: rotate(180deg);
@@ -556,14 +556,14 @@ header {
 
         .stop {
             margin-left: 0.8rem;
-            background-image: url(../img/slide_stop.png);
+            background-image: url($imgPath + 'slide_stop.png');
         }
     }
 
     &-item {
         width: 100%;
         height: 100%;
-        background: url(../img/main_w.png) no-repeat center;
+        background: url($imgPath + 'main_w.png') no-repeat center;
         color: #fff;
         padding: 19.9rem 0 0 44.79%;
 
@@ -714,7 +714,7 @@ header {
 
         &-item {
             padding: 6.8rem 0 0 1.6rem;
-            background: url(../img/main_m.png) center;
+            background: url($imgPath + 'main_m.png') center;
             background-size: cover;
 
             h1 {

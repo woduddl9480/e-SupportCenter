@@ -245,7 +245,7 @@ table.table-recruit {
 
                 h4::after {
                     content: '';
-                    background: url(/img/ico_link.svg);
+                    background: url($imgPath + 'ico_link.svg');
                     display: inline-block;
                     margin-left: 0.8rem;
                     width: 16px;
@@ -363,7 +363,7 @@ table.table-recruit {
 
         .recruit-srchbtn::before {
             content: '';
-            background: url(/img/ico_detail.svg);
+            background: url($imgPath + 'ico_detail.svg');
             display: inline-block;
             margin-right: 1.6rem;
             width: 14px;
@@ -503,7 +503,7 @@ table.table-recruit {
             .tit-prev {
                 a::before {
                     content: "";
-                    background: url(/img/ico-prev--gray.svg);
+                    background: url($imgPath + 'ico-prev--gray.svg');
                     display: inline-block;
                     margin-right: 1.6rem;
                     width: 16px;
@@ -515,7 +515,7 @@ table.table-recruit {
             .tit-next {
                 a::before {
                     content: "";
-                    background: url(/img/ico-next--gray.svg);
+                    background: url($imgPath + 'ico-next--gray.svg');
                     display: inline-block;
                     margin-right: 1.6rem;
                     width: 16px;

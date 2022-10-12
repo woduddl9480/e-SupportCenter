@@ -4,7 +4,7 @@ var gulp = require("gulp"),
   include = require("gulp-file-include"),
   concat = require("gulp-concat");
 var sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
 var src = "./asset/"; // 개발용
 var dist = "./asset/"; // 배포용
 var paths = {
@@ -49,9 +49,9 @@ gulp.task("gulp_css", function () {
     gulp
       .src([paths.src.scss, "!./scss/import/**"])
       .pipe(sass().on("error", sass.logError))
-      .pipe(autoprefixer({
-        cascade: false
-      }))
+      // .pipe(autoprefixer({
+      //   cascade: false
+      // }))
       // .pipe(minificss())
       .pipe(gulp.dest([paths.dist.css]))
       .pipe(browserSync.reload({ stream: true }))

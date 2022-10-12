@@ -51,7 +51,7 @@
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          background: url("../img/footer_arrow.png") no-repeat 93% 50%/1.5rem
+          background: url("$imgPath + 'footer_arrow.png'") no-repeat 93% 50%/1.5rem
             auto;
           padding-left: 2rem;
         }
@@ -89,7 +89,7 @@
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          background: url("../img/footer_arrow.png") no-repeat 93% 50%/1.5rem
+          background: url("$imgPath + 'footer_arrow.png'") no-repeat 93% 50%/1.5rem
             auto;
           padding-left: 2rem;
           letter-spacing: -0.064rem;

@@ -40,20 +40,20 @@
         }
 
         &.house {
-            background: url(../img/welfare_house_w.png) no-repeat center;
+            background: url($imgPath + 'welfare_house_w.png') no-repeat center;
             color: #222;
         }
 
         &.prize {
-            background: url(../img/welfare_prize_w.png) no-repeat center;
+            background: url($imgPath + 'welfare_prize_w.png') no-repeat center;
         }
 
         &.study {
-            background: url(../img/welfare_study_w.png) no-repeat center;
+            background: url($imgPath + 'welfare_study_w.png') no-repeat center;
         }
 
         &.etc {
-            background: url(../img/welfare_fund_w.png) no-repeat center;
+            background: url($imgPath + 'welfare_fund_w.png') no-repeat center;
         }
     }
 
@@ -72,7 +72,7 @@
             font-family: 'ONE-Mobile-Title';
             color: #222;
             padding: 0.6rem 4.2rem;
-            background: url(../img/welfare_info.png) no-repeat;
+            background: url($imgPath + 'welfare_info.png') no-repeat;
             line-height: 1;
             letter-spacing: -0.08rem;
         }
@@ -412,20 +412,20 @@
             }
 
             &.house {
-                background: url(../img/welfare_house_m.png) no-repeat center;
+                background: url($imgPath + 'welfare_house_m.png') no-repeat center;
                 color: #222;
             }
 
             &.prize {
-                background: url(../img/welfare_prize_m.png) no-repeat center;
+                background: url($imgPath + 'welfare_prize_m.png') no-repeat center;
             }
 
             &.study {
-                background: url(../img/welfare_study_m.png) no-repeat center;
+                background: url($imgPath + 'welfare_study_m.png') no-repeat center;
             }
 
             &.etc {
-                background: url(../img/welfare_fund_m.png) no-repeat center;
+                background: url($imgPath + 'welfare_fund_m.png') no-repeat center;
             }
         }
 

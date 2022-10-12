@@ -67,23 +67,23 @@
         }
 
         &.edu {
-            background: url(../img/counseledu_edu.png) no-repeat center;
+            background: url($imgPath + 'counseledu_edu.png') no-repeat center;
         }
 
         &.counsel {
-            background: url(../img/counseledu_counsel.png) no-repeat center;
+            background: url($imgPath + 'counseledu_counsel.png') no-repeat center;
         }
 
         &.mentor {
-            background: url(../img/counseledu_mentor.png) no-repeat center;
+            background: url($imgPath + 'counseledu_mentor.png') no-repeat center;
         }
 
         &.video {
-            background: url(../img/counseledu_video.png) no-repeat center;
+            background: url($imgPath + 'counseledu_video.png') no-repeat center;
         }
 
         &.student {
-            background: url(../img/counseledu_student.png) no-repeat center;
+            background: url($imgPath + 'counseledu_student.png') no-repeat center;
 
             h1 {
                 margin-top: 0;
@@ -196,15 +196,15 @@
                 }
 
                 &-1 {
-                    background: url(../img/homepage.png) no-repeat;
+                    background: url($imgPath + 'homepage.png') no-repeat;
                 }
 
                 &-2 {
-                    background: url(../img/talk.png) no-repeat;
+                    background: url($imgPath + 'talk.png') no-repeat;
                 }
 
                 &-3 {
-                    background: url(../img/phone.png) no-repeat;
+                    background: url($imgPath + 'phone.png') no-repeat;
                     padding-left: 2.2rem;
                     margin-right: 0;
                 }
@@ -735,7 +735,7 @@
             button:not(.btn) {
                 display: block;
                 padding-left: 2.4rem;
-                background: url(../img/file.png) no-repeat left center;
+                background: url($imgPath + 'file.png') no-repeat left center;
                 font-size: 1.5rem;
                 color: #666;
                 margin-bottom: 1.3rem;
@@ -856,7 +856,7 @@
         button {
             width: 3.2rem;
             height: 3.2rem;
-            background: url(../img/calendar_btn.png) no-repeat center;
+            background: url($imgPath + 'calendar_btn.png') no-repeat center;
             cursor: pointer;
         }
     }
@@ -1244,23 +1244,23 @@ button {
             }
 
             &.edu {
-                background: url(../img/counseledu_edu_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_edu_m.png') no-repeat center;
             }
 
             &.counsel {
-                background: url(../img/counseledu_counsel_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_counsel_m.png') no-repeat center;
             }
 
             &.mentor {
-                background: url(../img/counseledu_mentor_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_mentor_m.png') no-repeat center;
             }
 
             &.video {
-                background: url(../img/counseledu_video_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_video_m.png') no-repeat center;
             }
 
             &.student {
-                background: url(../img/counseledu_student_m.png) no-repeat center;
+                background: url($imgPath + 'counseledu_student_m.png') no-repeat center;
             }
         }
 

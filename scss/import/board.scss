@@ -1066,7 +1066,7 @@
   content: '';
   width: 2rem;
   height: 1.6rem;
-  background: url(../img/check_blue.png);
+  background: url($imgPath + 'check_blue.png');
   position: absolute;
   left: 0;
   top: 0.5rem;
@@ -1107,7 +1107,7 @@
   .right
   .right-content2
   h3::before {
-  content: url(../img/check_blue.png);
+  content: url($imgPath + 'check_blue.png');
   margin-right: 0.8rem;
 }
 
@@ -1481,7 +1481,7 @@
     content: '';
     width: 1.6rem;
     height: 1.6rem;
-    background: url(../img/file.png);
+    background: url($imgPath + 'file.png');
     position: absolute;
     left: -0.8rem;
     top: 0;
