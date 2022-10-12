@@ -5,7 +5,16 @@
   font-weight: normal;
 }
 
+.tab .center a strong {
+  display: flex;
+  font-weight: normal;
+}
+
 .tab .right a strong p {
+  margin-left: 0.5rem;
+}
+
+.tab .center a strong p {
   margin-left: 0.5rem;
 }
 .contents-box .contents-title {
@@ -214,6 +223,26 @@
   color: #666;
 }
 
+.free-box ol li .mycontents .mycontents-info .info1 strong {
+  font-weight: normal;
+  margin-left: 15%;
+  line-height: 1.19;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+  font-size: 1.6rem;
+}
+
+.free-box ol li .mycontents .mycontents-info .info3 strong {
+  font-weight: normal;
+  margin-left: 15%;
+  line-height: 1.19;
+  letter-spacing: -0.064rem;
+  text-align: left;
+  color: #666;
+  font-size: 1.5rem;
+}
+
 .free-box ol li:nth-child(1) .mycontents .mycontents-info strong:nth-child(1) {
   margin-left: 15%;
   font-size: 1.5rem;
@@ -222,16 +251,6 @@
   letter-spacing: -0.06rem;
   text-align: left;
   color: #222;
-}
-
-.free-box ol li .mycontents .mycontents-info strong:nth-child(3) {
-  font-size: 1.6rem;
-  font-weight: normal;
-  margin-left: 15%;
-  line-height: 1.19;
-  letter-spacing: -0.064rem;
-  text-align: left;
-  color: #666;
 }
 
 .free-box ol li .mycontents .mycontents-btn {
@@ -324,6 +343,14 @@
 }
 
 @media (max-width: 945px) {
+  .free-box ol li .mycontents .mycontents-info .info1 strong {
+    font-size: 1.4rem;
+  }
+
+  .free-box ol li .mycontents .mycontents-info .info3 strong {
+    font-size: 1.4rem;
+  }
+
   .tab .right a strong p {
     margin-left: 0rem;
   }
@@ -448,7 +475,7 @@
     width: 18rem;
   }
 
-  #my-position {
+  .my-position {
     position: absolute;
     top: 2rem;
     right: 1rem;
@@ -531,6 +558,12 @@
 }
 
 @media (max-width: 768px) {
+  .tab .center a strong {
+    display: block;
+  }
+  .tab .center a strong p {
+    margin-left: 0rem;
+  }
   .join-sp-tb {
     flex-wrap: wrap;
     border-top: 0.2rem solid #1a1a1a;

@@ -79,6 +79,16 @@
   padding-left: 2.4rem;
 }
 
+.listType-header
+  .info-main
+  .info-right
+  .info-tb
+  tbody
+  tr:nth-child(5)
+  td:nth-child(2) {
+  line-height: 1.5;
+}
+
 .listType-header .info-main .info-right .info-tb tbody tr .color-box {
   background-color: #f5f7ff;
 
