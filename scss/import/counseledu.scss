@@ -11,12 +11,21 @@
         border-radius: 1.6rem;
         color: #fff;
         padding-left: 50.1%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         margin-bottom: 2.4rem;
-        
+
         h1 {
             font-size: 3.6rem;
             font-family: map-get($ftStyle, secondary);
@@ -53,21 +62,26 @@
         &.edu {
             background: url(../img/counseledu_edu.png) no-repeat center;
         }
+
         &.counsel {
             background: url(../img/counseledu_counsel.png) no-repeat center;
         }
+
         &.mentor {
             background: url(../img/counseledu_mentor.png) no-repeat center;
         }
+
         &.video {
             background: url(../img/counseledu_video.png) no-repeat center;
         }
+
         &.student {
             background: url(../img/counseledu_student.png) no-repeat center;
 
             h1 {
                 margin-top: 0;
             }
+
             p {
                 margin-bottom: 0;
             }
@@ -76,6 +90,8 @@
 
     &-list {
         .item {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
 
             .left {
@@ -91,6 +107,7 @@
                 font-family: map-get($ftStyle, secondary);
                 height: 4rem;
                 margin-right: 4rem;
+                -ms-flex-negative: 0;
                 flex-shrink: 0;
             }
 
@@ -113,12 +130,19 @@
                 }
 
                 &.flex {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
                     justify-content: space-between;
+                    -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
                 }
 
                 &.start {
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
                     justify-content: flex-start;
 
                     div {
@@ -131,6 +155,7 @@
                 padding-left: 2.8rem;
                 display: inline-block;
                 margin-right: 4rem;
+                margin: 0 4rem 1rem 0;
 
                 p {
                     font-size: 1.8rem;
@@ -142,7 +167,11 @@
                 }
 
                 div {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
                     align-items: center;
 
                     &.mobile {
@@ -162,9 +191,11 @@
                 &-1 {
                     background: url(../img/homepage.png) no-repeat;
                 }
+
                 &-2 {
                     background: url(../img/talk.png) no-repeat;
                 }
+
                 &-3 {
                     background: url(../img/phone.png) no-repeat;
                     padding-left: 2.2rem;
@@ -209,19 +240,23 @@
 
             .counselEdu-item {
                 background: #faf7ff;
+
                 h5 {
                     color: #692de0;
                 }
             }
         }
+
         &.mentor {
             .left {
                 border-color: #ff9a26;
                 color: #ff9a26;
             }
+
             .top {
                 padding-bottom: 1.2rem;
             }
+
             .bottom {
                 text-align: center;
             }
@@ -230,6 +265,7 @@
                 background: #fff9f2;
                 height: 27.2rem;
                 padding: 2.4rem 2rem;
+
                 h5 {
                     color: #ff7310;
                     text-align: center;
@@ -237,27 +273,32 @@
                     margin-top: 2.2rem;
                 }
             }
+
             .process {
                 li {
                     line-height: 1.5;
                 }
+
                 &-1 {
                     p {
                         background: #ff9a26;
                     }
                 }
+
                 &-2 {
                     p {
                         background: #ff791f;
                     }
                 }
+
                 &-3 {
-                    p{
+                    p {
                         background: #e05a00;
                     }
                 }
             }
         }
+
         &.counsel {
             .left {
                 border-color: #00997a;
@@ -268,33 +309,37 @@
                 background: #f5faf9;
                 height: 22rem;
                 padding: 3.4rem 0 2.4rem;
+
                 h5 {
                     color: #008066;
                     margin: 3.1rem 0 1rem;
                 }
-        
+
                 p {
                     line-height: 1.19;
                 }
-        
+
                 &.half {
                     width: calc(50% - 0.4rem);
                     margin-top: 0.8rem;
                 }
             }
+
             .process {
                 &-1 {
                     p {
                         background: #00b892;
                     }
                 }
+
                 &-2 {
                     p {
                         background: #008f72;
                     }
                 }
+
                 &-3 {
-                    p{
+                    p {
                         background: #007a62;
                     }
                 }
@@ -309,9 +354,18 @@
         padding: 2.4rem;
 
         .top {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             padding-bottom: 1.6rem;
         }
@@ -344,8 +398,14 @@
         .img-area {
             width: 8rem;
             height: 8rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
     }
@@ -365,6 +425,8 @@
     }
 
     &-apply {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         border: 1px solid #e5e5e5;
         border-radius: 0.5rem;
@@ -408,7 +470,8 @@
             }
         }
 
-        th, td {
+        th,
+        td {
             padding-left: 2.4rem;
             text-align: left;
             border-bottom: 1px solid #d8e4ec;
@@ -430,6 +493,7 @@
             line-height: 1.17;
             margin-bottom: 1rem;
             overflow: hidden;
+            -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -476,7 +540,8 @@
             border-bottom: 2px solid #1a1a1a;
         }
 
-        input[type="text"], select {
+        input[type="text"],
+        select {
             width: 100%;
         }
     }
@@ -484,7 +549,10 @@
     &-edu {
         margin-bottom: 2.4rem;
         border-top: 2px solid #1a1a1a;
+
         .top {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             border-bottom: 1px solid #eee;
             height: 4.5rem;
@@ -496,20 +564,27 @@
             .right {
                 p {
                     padding-left: 4rem;
+                    white-space: pre;
+
                     &:first-child {
                         width: 58%;
                     }
+
                     &:nth-child(2) {
                         width: 20%;
                     }
+
                     &:last-child {
                         width: 22%;
                     }
                 }
             }
         }
+
         .bottom {
             li {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 padding: 2.4rem 0;
                 border-bottom: 1px solid #eee;
@@ -521,6 +596,12 @@
                         font-weight: 500;
                         letter-spacing: -0.072rem;
                         margin: 0.5rem 0 0.9rem;
+                        overflow: hidden;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical
                     }
 
                     span:not(.badge) {
@@ -543,17 +624,28 @@
                         font-size: 1.5rem;
                         color: #666;
                         padding-left: 4rem;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
                         flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
                         justify-content: center;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
                         align-items: flex-start;
 
                         &:first-child {
                             width: 58%;
                         }
+
                         &:nth-child(2) {
                             width: 20%;
                         }
+
                         &:last-child {
                             width: 22%;
                         }
@@ -566,12 +658,16 @@
                 }
             }
         }
+
         .left {
             width: 50.8%;
             padding-left: 2.4rem;
         }
+
         .right {
             width: 49.2%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
     }
@@ -592,6 +688,7 @@
                 margin: 0.3rem 0 0 0.4rem;
             }
         }
+
         td {
             font-size: 1.6rem;
             line-height: 1.2;
@@ -606,7 +703,11 @@
             }
 
             div {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
 
                 span {
@@ -614,7 +715,8 @@
                 }
             }
 
-            em, .point {
+            em,
+            .point {
                 font-weight: 500;
                 color: map-get($color, primary);
             }
@@ -661,6 +763,7 @@
 .video {
     &-list {
         overflow: hidden;
+
         .item {
             display: block;
             float: left;
@@ -669,13 +772,15 @@
             &:nth-child(3n+2) {
                 margin: 0 2.34rem;
             }
+
             &:nth-child(n+4) {
                 margin-top: 2.4rem;
             }
         }
-        
+
         .top {
             position: relative;
+
             img {
                 width: 100%;
                 height: auto;
@@ -684,6 +789,7 @@
                 background: #666;
                 border-radius: 1.5rem 1.5rem 0 0;
             }
+
             .badge {
                 position: absolute;
                 left: 0.8rem;
@@ -698,7 +804,11 @@
             border-radius: 0 0 1.5rem 1.5rem;
 
             .title {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 height: 5.4rem;
                 margin-bottom: 1.6rem;
@@ -707,6 +817,7 @@
             p {
                 word-break: keep-all;
                 overflow: hidden;
+                -o-text-overflow: ellipsis;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
@@ -718,8 +829,14 @@
 
 .calendar {
     .top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         p {
@@ -736,12 +853,17 @@
             cursor: pointer;
         }
     }
+
     &-week {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: #18297a;
         border-radius: 1rem 1rem 0 0;
         color: #fff;
         height: 4.8rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
 
@@ -750,8 +872,12 @@
             font-size: 1.5rem;
         }
     }
+
     &-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         border: 1px solid #ddd;
         border-top: none;
@@ -774,9 +900,11 @@
             &:nth-child(7n+1) {
                 border-left: none;
             }
+
             &:nth-child(n+36) {
                 border-bottom: none;
             }
+
             &:nth-child(7n) {
                 border-right: none;
             }
@@ -786,16 +914,19 @@
                 background: #f9f9f9;
                 cursor: default;
             }
+
             &.weekend {
                 color: #aaaaaa;
                 background: #f2f2f2;
                 cursor: default;
             }
+
             &.impossible {
                 color: #adb4cc;
                 background: #f5f7ff;
                 cursor: default;
             }
+
             &.active {
                 color: #fff;
                 background: #3355ff;
@@ -803,20 +934,34 @@
             }
         }
     }
+
     &-next {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
     }
+
     &-ex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         margin-top: 1.2rem;
+
         .section {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             font-size: 1.5rem;
             line-height: 1;
             color: #444;
             margin: 0 0.8rem;
+
             div {
                 width: 1.6rem;
                 height: 1.6rem;
@@ -826,6 +971,7 @@
                 &.active {
                     background: #3355ff;
                 }
+
                 &.impossible {
                     background: #f5f7ff;
                     border: 1px solid #d2d5e3;
@@ -837,8 +983,11 @@
 
 .apply {
     &-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-bottom: 2.5rem;
+
         p {
             width: 100%;
             font-family: map-get($ftStyle, secondary);
@@ -847,9 +996,11 @@
             line-height: 1;
             margin-bottom: 0.8rem;
         }
+
         input[type="text"] {
             width: 100%;
         }
+
         .section {
             margin-left: 0.8rem;
 
@@ -858,8 +1009,13 @@
             }
         }
     }
+
     &-select {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         span {
@@ -875,6 +1031,7 @@
             }
         }
     }
+
     &-save {
         text-align: center;
         margin: 4rem 0 3.3rem;
@@ -902,33 +1059,43 @@
     &-full {
         width: 100%;
     }
+
     &-80 {
         max-width: 8rem;
     }
+
     &-90 {
         width: 9rem;
     }
+
     &-100 {
         max-width: 10rem !important;
     }
+
     &-120 {
         width: 12rem !important;
     }
+
     &-140 {
         width: 14rem;
     }
+
     &-160 {
         max-width: 14rem;
     }
+
     &-240 {
         max-width: 24rem;
     }
+
     &-320 {
         max-width: 32rem;
     }
+
     &-560 {
         max-width: 56rem;
     }
+
     &-828 {
         max-width: 82.8rem;
     }
@@ -943,15 +1110,19 @@ button {
 }
 
 @media screen and (max-width: 1210px) {
-    .counselEdu-apply  {
-        .left, .right {
+    .counselEdu-apply {
+
+        .left,
+        .right {
             padding: 2rem;
         }
     }
+
     .apply-select {
         select {
             &.w-90 {
-                width: 7rem;
+                max-width: 7rem;
+                width: 25%;
             }
         }
     }
@@ -962,12 +1133,12 @@ button {
         &-list {
             .counselEdu-item {
                 height: auto !important;
-    
+
                 h5 {
                     font-size: 1.6rem;
                 }
             }
-    
+
             .item {
                 .process {
                     li {
@@ -982,6 +1153,8 @@ button {
                 line-height: 1;
                 height: auto;
                 min-height: 4.5rem;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
 
                 .right {
@@ -990,9 +1163,13 @@ button {
                     }
                 }
             }
+
             .right {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
             }
+
             .bottom {
                 li {
                     .right {
@@ -1011,7 +1188,7 @@ button {
 }
 
 @media screen and (max-width: 945px) {
-    .video-list  {
+    .video-list {
         .item {
             width: 100%;
             margin-bottom: 1.6rem;
@@ -1036,10 +1213,13 @@ button {
                 margin-bottom: 0;
             }
         }
+
         &-title {
             height: 35rem;
             padding: 4rem 0 0 2rem;
             background-size: cover !important;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
 
             h1 {
@@ -1059,15 +1239,19 @@ button {
             &.edu {
                 background: url(../img/counseledu_edu_m.png) no-repeat center;
             }
+
             &.counsel {
                 background: url(../img/counseledu_counsel_m.png) no-repeat center;
             }
+
             &.mentor {
                 background: url(../img/counseledu_mentor_m.png) no-repeat center;
             }
+
             &.video {
                 background: url(../img/counseledu_video_m.png) no-repeat center;
             }
+
             &.student {
                 background: url(../img/counseledu_student_m.png) no-repeat center;
             }
@@ -1104,6 +1288,9 @@ button {
                     }
 
                     &.flex {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
                         flex-direction: column;
                     }
 
@@ -1118,7 +1305,8 @@ button {
                     }
                 }
 
-                .process, .way {
+                .process,
+                .way {
                     width: 100%;
                 }
 
@@ -1137,14 +1325,24 @@ button {
                     }
 
                     div {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
                         flex-direction: column;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
                         align-items: flex-start;
+
                         &.pc {
                             display: none;
                         }
+
                         &.mobile {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
                         }
+
                         &.flex-none {
                             display: block;
                         }
@@ -1225,7 +1423,9 @@ button {
         }
 
         &-teacher {
-            thead, colgroup {
+
+            thead,
+            colgroup {
                 display: none;
             }
 
@@ -1248,6 +1448,7 @@ button {
                         content: '신청년도';
                     }
                 }
+
                 &:last-child {
                     margin-bottom: 2rem;
 
@@ -1255,36 +1456,43 @@ button {
                         content: '강사';
                     }
                 }
+
                 &:nth-child(2) {
                     &::before {
                         content: '학교명';
                     }
                 }
+
                 &:nth-child(3) {
                     &::before {
                         content: '학교급';
                     }
                 }
+
                 &:nth-child(4) {
                     &::before {
                         content: '지역';
                     }
                 }
+
                 &:nth-child(5) {
                     &::before {
                         content: '종목';
                     }
                 }
+
                 &:nth-child(6) {
                     &::before {
                         content: '인원';
                     }
                 }
+
                 &:nth-child(7) {
                     &::before {
                         content: '담당자';
                     }
                 }
+
                 &::before {
                     position: absolute;
                     left: 1rem;
@@ -1292,6 +1500,7 @@ button {
                     color: #1a1a1a;
                     font-weight: bold;
                 }
+
                 &::after {
                     content: '';
                     width: 0.1rem;
@@ -1310,10 +1519,12 @@ button {
         }
 
         &-apply {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             border: 0;
 
-            .left, .right {
+            .left,
+            .right {
                 width: 100%;
                 border-top: 2px solid #1a1a1a !important;
             }
@@ -1356,6 +1567,7 @@ button {
 
         &-lesson {
             padding: 3rem 1rem;
+
             h2 {
                 font-size: 2.4rem;
                 line-height: 1.33;
@@ -1364,8 +1576,14 @@ button {
 
             p {
                 font-size: 1.5rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
             }
 
@@ -1402,6 +1620,7 @@ button {
 
                             &.wrap {
                                 div {
+                                    -ms-flex-wrap: wrap;
                                     flex-wrap: wrap;
 
                                     input {
@@ -1410,18 +1629,21 @@ button {
                                     }
                                 }
                             }
+
                             button {
                                 &.w-140 {
                                     width: 11.8rem;
                                     margin-bottom: 0.8rem;
                                 }
                             }
+
                             input {
                                 &.w-120 {
                                     width: calc(100% - 12.3rem) !important;
                                     margin-bottom: 0.8rem;
                                 }
                             }
+
                             .w-560 {
                                 width: 100%;
                                 margin-bottom: 0.4rem;
@@ -1447,6 +1669,7 @@ button {
         &-edu {
             .bottom {
                 li {
+                    -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
                     padding: 2.6rem 1rem 2rem;
                     position: relative;
@@ -1455,6 +1678,7 @@ button {
                         li {
                             word-break: keep-all;
                             overflow: hidden;
+                            -o-text-overflow: ellipsis;
                             text-overflow: ellipsis;
                             display: -webkit-box;
                             -webkit-line-clamp: 2;
@@ -1513,7 +1737,8 @@ button {
                 display: none;
             }
 
-            .left, .right {
+            .left,
+            .right {
                 width: 100%;
             }
 
@@ -1523,6 +1748,7 @@ button {
             }
 
             .right {
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 padding: 1.6rem;
                 background: #f6f6f6;
@@ -1537,16 +1763,18 @@ button {
             .list-right {
                 margin-left: 0;
                 max-width: unset;
+
                 .select {
                     font-size: 1.6rem;
                     padding-right: 2rem;
                     margin-right: 0.4rem;
-                    width: 34%;
+                    width: 33%;
                     max-width: unset;
 
                     &:nth-child(3) {
                         margin-right: 0;
                     }
+
                     &.w-100 {
                         max-width: 9rem !important;
                     }
@@ -1566,10 +1794,11 @@ button {
 
             &.b {
                 width: 100%;
+
                 button {
                     width: calc(50% - 0.3rem);
                     max-width: unset;
-                    
+
                     &.m-r-2 {
                         margin-right: 0.6rem !important;
                     }
@@ -1593,32 +1822,39 @@ button {
             p {
                 font-size: 2.2rem;
             }
+
             margin-bottom: 2.4rem;
         }
+
         &-week {
             div {
                 font-size: 1.4rem;
             }
         }
+
         &-box {
             div {
                 font-size: 1.4rem;
             }
         }
+
         &-ex {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
     }
 
     .apply {
         &-item {
-            
+
             &.wrap {
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
 
                 .section {
                     margin: 0;
-    
+
                     &:nth-child(2) {
                         margin-top: 2.4rem;
                     }
@@ -1636,10 +1872,15 @@ button {
                 letter-spacing: -0.06rem;
                 padding-left: 1rem;
             }
+
+            .w-120 {
+                width: 10rem !important;
+            }
         }
 
         &-save {
             margin-bottom: 0;
+
             p {
                 font-size: 1.4rem;
                 line-height: 1.57;
