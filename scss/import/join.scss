@@ -1,11 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 // 마이페이지 start
 
 .tab .right a strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: normal;
 }
 
 .tab .center a strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: normal;
 }
@@ -20,13 +31,19 @@
 .contents-box .contents-title {
   width: 100%;
   margin-bottom: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .join .lecture {
   margin-bottom: 4rem;
   background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 8rem;
@@ -35,23 +52,39 @@
 .join .lecture form {
   width: 100%;
   gap: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .join .lecture form .lecture-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   gap: 2%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .join .lecture form .classification {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .join .lecture .classification label {
@@ -83,8 +116,12 @@
 }
 
 .join .lecture .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .join .lecture button {
@@ -106,10 +143,16 @@
 .free-box ol li {
   width: 100%;
   height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 0.1rem solid #eee;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .free-box ol li:nth-child(1) {
@@ -117,9 +160,15 @@
 }
 
 .free-box ol li .mycontents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 10rem;
 }
@@ -140,7 +189,8 @@
 
 .free-box ol li .mycontents .mycontents-title h4 {
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   white-space: normal;
   word-wrap: break-word;
   display: -webkit-box;
@@ -164,8 +214,12 @@
 }
 
 .free-box ol li .mycontents .mycontents-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25%;
 }
 
@@ -255,8 +309,12 @@
 
 .free-box ol li .mycontents .mycontents-btn {
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
 }
@@ -268,8 +326,12 @@
   text-align: left;
   color: #222;
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .free-box ol li:nth-child(1) .mycontents .mycontents-btn strong {
   font-weight: 600;
@@ -365,8 +427,12 @@
     width: 100%;
     gap: 2%;
     display: block;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .join .lecture form .lecture-center {
@@ -377,16 +443,24 @@
 
   .join .lecture form .classification {
     margin-top: 2.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 
   .join .lecture .course {
     margin-top: 0.8rem;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .free-box ol li:nth-child(1) {
     display: none;
@@ -428,20 +502,32 @@
   }
 
   .free-box ol li .mycontents .mycontents-info .info1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 1rem;
   }
 
   .free-box ol li .mycontents .mycontents-info .info3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 1rem;
   }
   .free-box ol li .mycontents .mycontents-btn {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 
     padding-left: 1rem;
   }
@@ -565,13 +651,18 @@
     margin-left: 0rem;
   }
   .join-sp-tb {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-top: 0.2rem solid #1a1a1a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
   .join-sp-tb .tb-mob {
     border-bottom: 0.1rem solid #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 5%;
   }
@@ -596,8 +687,13 @@
   .join-sp-tb thead tr {
     margin-left: 1rem;
     border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .join-sp-tb thead tr th {
@@ -614,13 +710,20 @@
     width: 65%;
     padding-top: 2rem;
     height: 24rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .join-sp-tb tbody tr {
     border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .join-sp-tb tbody tr th {
     line-height: 1.17;
@@ -643,5 +746,3 @@
     color: #666;
   }
 }
-
-// 조인 끝 //

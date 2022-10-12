@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 // 센터정보 //
 #map {
   position: relative;
@@ -10,11 +17,17 @@
   color: #888;
   font-stretch: normal;
   font-style: normal;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: -0.064rem;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
@@ -27,6 +40,8 @@
 }
 
 .listType-header .info-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-top: 0.2rem solid #000;
   width: 100%;

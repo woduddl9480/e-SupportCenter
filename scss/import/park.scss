@@ -1,8 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 // 페이지네이션
 .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     &-control {
         font-size: 0;
@@ -16,7 +29,9 @@
             margin-left: 0.5rem;
 
             i {
-                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                        transform: rotate(180deg);
             }
         }
     }
@@ -34,10 +49,14 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.reverse {
-                transform: rotate(180deg) translate(50%, 50%);
+                -webkit-transform: rotate(180deg) translate(50%, 50%);
+                    -ms-transform: rotate(180deg) translate(50%, 50%);
+                        transform: rotate(180deg) translate(50%, 50%);
             }
         }
 
@@ -54,6 +73,8 @@
 
 
     &-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         li {
@@ -128,6 +149,8 @@
             }
 
             .btn-find {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 width: 100%;
                 padding: 19px 0 17px 0;
@@ -163,9 +186,15 @@
 
             .btn-join {
                 width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 margin-top: 2.4rem;
             }
         }
@@ -188,7 +217,7 @@
     height: 0.8rem;
     border-radius: 50%;
     background: #000e52;
-    margin: 0 0.8rem 0.2rem 0 ;
+    margin: 0 0.8rem 0.2rem 0;
     vertical-align: middle;
 }
 
@@ -200,7 +229,7 @@
             background: #f9f9f9;
             border: 1px solid #e5e5e5;
             border-radius: 0.4rem;
-    
+
             ul {
                 li {
                     font-size: 1.5rem;
@@ -212,21 +241,38 @@
                 }
             }
         }
+
         .search2 {
             min-height: 16.2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             position: relative;
         }
+
         .search3 {
             min-height: 1rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             position: relative;
         }
     }
+
     .join-table {
         tbody {
             tr {
@@ -236,39 +282,49 @@
                     font-size: 1.5rem;
                     line-height: 1;
                 }
-    
+
                 td {
                     div {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
                     }
-    
+
                     input[type=text] {
                         height: 4.8rem;
                         line-height: 4.8rem;
                         padding: 0 3rem 0 1rem;
                         border-color: #ccc;
                     }
-    
+
                     input.w-560-2 {
                         width: 57.5%;
                     }
-    
+
                     input.w-100p {
                         width: 84.8%;
                     }
+
                     .confirmed {
+                        display: -webkit-inline-box;
+                        display: -ms-inline-flexbox;
                         display: inline-flex;
                         font-size: 1.4rem;
                         font-weight: 500;
                         color: #ccc;
                         letter-spacing: -0.056rem;
                         height: 4.8rem;
-                        align-items: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
                         margin-left: 1rem;
                     }
+
                     .p-gray {
-                        
+
                         font-size: 14px;
                         font-style: normal;
                         line-height: 1.14;
@@ -276,9 +332,11 @@
                         text-align: left;
                         color: #666;
                     }
+
                     .hyphen {
                         margin: 0 0.4rem;
                     }
+
                     .send-check {
                         font-size: 1.5rem;
                         font-weight: normal;
@@ -287,8 +345,10 @@
                         line-height: 1.2;
                         letter-spacing: -0.3px;
                         text-align: left;
-                        color: #444;margin-bottom: 1rem;
+                        color: #444;
+                        margin-bottom: 1rem;
                     }
+
                     .td-name {
                         font-size: 2rem;
                         font-weight: 600;
@@ -299,6 +359,7 @@
                         text-align: left;
                         color: #222;
                     }
+
                     .td-birth {
                         font-size: 16px;
                         font-weight: normal;
@@ -338,6 +399,7 @@
             }
         }
     }
+
     .join {
         .join-contents {
             .gray-box2 {
@@ -346,7 +408,7 @@
                 background: #f9f9f9;
                 border: 1px solid #e5e5e5;
                 border-radius: 0.4rem;
-        
+
                 ul {
                     li {
                         font-size: 1.5rem;
@@ -358,41 +420,54 @@
                     }
                 }
             }
+
             .search2 {
                 min-height: 16.2rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 position: relative;
             }
         }
+
         .join-table {
             tbody {
                 tr {
                     th {
-                      width: 27%!important;
+                        width: 27% !important;
                     }
-        
+
                     td {
                         .input-id {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                           flex-wrap: wrap;
+                            -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
                         }
+
                         .input-email {
-                            flex-wrap: wrap;
+                            -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
                         }
-        
-                        input[type=text] {
-                            
-                        }
-        
+
+                        input[type=text] {}
+
                         input.w-560-2 {
                             width: 57.5%;
                         }
-        
+
                         input.w-100p {
                             width: 84.8%;
                         }
+
                         .confirmed {
                             font-size: 14px;
                             font-weight: normal;
@@ -400,6 +475,7 @@
                             letter-spacing: -0.56px;
                             text-align: left;
                         }
+
                         .p-gray {
                             font-size: 14px;
                             font-weight: normal;
@@ -407,26 +483,23 @@
                             letter-spacing: -0.56px;
                             text-align: left;
                         }
-                        .hyphen {
-                            
-                        }
+
                         .send-check {
                             font-size: 14px;
                             font-weight: normal;
                             line-height: 1.57;
                             letter-spacing: -0.56px;
                         }
+
                         .td-name {
                             font-size: 1.8rem;
                         }
-                        .td-birth {
-                            
-                        }
+
                     }
                 }
             }
         }
     }
-    
-    
+
+
 }
