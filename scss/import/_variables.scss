@@ -1,24 +1,10 @@
 
 $responsive: (
-    //desktop: 
     tablet: 1280px,
     mobile: 768px,
 );
 
-/*
-@mixin desktop {
-    @media (max-width: #{desktop}) {
-      @content;
-    }
-}
-*/
-
-
 $imgSrc: (
-    /*
-    main: '/img/main/',
-    common: '/img/common/',
-    */
     common: '/img/',
 ); 
 
