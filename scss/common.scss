@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "../scss/import/_variables.scss";
 @import "../scss/import/_mixin.scss";
 // common test edit fix
@@ -223,9 +230,15 @@
 }
 /* 버튼 */
 .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     border-radius: 2px;    
     cursor: pointer;
     &--size {
@@ -325,9 +338,14 @@
 
 /* radio */
 .radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     &__inp {
         margin-right: 0.5rem;
         width: 2rem;
@@ -341,9 +359,14 @@
 
 /* checkbox */
 .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     &__inp {
         margin-right: 0.6rem;
         width: 2rem;
@@ -372,8 +395,12 @@
 
 /* 라벨, 상태, 뱃지 */
 .label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 3rem;
     line-height: 3rem;
     padding: 0 1rem;
@@ -388,8 +415,12 @@
 }
 
 .state {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 7rem;
     height: 3rem;
     line-height: 3rem;
@@ -417,8 +448,12 @@
 
 
 .badge {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 2.4rem;
     line-height: 2.4rem;
     padding: 0 0.8rem;
@@ -454,11 +489,6 @@
   }
 }
 
-
-
-
-
-@import "../scss/import/kkami.scss";
 @import "../scss/import/bsh.scss";
 @import "../scss/import/jsw.scss";
 @import "../scss/import/park.scss";

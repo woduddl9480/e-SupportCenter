@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: inherit;
@@ -17,7 +25,8 @@
 
 *:before,
 *:after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: inherit;
@@ -110,7 +119,8 @@ input[type=submit] {
     background: none;
     border-radius: 0;
     -webkit-appearance: none;
-    appearance: none;
+    -moz-appearance: none;
+         appearance: none;
 }
 
 input[type=text] {
@@ -118,6 +128,18 @@ input[type=text] {
     padding-left: 1.5rem;
     border-radius: 0.2rem;
     border: solid 0.1rem #ccc;
+}
+input::-webkit-input-placeholder {
+    color:#ccc;
+}
+input::-moz-placeholder {
+    color:#ccc;
+}
+input:-ms-input-placeholder {
+    color:#ccc;
+}
+input::-ms-input-placeholder {
+    color:#ccc;
 }
 input::placeholder {
     color:#ccc;
@@ -130,6 +152,22 @@ input:-ms-input-placeholder {
 }
 
 @media all and (max-width: 768px) {
+    input::-webkit-input-placeholder {
+        color:#ccc;
+        font-size: 1.3rem;
+    }
+    input::-moz-placeholder {
+        color:#ccc;
+        font-size: 1.3rem;
+    }
+    input:-ms-input-placeholder {
+        color:#ccc;
+        font-size: 1.3rem;
+    }
+    input::-ms-input-placeholder {
+        color:#ccc;
+        font-size: 1.3rem;
+    }
     input::placeholder {
         color:#ccc;
         font-size: 1.3rem;
@@ -186,7 +224,8 @@ caption {
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
 }
 
 /* 마진 단위 */
