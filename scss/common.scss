@@ -438,6 +438,14 @@
     }
 }
 
+@include mobile {
+  .pagination-list {
+    li.mo-none {
+        display: none!important;
+    }
+  }
+}
+
 @media all and (max-width: 449px) {
   .pagination-list {
     li.mo-none {
