@@ -129,6 +129,12 @@ input:-ms-input-placeholder {
     color:#ccc;
 }
 
+@media all and (max-width: 768px) {
+    input::placeholder {
+        color:#ccc;
+        font-size: 1.3rem;
+    }
+  }
 
 select:disabled {
     border: solid 1px #ccc;
