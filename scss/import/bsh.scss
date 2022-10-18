@@ -23,9 +23,9 @@ header {
     width: 100%;
     height: 8rem;
     padding: 0 4rem;
-    position: relative;
+    position: fixed;
     z-index: 5;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -60,6 +60,7 @@ header {
                 font-size: 1.6rem;
                 padding: 0 1rem;
                 letter-spacing: -0.064rem;
+                color: #fff;
             }
 
             &:last-child {
@@ -90,7 +91,7 @@ header {
             width: 100%;
             height: 100%;
             font-size: 2rem;
-            color: #222;
+            color: #fff;
             font-weight: 600;
             line-height: 1;
             -webkit-box-align: center;

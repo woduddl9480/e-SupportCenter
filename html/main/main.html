@@ -2,7 +2,75 @@
 @@include('../../include/header.html')
 <!-- header include -->
 
-<div class="container main">
+<!-- JQ불러오기 -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- slick불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+<div class="slide-wrap">
+    <div class="slide" style="position:unset">
+        <div class="visual  slide-info">
+            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
+            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
+            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
+        </div>
+    </div>
+    <div class="padgenation">
+        <span class="padgenation-now">1</span>
+        /
+        <span class="padgenation-total"></span>
+    </div>
+    <h1 class="slide-title">
+        체육인의 복지!<br>
+        일자리와 행복에 있습니다.
+    </h1>
+    <p class="slide-txt">
+        학생선수와 학부모에게는 진로인식 개선 서비스<br>
+        새로운 도전을 준비하는 선수에게는 진로 전환 서비스
+    </p>
+    <button class="play" style="display:none;"></button>
+    <button class="stop"></button>
+    <button class="prev"></button>
+    <button class="next"></button>
+</div>
+<script>
+    // console.clear();
+    $('.visual').on('afterChange', function (event, slick, currentSlide) {
+        console.log(slick.slideCount, currentSlide);
+        $('.padgenation-now').text(currentSlide + 1)
+    });
+    $('.visual').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        dots: true,
+        dotsClass: 'custom_paging',
+        customPaging: function (slider, i) {
+            console.log(slider);
+            $('.padgenation-total').text(slider.slideCount)
+            return;
+        }
+    });
+    $('.play').click(function () {
+        $('.visual').slick('slickPlay');
+        $(this).hide()
+        $('.stop').show()
+    });
+
+    $('.stop').click(function () {
+        $('.visual').slick('slickPause');
+        $(this).hide()
+        $('.play').show()
+    });
+</script>
+
+
+
+<!-- 
     <div class="slide">
         <div class="slide-info">
             <div class="slide-progress">
@@ -24,298 +92,298 @@
                 새로운 도전을 준비하는 선수에게는 진로 전환 서비스
             </p>
         </div>
+    </div> -->
+<div class="contents">
+    <div class="contents-box">
+        <h3 class="main-title">e진로지원센터 콘텐츠</h3>
+        <div class="main-contents">
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="신입사원 인터뷰 현직자 5명이 아낌없이 알려주는 취업꿀팁 영상 바로가기">
+                    <span class="badge badge--info">진로교육</span>
+                    <div class="video-badge"></div>
+                </div>
+                <div class="item-bottom">
+                    <p>[신입사원 인터뷰] 현직자 5명이 아낌없이 알려주는 취업꿀팁</p>
+                    <span class="label">진로상담</span>
+                    <span class="label">취업</span>
+                    <span class="label">인터뷰</span>
+                    <span class="label">유튜브</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="[스포츠 영양학] 승패를 좌우하는 과학적 영양 섭취 영상 바로가기">
+                    <span class="badge badge--up">스펙업</span>
+                    <div class="video-badge"></div>
+                </div>
+                <div class="item-bottom">
+                    <p>[스포츠 영양학] 승패를 좌우하는 과학적 영양 섭취</p>
+                    <span class="label">스포츠 영양학</span>
+                    <span class="label">영양섭취</span>
+                    <span class="label">스펙업</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="[스포츠 빅데이터] 체계적인 '스포츠 빅데이터' 의 역할 콘텐츠 바로가기">
+                    <span class="badge badge--info">진로교육</span>
+                </div>
+                <div class="item-bottom">
+                    <p>[스포츠 빅데이터] 체계적인 '스포츠 빅데이터' 의 역할</p>
+                    <span class="label">스포츠 빅데이터</span>
+                    <span class="label">진로교육</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="문서의 신이 알려주는 글쓰기의 법칙, 비즈니스 글쓰기의 모든 것 콘텐츠 바로가기">
+                    <span class="badge badge--warning">인문사회</span>
+                </div>
+                <div class="item-bottom">
+                    <p>문서의 신이 알려주는 글쓰기의 법칙, 비즈니스 글쓰기의 모든 것</p>
+                    <span class="label">인문사회</span>
+                    <span class="label">글쓰기</span>
+                    <span class="label">문서작성</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="실무 프로젝트로 배우는 스포츠 마케팅과 브랜딩 콘텐츠 바로가기">
+                    <span class="badge badge--info">진로교육</span>
+                </div>
+                <div class="item-bottom">
+                    <p>실무 프로젝트로 배우는 스포츠 마케팅과 브랜딩</p>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="한 번에 끝내는 비즈니스 영어 콘텐츠 바로가기">
+                    <span class="badge badge--warning">인문사회</span>
+                </div>
+                <div class="item-bottom">
+                    <p>한 번에 끝내는 비즈니스 영어</p>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="한 번에 끝내는 구글 스프레드시트 사용법 콘텐츠 바로가기">
+                    <span class="badge badge--up">스펙업</span>
+                </div>
+                <div class="item-bottom">
+                    <p>한 번에 끝내는 구글 스프레드시트 사용법</p>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="item-top">
+                    <img src="" alt="[생활 체육] 실생활에서 바로 따라 해보는 자가체력측정 방법 영상 바로가기">
+                    <span class="badge badge--up">스펙업</span>
+                    <div class="video-badge"></div>
+                </div>
+                <div class="item-bottom">
+                    <p>[생활 체육] 실생활에서 바로 따라 해보는 자가체력측정 방법</p>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                    <span class="label">진로상담</span>
+                </div>
+            </a>
+        </div>
     </div>
-    <div class="contents">
-        <div class="contents-box">
-            <h3 class="main-title">e진로지원센터 콘텐츠</h3>
-            <div class="main-contents">
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="신입사원 인터뷰 현직자 5명이 아낌없이 알려주는 취업꿀팁 영상 바로가기">
-                        <span class="badge badge--info">진로교육</span>
-                        <div class="video-badge"></div>
-                    </div>
-                    <div class="item-bottom">
-                        <p>[신입사원 인터뷰] 현직자 5명이 아낌없이 알려주는 취업꿀팁</p>
-                        <span class="label">진로상담</span>
-                        <span class="label">취업</span>
-                        <span class="label">인터뷰</span>
-                        <span class="label">유튜브</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="[스포츠 영양학] 승패를 좌우하는 과학적 영양 섭취 영상 바로가기">
-                        <span class="badge badge--up">스펙업</span>
-                        <div class="video-badge"></div>
-                    </div>
-                    <div class="item-bottom">
-                        <p>[스포츠 영양학] 승패를 좌우하는 과학적 영양 섭취</p>
-                        <span class="label">스포츠 영양학</span>
-                        <span class="label">영양섭취</span>
-                        <span class="label">스펙업</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="[스포츠 빅데이터] 체계적인 '스포츠 빅데이터' 의 역할 콘텐츠 바로가기">
-                        <span class="badge badge--info">진로교육</span>
-                    </div>
-                    <div class="item-bottom">
-                        <p>[스포츠 빅데이터] 체계적인 '스포츠 빅데이터' 의 역할</p>
-                        <span class="label">스포츠 빅데이터</span>
-                        <span class="label">진로교육</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="문서의 신이 알려주는 글쓰기의 법칙, 비즈니스 글쓰기의 모든 것 콘텐츠 바로가기">
-                        <span class="badge badge--warning">인문사회</span>
-                    </div>
-                    <div class="item-bottom">
-                        <p>문서의 신이 알려주는 글쓰기의 법칙, 비즈니스 글쓰기의 모든 것</p>
-                        <span class="label">인문사회</span>
-                        <span class="label">글쓰기</span>
-                        <span class="label">문서작성</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="실무 프로젝트로 배우는 스포츠 마케팅과 브랜딩 콘텐츠 바로가기">
-                        <span class="badge badge--info">진로교육</span>
-                    </div>
-                    <div class="item-bottom">
-                        <p>실무 프로젝트로 배우는 스포츠 마케팅과 브랜딩</p>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="한 번에 끝내는 비즈니스 영어 콘텐츠 바로가기">
-                        <span class="badge badge--warning">인문사회</span>
-                    </div>
-                    <div class="item-bottom">
-                        <p>한 번에 끝내는 비즈니스 영어</p>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="한 번에 끝내는 구글 스프레드시트 사용법 콘텐츠 바로가기">
-                        <span class="badge badge--up">스펙업</span>
-                    </div>
-                    <div class="item-bottom">
-                        <p>한 번에 끝내는 구글 스프레드시트 사용법</p>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="item-top">
-                        <img src="" alt="[생활 체육] 실생활에서 바로 따라 해보는 자가체력측정 방법 영상 바로가기">
-                        <span class="badge badge--up">스펙업</span>
-                        <div class="video-badge"></div>
-                    </div>
-                    <div class="item-bottom">
-                        <p>[생활 체육] 실생활에서 바로 따라 해보는 자가체력측정 방법</p>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                        <span class="label">진로상담</span>
-                    </div>
-                </a>
-            </div>
+    <div class="contents-box service">
+        <h3 class="main-title">e진로지원센터 서비스</h3>
+        <div class="main-service">
+            <a href="">
+                <img src="../img/main_service_1.png" alt="온라인 잡매칭 바로가기">
+                <p>온라인 잡매칭</p>
+                <span class="common">채용정보 제공</span>
+                <span class="hover">
+                    진로 탐색 및 전환<br>
+                    위한 맞춤형 상담<br>
+                    및 정보제공
+                </span>
+            </a>
+            <a href="">
+                <img src="../img/main_service_2.png" alt="진로 상담 바로가기">
+                <p>진로 상담</p>
+                <span class="common">맞춤형 진로 상담</span>
+                <span class="hover">
+                    선수경력자를 위한<br>
+                    채용정보 제공 및<br>
+                    구인구직 매칭 서비스
+                </span>
+            </a>
+            <a href="">
+                <img src="../img/main_service_3.png" alt="학생선수 진로교육 바로가기">
+                <p>학생선수 진로교육</p>
+                <span class="common">진로 전환 대비</span>
+                <span class="hover">
+                    선수들의 운동·학업<br>
+                    병행과 진로 전환 대비<br>
+                    의 중요성 및 과정 소개
+                </span>
+            </a>
+            <a href="">
+                <img src="../img/main_service_4.png" alt="진로 역량 교육 바로가기">
+                <p>진로 역량 교육</p>
+                <span class="common">직업 기초 소양 교육</span>
+                <span class="hover">
+                    스포츠 전문 분야 및<br>
+                    직업기초소양교육을 통해<br>
+                    선수진로 전환 역량 제고
+                </span>
+            </a>
+            <a href="">
+                <img src="../img/main_service_5.png" alt="멘토링 바로가기">
+                <p>멘토링</p>
+                <span class="common">분야별 선수 멘토 구성</span>
+                <span class="hover">
+                    분야별 선수 멘토-멘티<br>
+                    그룹 구성, 관심 분야 <br>
+                    직무체험 및 정보 제공
+                </span>
+            </a>
         </div>
-        <div class="contents-box service">
-            <h3 class="main-title">e진로지원센터 서비스</h3>
-            <div class="main-service">
-                <a href="">
-                    <img src="../img/main_service_1.png" alt="온라인 잡매칭 바로가기">
-                    <p>온라인 잡매칭</p>
-                    <span class="common">채용정보 제공</span>
-                    <span class="hover">
-                        진로 탐색 및 전환<br>
-                        위한 맞춤형 상담<br>
-                        및 정보제공
-                    </span>
-                </a>
-                <a href="">
-                    <img src="../img/main_service_2.png" alt="진로 상담 바로가기">
-                    <p>진로 상담</p>
-                    <span class="common">맞춤형 진로 상담</span>
-                    <span class="hover">
-                        선수경력자를 위한<br>
-                        채용정보 제공 및<br>
-                        구인구직 매칭 서비스
-                    </span>
-                </a>
-                <a href="">
-                    <img src="../img/main_service_3.png" alt="학생선수 진로교육 바로가기">
-                    <p>학생선수 진로교육</p>
-                    <span class="common">진로 전환 대비</span>
-                    <span class="hover">
-                        선수들의 운동·학업<br>
-                        병행과 진로 전환 대비<br>
-                        의 중요성 및 과정 소개
-                    </span>
-                </a>
-                <a href="">
-                    <img src="../img/main_service_4.png" alt="진로 역량 교육 바로가기">
-                    <p>진로 역량 교육</p>
-                    <span class="common">직업 기초 소양 교육</span>
-                    <span class="hover">
-                        스포츠 전문 분야 및<br>
-                        직업기초소양교육을 통해<br>
-                        선수진로 전환 역량 제고
-                    </span>
-                </a>
-                <a href="">
-                    <img src="../img/main_service_5.png" alt="멘토링 바로가기">
-                    <p>멘토링</p>
-                    <span class="common">분야별 선수 멘토 구성</span>
-                    <span class="hover">
-                        분야별 선수 멘토-멘티<br>
-                        그룹 구성, 관심 분야 <br>
-                        직무체험 및 정보 제공
-                    </span>
-                </a>
+    </div>
+    <div class="contents-box">
+        <div class="main-notice">
+            <div class="item">
+                <h3 class="main-title">
+                    공지사항
+                    <a href=""></a>
+                </h3>
+                <ul class="bottom">
+                    <li>
+                        <a href="">
+                            <p>[진로역량교육] 8월 교육일정 캘린더 공지</p>
+                            <span class="date">2022-07-21</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>[7월 3차 진로지원센터 추천 채용공고] 공지하여 드립니다.</p>
+                            <span class="date">2022-07-21</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2022년 연간 진로역량교육 프로그램 안내</p>
+                            <span class="date">2022-07-21</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>[채용공고] 진진시스템 - 경기실적등록(스포츠데이터 등)</p>
+                            <span class="date">2022-07-21</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>7월 교육일정 캘린더 공지</p>
+                            <span class="date">2022-07-21</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="contents-box">
-            <div class="main-notice">
-                <div class="item">
-                    <h3 class="main-title">
-                        공지사항
-                        <a href=""></a>
-                    </h3>
-                    <ul class="bottom">
-                        <li>
-                            <a href="">
-                                <p>[진로역량교육] 8월 교육일정 캘린더 공지</p>
-                                <span class="date">2022-07-21</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>[7월 3차 진로지원센터 추천 채용공고] 공지하여 드립니다.</p>
-                                <span class="date">2022-07-21</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>2022년 연간 진로역량교육 프로그램 안내</p>
-                                <span class="date">2022-07-21</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>[채용공고] 진진시스템 - 경기실적등록(스포츠데이터 등)</p>
-                                <span class="date">2022-07-21</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>7월 교육일정 캘린더 공지</p>
-                                <span class="date">2022-07-21</span>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="item">
+                <h3 class="main-title">
+                    채용정보
+                    <a href=""></a>
+                </h3>
+                <div class="bottom">
+                    <a href="" class="item-employ">
+                        <div>
+                            <span class="point">(사)제철</span>
+                            <span class="date">2022-07-21</span>
+                            <p>포스코 메디컬피트니스 운동처방사 모집</p>
+                        </div>
+                        <span class="date">2022-07-21</span>
+                    </a>
+                    <a href="" class="item-employ">
+                        <div>
+                            <span class="point">아프로에프</span>
+                            <span class="date">2022-07-21</span>
+                            <p>시설관리 공무관리 사원 모집</p>
+                        </div>
+                        <span class="date">2022-07-21</span>
+                    </a>
+                    <a href="" class="item-employ">
+                        <div>
+                            <span class="point">(재)국립</span>
+                            <span class="date">2022-07-21</span>
+                            <p>국립심포니오케스트라 경영관리팀원 채용 공고</p>
+                        </div>
+                        <span class="date">2022-07-21</span>
+                    </a>
                 </div>
-                <div class="item">
-                    <h3 class="main-title">
-                        채용정보
-                        <a href=""></a>
-                    </h3>
-                    <div class="bottom">
-                        <a href="" class="item-employ">
-                            <div>
-                                <span class="point">(사)제철</span>
-                                <span class="date">2022-07-21</span>
-                                <p>포스코 메디컬피트니스 운동처방사 모집</p>
-                            </div>
-                            <span class="date">2022-07-21</span>
-                        </a>
-                        <a href="" class="item-employ">
-                            <div>
-                                <span class="point">아프로에프</span>
-                                <span class="date">2022-07-21</span>
-                                <p>시설관리 공무관리 사원 모집</p>
-                            </div>
-                            <span class="date">2022-07-21</span>
-                        </a>
-                        <a href="" class="item-employ">
-                            <div>
-                                <span class="point">(재)국립</span>
-                                <span class="date">2022-07-21</span>
-                                <p>국립심포니오케스트라 경영관리팀원 채용 공고</p>
-                            </div>
-                            <span class="date">2022-07-21</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contents-box">
-            <h3 class="main-title">e진로지원센터 SNS</h3>
-            <div class="main-sns">
-                <a href="" class="item">
-                    <div class="top">
-                        <img src="" alt="네이버 블로그 바로가기">
-                        <span class="blog"></span>
-                    </div>
-                    <div class="bottom">
-                        <span class="point">네이버 블로그</span>
-                        <div>
-                            <p>꿀 같은 휴식인 점심시간은 근로시간에 포함될까?</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="top">
-                        <img src="" alt="유튜브 바로가기">
-                        <span class="youtube"></span>
-                    </div>
-                    <div class="bottom">
-                        <span class="point">유튜브</span>
-                        <div>
-                            <p>색다른 직업, 색을 다루는 컬러리스트</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="top">
-                        <img src="" alt="페이스북 바로가기">
-                        <span class="facebook"></span>
-                    </div>
-                    <div class="bottom">
-                        <span class="point">페이스북</span>
-                        <div>
-                            <p>러닝메이트 달리의 취업 꿀팁 진로상담 편</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="item">
-                    <div class="top">
-                        <img src="" alt="인스타그램 바로가기">
-                        <span class="insta"></span>
-                    </div>
-                    <div class="bottom">
-                        <span class="point">인스타그램</span>
-                        <div>
-                            <p>
-                                달리팍도사<br>
-                                진로에 대한 고민 -제2화-
-                            </p>
-                        </div>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
+    <div class="contents-box">
+        <h3 class="main-title">e진로지원센터 SNS</h3>
+        <div class="main-sns">
+            <a href="" class="item">
+                <div class="top">
+                    <img src="" alt="네이버 블로그 바로가기">
+                    <span class="blog"></span>
+                </div>
+                <div class="bottom">
+                    <span class="point">네이버 블로그</span>
+                    <div>
+                        <p>꿀 같은 휴식인 점심시간은 근로시간에 포함될까?</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="top">
+                    <img src="" alt="유튜브 바로가기">
+                    <span class="youtube"></span>
+                </div>
+                <div class="bottom">
+                    <span class="point">유튜브</span>
+                    <div>
+                        <p>색다른 직업, 색을 다루는 컬러리스트</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="top">
+                    <img src="" alt="페이스북 바로가기">
+                    <span class="facebook"></span>
+                </div>
+                <div class="bottom">
+                    <span class="point">페이스북</span>
+                    <div>
+                        <p>러닝메이트 달리의 취업 꿀팁 진로상담 편</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="top">
+                    <img src="" alt="인스타그램 바로가기">
+                    <span class="insta"></span>
+                </div>
+                <div class="bottom">
+                    <span class="point">인스타그램</span>
+                    <div>
+                        <p>
+                            달리팍도사<br>
+                            진로에 대한 고민 -제2화-
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 </div>
 <div class="main-support">
     <a href="">
