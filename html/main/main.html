@@ -1,5 +1,5 @@
 <!-- header include -->
-@@include('../../include/header.html')
+@@include('../../include/header_main.html')
 <!-- header include -->
 
 <!-- JQ불러오기 -->
@@ -10,12 +10,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
+<!-- 됐지?
+디테일한건 맞추고
+top에서 오는건 px로 맞춰도 돼 모발에서
+그리고 모발에서 텍스트 타이틀 있는 부분은
+div 100% 인데 양쪽에 padding 이 있다고 생각하고 작업하는게 좋아
+그래서 padding으로 넣어놨으니까 계산해서 바꾸면 됨
+html 코드는 그냥 pc /mo 하나로 합지침
+ㅇㅋ? -->
 <div class="slide-wrap">
     <div class="slide" style="position:unset">
         <div class="visual slide-info">
             <!-- 반복 -->
             <div class="img-box">
+                <!-- 피씨이미지 -->
                 <img src="/img/main_w.png" alt="" class="pc">
+                <!-- 모발이미 -->
                 <img src="/img/main_m.png" alt="" class="mo">
                 <div class="img-box-txt">
                     <h1 class="img-box-txt--title">

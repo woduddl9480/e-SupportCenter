@@ -9,7 +9,7 @@ header {
     &.main {
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
-
+        position: fixed;
         .nav {
             >li {
                 >a {
@@ -601,7 +601,7 @@ header {
 
                 &-txt {
                     position: absolute;
-                    top: 50px;
+                    bottom: 25%;
                     left: 55%;
 
                     &--title {
@@ -634,37 +634,13 @@ header {
         font-size: 2rem;
         color: #fff;
         font-weight: bold;
-        left: 44.79%;
+        left: 55%;
         top: 26.5%;
     }
 
-    // .slide-title {
-    //     position: absolute;
-    //     left: 44.79%;
-    //     top: 30.5%;
-    //     color: #fff;
-    //     font-size: 6.4rem;
-    //     line-height: 1.25;
-    //     letter-spacing: -0.256rem;
-    //     font-weight: bold;
-    // }
-
-    // .slide-txt {
-    //     position: absolute;
-    //     left: 44.79%;
-    //     top: 58%;
-    //     font-size: 2rem;
-    //     line-height: 1.6;
-    //     letter-spacing: -0.08rem;
-    //     color: #fff;
-    // }
+    
 
     button {
-        // position: absolute;
-        // display: -webkit-box;
-        // display: -ms-flexbox;
-        // display: flex;
-        // top: 79%;
         width: 4.8rem;
         height: 4.8rem;
         background: rgba(0, 0, 0, 0.72) no-repeat center;
@@ -714,6 +690,260 @@ header {
     display: block !important;
 }
 
+@media screen and (max-width: 1600px) { 
+    .slide-wrap {
+        .slide {
+            &-info {
+                .img-box {
+                    position: relative;
+    
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+    
+                    &-txt {
+                        position: absolute;
+                        bottom: 23%;
+                        left: 55%;
+    
+                        &--title {
+                            color: #fff;
+                            font-size: 6rem;
+                            line-height: 1.2;
+                            letter-spacing: -0.256rem;
+                            font-weight: bold;
+                        }
+                        &--content {
+                            font-size: 2rem;
+                            line-height: 1.6;
+                            letter-spacing: -0.08rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+    
+            &-btn {
+                position: absolute;
+                bottom: 50px;
+                left: 55%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) { 
+    .slide-wrap {
+        .slide {
+            .slide {
+                &-info {
+                    .img-box {
+                        position: relative;
+        
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+        
+                        &-txt {
+                            position: absolute;
+                            bottom: 30%;
+                            left: 55%;
+        
+                            &--title {
+                                color: #fff;
+                                font-size: 5rem;
+                                line-height: 1.2;
+                                letter-spacing: -0.256rem;
+                                font-weight: bold;
+                            }
+                            &--content {
+                                font-size: 2rem;
+                                line-height: 1.5;
+                                letter-spacing: -0.08rem;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                bottom: 50px;
+                left: 55%;
+            }
+        }
+        .padgenation {
+            position: absolute;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+            left: 69%;
+            top: 77.5%;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .slide-wrap {
+        .slide {
+            .slide {
+                &-info {
+                    .img-box {
+                        position: relative;
+        
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+        
+                        &-txt {
+                            position: absolute;
+                            bottom: 30%;
+                            left: 55%;
+        
+                            &--title {
+                                font-size: 4rem;
+                                line-height: 1.2;
+                                letter-spacing: -0.256rem;
+                            }
+                            &--content {
+                                font-size: 1.5rem;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                bottom: 50px;
+                left: 55%;
+            }
+        }
+        .padgenation {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
+            left: 71%;
+            top: 71.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        background: none;
+    }
+    .slide-wrap {
+        .slide {
+            .slide {
+                &-info {
+                    .img-box {
+                        position: relative;
+        
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+        
+                        &-txt {
+                            position: absolute;
+                            bottom: 33%;
+                            left: 55%;
+        
+                            &--title {
+                                font-size: 4rem;
+                                line-height: 1.2;
+                                letter-spacing: -0.256rem;
+                            }
+                            &--content {
+                                font-size: 1.5rem;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                bottom: 50px;
+                left: 55%;
+            }
+        }
+        .padgenation {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
+            left: 71%;
+            top: 71.5%;
+        }
+        button {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    
+    
+}
+@media screen and (max-width: 840px) {
+    header {
+        background: none;
+    }
+    .slide-wrap {
+        .slide {
+            .slide {
+                &-info {
+                    .img-box {
+                        position: relative;
+        
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+        
+                        &-txt {
+                            position: absolute;
+                            bottom: 40%;
+                            left: 55%;
+        
+                            &--title {
+                                font-size: 3rem;
+                                line-height: 1.2;
+                                letter-spacing: -0.256rem;
+                            }
+                            &--content {
+                                font-size: 1.3rem;
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                bottom: 50px;
+                left: 55%;
+            }
+        }
+        .padgenation {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
+            left: 74%;
+            top: 64.5%;
+        }
+        button {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    
+    
+}
 @media screen and (max-width: 768px) {
     .slide-wrap {
         .mo {
@@ -724,11 +954,9 @@ header {
             display: none !important;
         }
     }
-
-
     .slide-wrap {
-
         .padgenation {
+            padding-left: 2rem;
             position: absolute;
             font-size: 2rem;
             color: #fff;
@@ -736,40 +964,42 @@ header {
             left: 0;
             top: 80px;
         }
-
         .slide {
-            &-info {
-                .img-box {
-                    position: relative;
-
-                    img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-
-                    &-txt {
-                        position: absolute;
-                        top: 100px;
-                        left: 0;
-                        padding: 2rem;
-
-                        &--title {
-                            color: #fff;
-                            font-size: 3.4rem;
-                            line-height: 1.25;
-                            letter-spacing: -0.256rem;
-                            font-weight: bold;
+            .slide {
+                &-info {
+                    .img-box {
+                        position: relative;
+    
+                        img {
+                            max-width: 100%;
+                            height: auto;
                         }
-
-                        &--content {
-                            font-size: 1rem;
-                            line-height: 1.6;
-                            letter-spacing: -0.08rem;
-                            color: #fff;
+    
+                        &-txt {
+                            position: absolute;
+                            top: 100px;
+                            left: 0;
+                            padding: 2rem;
+    
+                            &--title {
+                                color: #fff;
+                                font-size: 3.4rem;
+                                line-height: 1.25;
+                                letter-spacing: -0.256rem;
+                                font-weight: bold;
+                            }
+    
+                            &--content {
+                                font-size: 1rem;
+                                line-height: 1.6;
+                                letter-spacing: -0.08rem;
+                                color: #fff;
+                            }
                         }
                     }
                 }
             }
+            
 
             &-btn {
                 position: absolute;
@@ -780,31 +1010,6 @@ header {
         }
     }
 }
-
-// @media screen and (max-width: 1700px) {
-//     .slide-wrap {
-//         .padgenation {
-//             top: 25.5%;
-//         }
-//         .slide-title {
-//             top: 31.5%;
-//             font-size: 5.5rem;
-//             margin-bottom: 0.5rem;
-//             line-height: 1.15;
-//         }
-//         .slide-txt {
-//             font-size: 2rem;
-//             top: 57%;
-//             line-height: 1.3;
-//         }
-
-//         button {
-//             top: 77%;
-//             width: 4.5rem;
-//             height: 4.5rem;
-//         }
-//     }
-// }
 
 @media screen and (max-width: 1280px) {
     .slide-wrap {
