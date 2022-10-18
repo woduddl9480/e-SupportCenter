@@ -12,15 +12,39 @@
 
 <div class="slide-wrap">
     <div class="slide" style="position:unset">
-        <div class="visual slide-info pc">
-            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
-            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
-            <div class="img-box"><img src="/img/main_w.png" alt=""></div>
-        </div>
-        <div class="visual slide-info mo">
-            <div class="img-box"><img src="/img/main_m.png" alt=""></div>
-            <div class="img-box"><img src="/img/main_m.png" alt=""></div>
-            <div class="img-box"><img src="/img/main_m.png" alt=""></div>
+        <div class="visual slide-info">
+            <!-- 반복 -->
+            <div class="img-box">
+                <img src="/img/main_w.png" alt="" class="pc">
+                <img src="/img/main_m.png" alt="" class="mo">
+                <div class="img-box-txt">
+                    <h1 class="img-box-txt--title">
+                        체육인의 복지!<br>
+                        일자리와 행복에 있습니다.
+                    </h1>
+                    <p class="img-box-txt--content">
+                        학생선수와 학부모에게는 진로인식 개선 서비스<br>
+                        새로운 도전을 준비하는 선수에게는 진로 전환 서비스
+                    </p>
+                </div>
+            </div>
+            <!-- 반복 -->
+            <!-- 반복 -->
+            <div class="img-box">
+                <img src="/img/main_w.png" alt="" class="pc">
+                <img src="/img/main_m.png" alt="" class="mo">
+                <div class="img-box-txt">
+                    <h1 class="img-box-txt--title">
+                        체육인의 복지!<br>
+                        일자리와 행복에 있습니다.
+                    </h1>
+                    <p class="img-box-txt--content">
+                        학생선수와 학부모에게는 진로인식 개선 서비스<br>
+                        새로운 도전을 준비하는 선수에게는 진로 전환 서비스
+                    </p>
+                </div>
+            </div>
+            <!-- 반복 -->
         </div>
     </div>
     <div class="padgenation">
@@ -28,18 +52,12 @@
         /
         <span class="padgenation-total"></span>
     </div>
-    <h1 class="slide-title">
-        체육인의 복지!<br>
-        일자리와 행복에 있습니다.
-    </h1>
-    <p class="slide-txt">
-        학생선수와 학부모에게는 진로인식 개선 서비스<br>
-        새로운 도전을 준비하는 선수에게는 진로 전환 서비스
-    </p>
-    <button class="play" style="display:none;"></button>
-    <button class="stop"></button>
-    <button class="prev"></button>
-    <button class="next"></button>
+    <div class="slide-btn flex">
+        <button class="prev"></button>
+        <button class="next" style="margin-left:-4px"></button>
+        <button class="play" style="display:none;"></button>
+        <button class="stop"></button>
+    </div>
 </div>
 <script>
     // console.clear();
