@@ -471,6 +471,14 @@
         background-color: #fc3;
         color: map-get($color, primary);
     }
+    &--etc {
+        background-color: #00A388;
+        color: #fff;
+    }
+    &--sports {
+        background-color: #4C6AFF;
+        color: #fff;
+    }
 }
 
 @include mobile {
