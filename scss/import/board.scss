@@ -838,7 +838,7 @@
   background-color: #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-bottom: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -846,6 +846,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 
 .list-info ol {
@@ -2136,9 +2137,17 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+ 
+  cursor: pointer;
   img {
     margin-left: 0.8rem;
   }
+  .list-info {
+    // display: none;
+  }
+}
+#toc-toggle2 {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .img-file {
