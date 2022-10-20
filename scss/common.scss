@@ -222,12 +222,12 @@
 }
 
 /* 라디오 */
-.radio {
-  &__input {
-  }
-  &__label {
-  }
-}
+// .radio {
+//   &__input {
+//   }
+//   &__label {
+//   }
+// }
 /* 버튼 */
 .btn {
     display: -webkit-box;
@@ -382,7 +382,6 @@
         &:disabled {
             background-color: #eee;
             border: 1px solid #ccc;
-            
         }
     }
     &__label {
@@ -398,7 +397,6 @@
         }
     }
 }
-
 
 /* 라벨, 상태, 뱃지 */
 .label {
