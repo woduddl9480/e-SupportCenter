@@ -419,6 +419,7 @@
     letter-spacing: -0.06rem;
 }
 
+/*리스트용*/
 .state {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,6 +450,40 @@
         border-color: #aaa;
         color: #ccc;
     }
+}
+
+/* 오른쪽 마진 추가 */
+.state2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  margin-right: 1.2rem;
+  font: {
+      weight: 500;
+      size: 1.5rem;
+  }
+  letter-spacing: -0.06rem;
+  &--waiting {
+      border-color: #aaa;
+      color: map-get($color, primary);
+  }
+  &--apply {
+      border-color: #00a9ff;
+      color: #00a9ff;
+  }
+  &--completion {
+      border-color: #aaa;
+      color: #ccc;
+  }
 }
 
 
