@@ -295,6 +295,14 @@
                 border-color: #4766ff;
             }
         }
+        &-primary2 {
+          border: 1px solid #4766ff;
+          color: #d6ddff;
+          &:hover {
+              background-color: #f5f7ff;
+              border-color: #4766ff;
+          }
+      }
         &-dark {
             border: 1px solid #222;
             color: #666;
