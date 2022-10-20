@@ -47,16 +47,19 @@
         <p>정보자료실</p>
       </div>
       <div class="listType-header">
-        <!-- <div class="mob-list-info">
-          <h1>
+        <div class="mob-list-info ">
+          <h1 class="main-title-info" id="toc-toggle" onclick="openCloseToc()">
             관심분야를 선택하세요
-            <img
+            
+          </h1>
+          <img
+              id="srch-img"
               src="/img/arrow-down.png"
               alt="관심분야 선택"
+              class=""
             />
-          </h1>
-        </div> -->
-        <div class="list-info">
+        </div>
+        <div class="list-info" id="toc-content">
           <ol>
             <li>
               <button class="blue-btn">국민취업지원제도</button>
@@ -381,10 +384,10 @@
             
           </div>
           <hr class="section-part" />
-          <div class="article-main-title mob-blind">
+          <div class="article-main-title">
             <h1 class="main-title2-info">근로계약서 샘플 및 Q&A(파일)</h1>
           </div>
-          <div class="article-main mob-blind">
+          <div class="article-main">
             <div class="artile-section1">
               <div class="left">
                 <h2>소개</h2>
@@ -400,6 +403,21 @@
     </div>
   </div>
 </div>
+
+<!-- 페이지 여닫기 -->
+<script>
+  function openCloseToc() {
+    if(document.getElementById('toc-content').style.display === 'block') {
+      document.getElementById('toc-content').style.display = 'none';
+      document.getElementById("srch-img").src = "/img/ico_arrow--down.svg";
+    } else {
+      document.getElementById('toc-content').style.display = 'block';
+      document.getElementById("srch-img").src = "/img/ico_arrow--down.svg";
+      document.getElementById("contents_detail").style = "border-bottom: none!important";
+    }
+  }
+</script>
+
 
 <!-- footer include -->
 @@include('../../include/footer.html')

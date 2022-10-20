@@ -670,7 +670,8 @@ table.table-recruit {
                         letter-spacing: -0.56px;
                         padding: 2rem 1rem;
 
-                        input[type=text] {
+                        input[type=text],
+                        input[type=password] {
                             height: 4rem;
                             line-height: 4rem;
                             padding: 0 3rem 0 1rem;

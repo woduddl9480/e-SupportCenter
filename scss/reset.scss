@@ -129,6 +129,12 @@ input[type=text] {
     border-radius: 0.2rem;
     border: solid 0.1rem #ccc;
 }
+input[type=password] {
+    height: 4.8rem;
+    padding-left: 1.5rem;
+    border-radius: 0.2rem;
+    border: solid 0.1rem #ccc;
+}
 input::-webkit-input-placeholder {
     color:#ccc;
 }

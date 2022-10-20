@@ -2064,7 +2064,14 @@
 .listType-header .free-main {
   display: none;
 }
-
+.main-title-info {
+  font-family: "ONE-Mobile-Title";
+  line-height: 1.5;
+  letter-spacing: -0.048rem;
+  font-size: 2.4rem;
+  color: #222;
+  
+}
 .boardlist-table {
   margin: 4rem 0 2.4rem;
   border-top: 2px solid #1a1a1a;
@@ -2123,30 +2130,16 @@
 
   }
 
-  // th,
-  // td {
-  //     padding-left: 2.4rem;
-  //     border-bottom: 1px solid #d8e4ec;
-      
-  // }
 }
 
-// .img-speaker {
-//   text-align: center;
-//   img {
-   
-//     padding: 0!important;
-//     width: 24px!important;
-//     height: 19px!important;
-//     border: none!important;
-//     box-shadow: none!important;
-//     border-radius: 0!important;
-//     -webkit-border-radius: 0!important;
-//     -moz-border-radius: 0!important;
-//     -ms-border-radius: 0!important;
-//     -o-border-radius: 0!important;
-//   }
-// }
+.mob-list-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    margin-left: 0.8rem;
+  }
+}
 
 .img-file {
   img {
