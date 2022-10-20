@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 // 푸터 여백 없애는 용도
 .container-bottom2 {
   padding: 4rem 0 0;
@@ -2056,5 +2057,134 @@
   .listType-header .detail-main-title .qna-before img {
     margin-top: -4rem;
     margin-left: 0;
+  }
+}
+
+/*게시판 리스트 수정*/
+.listType-header .free-main {
+  display: none;
+}
+
+.boardlist-table {
+  margin: 4rem 0 2.4rem;
+  border-top: 2px solid #1a1a1a;
+  width: 100%;
+  max-width: 128rem;
+  margin-top: 0.8rem;
+  h4 {
+    letter-spacing: -0.072rem;
+    line-height: 1.19;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #222222;
+  }
+  tr {
+      height: 4.8rem;
+      &.board-bg {
+        background-color: #f0f6fa;
+      }
+  }
+  th {
+      height: 4.6rem;
+      padding: 1rem 2rem 1rem 2rem !important;
+      font-size: 1.5rem;
+      letter-spacing: -0.06rem;
+      color: #1a1a1a;
+      font-weight: 600;
+      border-bottom: 0.1rem solid #eee;
+  }
+  // td:first-child {
+  //     text-align: left;
+  // }
+
+  td {
+      padding: 2.4rem 2rem !important;
+      border-bottom: 0.1rem solid #eee;
+      height: auto;
+      font-size: 1.6rem;
+      letter-spacing: -0.064rem;
+      color: #666;
+
+      &.strong {
+          font-size: 1.8rem;
+          color: map-get($color, primary);
+          letter-spacing: -0.072rem;
+          font-weight: 500;
+      }
+      img {
+          // background-color: #fff;
+          display: inline-block;
+          text-align: center;
+          &.img-speaker {
+            width: 24px!important;
+            height: 19px!important;
+          }
+      }
+
+  }
+
+  // th,
+  // td {
+  //     padding-left: 2.4rem;
+  //     border-bottom: 1px solid #d8e4ec;
+      
+  // }
+}
+
+// .img-speaker {
+//   text-align: center;
+//   img {
+   
+//     padding: 0!important;
+//     width: 24px!important;
+//     height: 19px!important;
+//     border: none!important;
+//     box-shadow: none!important;
+//     border-radius: 0!important;
+//     -webkit-border-radius: 0!important;
+//     -moz-border-radius: 0!important;
+//     -ms-border-radius: 0!important;
+//     -o-border-radius: 0!important;
+//   }
+// }
+
+.img-file {
+  img {
+    display: inline-block;
+    padding: 0!important;
+    width: 16px!important;
+    height: 16px!important;
+    border: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    -ms-border-radius: 0!important;
+    -o-border-radius: 0!important;
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  .boardlist-table {
+      th {
+          padding: 0.5rem 1rem !important;
+      }
+      td {
+          padding: 2rem 1rem !important;
+          img {
+              
+          }
+      }
+      
+  }
+}
+
+@media all and (max-width: 768px) {
+  .boardlist-table {
+    display: none;
+  }
+  .listType-header .free-main {
+    display: block;
   }
 }
