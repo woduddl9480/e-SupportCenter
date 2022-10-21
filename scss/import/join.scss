@@ -28,6 +28,7 @@
 .tab .center a strong p {
   margin-left: 0.5rem;
 }
+
 .contents-box .contents-title {
   width: 100%;
   margin-bottom: 2.4rem;
@@ -35,8 +36,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .join .lecture {
@@ -56,11 +57,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .join .lecture form .lecture-center {
@@ -71,11 +72,11 @@
   gap: 2%;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .join .lecture form .classification {
@@ -83,8 +84,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .join .lecture .classification label {
@@ -110,6 +111,7 @@
   width: 16rem;
   height: 4.8rem;
 }
+
 .join .lecture .course .select {
   width: 16rem;
   height: 4.8rem;
@@ -120,8 +122,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .join .lecture button {
@@ -147,12 +149,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 0.1rem solid #eee;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .free-box ol li:nth-child(1) {
@@ -164,18 +166,20 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 10rem;
 }
+
 .free-box ol li .mycontents .mycontents-title {
   width: 55%;
   padding-left: 24px;
 }
+
 .free-box ol li .mycontents .mycontents-title .blue {
   font-size: 1.5rem;
   font-weight: 600;
@@ -190,7 +194,7 @@
 .free-box ol li .mycontents .mycontents-title h4 {
   overflow: hidden;
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: normal;
   word-wrap: break-word;
   display: -webkit-box;
@@ -218,8 +222,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 25%;
 }
 
@@ -313,8 +317,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
 }
@@ -330,12 +334,14 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
+
 .free-box ol li:nth-child(1) .mycontents .mycontents-btn strong {
   font-weight: 600;
 }
+
 .free-box ol li .mycontents .mycontents-btn button:nth-child(1) {
   cursor: pointer;
   width: 9.4rem;
@@ -420,19 +426,21 @@
   .tab .right a strong {
     display: block;
   }
+
   .join .lecture {
     height: 15.2rem;
   }
+
   .join .lecture form {
     width: 100%;
     gap: 2%;
     display: block;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .join .lecture form .lecture-center {
@@ -447,8 +455,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -459,12 +467,14 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .free-box ol li:nth-child(1) {
     display: none;
   }
+
   .free-box ol li {
     height: 27rem;
   }
@@ -483,6 +493,7 @@
   .free-box ol li .mycontents .mycontents-title h4 {
     -webkit-line-clamp: 2;
   }
+
   .free-box ol li .mycontents .mycontents-title {
     padding-top: 3.2rem;
     width: 100%;
@@ -493,6 +504,7 @@
     font-size: 1.5rem;
     margin-bottom: 10rem;
   }
+
   .free-box ol li .mycontents .mycontents-info {
     padding-bottom: 2.4rem;
     padding-top: 2.4rem;
@@ -506,8 +518,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 1rem;
   }
 
@@ -516,18 +528,19 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 1rem;
   }
+
   .free-box ol li .mycontents .mycontents-btn {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
 
     padding-left: 1rem;
   }
@@ -557,6 +570,7 @@
   .join .lecture .classification .select {
     width: calc(100% - 10.9rem);
   }
+
   .join .lecture .course .select {
     width: calc(100% - 10.9rem);
   }
@@ -647,18 +661,21 @@
   .tab .center a strong {
     display: block;
   }
+
   .tab .center a strong p {
     margin-left: 0rem;
   }
+
   .join-sp-tb {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     border-top: 0.2rem solid #1a1a1a;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
+
   .join-sp-tb .tb-mob {
     border-bottom: 0.1rem solid #eee;
     display: -webkit-box;
@@ -692,8 +709,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .join-sp-tb thead tr th {
@@ -701,6 +718,7 @@
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
+
   .join-sp-tb thead tr th:nth-child(1) {
     padding-left: 0rem;
   }
@@ -722,9 +740,10 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .join-sp-tb tbody tr th {
     line-height: 1.17;
     font-size: 1.4rem;
@@ -748,39 +767,121 @@
 }
 
 /*마이페이지 프로그램 참여 현황 상단 테이블*/
-.scroll-auto {
-  .wd-80 {
-    width: 80%!important;
+.mypage-table {
+  margin: 4rem 0 2.4rem;
+
+  tr {
+    border: 1px solid #e4e6ee;
+
+    th {
+      height: 4.6rem;
+      font-size: 1.5rem;
+      letter-spacing: -0.06rem;
+      color: #1a1a1a;
+      font-weight: 600;
+      background-color: #f5f7ff;
+      color: #18297a;
+      border-right: 1px solid #e4e6ee;
+    }
+
+    td {
+      height: 6.4rem;
+      font-size: 1.6rem;
+      letter-spacing: -0.064rem;
+      color: #666;
+      border-right: 1px solid #e4e6ee;
+      padding: 1rem 2rem;
+
+      input {
+        width: 80%;
+        padding-left: 1rem!important;
+      }
+      .select {
+        width: 70%;
+      }
+
+      td:last-child {
+        border: none;
+      }
+
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #d8e4ec;
+
+    }
   }
-  width: 100%;
-  overflow-x: auto;
+}
+
+@include mobile {
   .mypage-table {
-    border-radius: 0.4rem;
-    tbody {
-      display: table-row-group;
-      tr {
-        border: 1px solid #e4e6ee;
-        th {
-          background: #f5f7ff;
-          color: #18297a;
-          font-size: 1.6rem;
-          font-weight: 600;
-          text-align: center;
-          border-right: 1px solid #e4e6ee;
-        }
-        td {
-          padding: 1.5rem;
-          font-size: 1.4rem;
-          text-align: center;
-          border-right: 1px solid #e4e6ee;
-        }
-        td:last-child {
-          border: none;
+
+    colgroup,
+    th {
+      display: none;
+    }
+
+    th,
+    td {
+      white-space: pre;
+    }
+
+    td {
+      display: block;
+      height: auto;
+      border: 0;
+      font-size: 1.4rem !important;
+      font-weight: normal !important;
+      color: #666 !important;
+      margin-bottom: 1rem;
+      position: relative;
+      line-height: 1.14;
+      border: none !important;
+
+      &:nth-child(2) {
+        &::before {
+          content: '교육년도';
         }
       }
-    }
-    
-  }
 
+      &:nth-child(4) {
+        &::before {
+          content: '구분';
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 2rem;
+
+        &::before {
+          content: '교육명';
+        }
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        font-size: 1.4rem;
+        color: #1a1a1a;
+        font-weight: bold;
+      }
+      .select {
+        width: 40%!important;
+        height: 4rem!important;
+        line-height: 4rem;
+
+      }
+      input {
+        width: 50%!important;
+      }
+    }
+
+    tr {
+      padding: 0 !important;;
+      border-left: none !important;
+      border-right: none !important;
+    }
+  }
 }
- 
