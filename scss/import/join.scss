@@ -746,3 +746,41 @@
     color: #666;
   }
 }
+
+/*마이페이지 프로그램 참여 현황 상단 테이블*/
+.scroll-auto {
+  .wd-80 {
+    width: 80%!important;
+  }
+  width: 100%;
+  overflow-x: auto;
+  .mypage-table {
+    border-radius: 0.4rem;
+    tbody {
+      display: table-row-group;
+      tr {
+        border: 1px solid #e4e6ee;
+        th {
+          background: #f5f7ff;
+          color: #18297a;
+          font-size: 1.6rem;
+          font-weight: 600;
+          text-align: center;
+          border-right: 1px solid #e4e6ee;
+        }
+        td {
+          padding: 1.5rem;
+          font-size: 1.4rem;
+          text-align: center;
+          border-right: 1px solid #e4e6ee;
+        }
+        td:last-child {
+          border: none;
+        }
+      }
+    }
+    
+  }
+
+}
+ 
