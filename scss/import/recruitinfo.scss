@@ -650,6 +650,7 @@ table.table-recruit {
                 font-weight: 500;
                 font-size: 1.5rem;
                 letter-spacing: -0.064rem;
+                padding: 0!important;
             }
 
             tbody {
@@ -657,7 +658,7 @@ table.table-recruit {
                     th {
                         font-size: 1.3rem;
                         width: 30%;
-                        padding: 0 2.4rem 0 1.2rem;
+                        padding: 0 2rem 0 1.2rem;
                     }
 
                     th.th-detail {
