@@ -59,33 +59,6 @@ navOpen.addEventListener('click',() => {
     }
 });
 
-//main 페이지 헤더에 main 클래스 추가
-
-window.addEventListener('load', () => {
-    const container = document.querySelector('.container')
-    const header = document.querySelector('header')
-
-    if(container.classList.contains('main') && window.innerWidth > 1000) {
-        header.classList.add('main')
-    }
-});
-
-// 브라우저 창 1000px 이하 main 클래스 제거
-
-window.addEventListener('resize', () => {
-    const width = window.innerWidth;
-    const container = document.querySelector('.container')
-    const header = document.querySelector('header')
-
-    if(width < 1000 && container.classList.contains('main')) {
-        header.classList.remove('main')
-    } else if (!container.classList.contains('main')) {
-        header.classList.remove('main')
-    } else {
-        header.classList.add('main')
-    }
-});
-
 //정보자료실 class
 
 const boardTab = document.querySelectorAll('.list-info button')
