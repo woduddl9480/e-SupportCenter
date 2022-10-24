@@ -9,7 +9,7 @@ header {
     &.main {
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
-        position: fixed;
+        position: absolute;
         .nav {
             >li {
                 >a {
@@ -506,6 +506,16 @@ header {
 
             .m {
                 display: none;
+            }
+        }
+    }
+
+    &.contents {
+        .contents-box {
+            margin-bottom: 8rem;
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -1365,6 +1375,16 @@ header {
 
                 &:nth-child(n+3) {
                     margin-top: 2rem;
+                }
+            }
+        }
+
+        &.contents {
+            .contents-box {
+                margin-bottom: 6rem;
+
+                &:last-child {
+                    margin-bottom:  6rem;
                 }
             }
         }
