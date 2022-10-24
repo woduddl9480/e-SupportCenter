@@ -1012,31 +1012,31 @@
 
       &:nth-child(2) {
         &::before {
-          content: '학교급';
+          content: '구분';
         }
       }
 
       &:nth-child(3) {
         &::before {
-          content: '지역';
+          content: '교육명';
         }
       }
 
       &:nth-child(4) {
         &::before {
-          content: '종목';
+          content: '교육일정';
         }
       }
 
       &:nth-child(5) {
         &::before {
-          content: '인원';
+          content: '강사(멘토링)';
         }
       }
 
       &:nth-child(6) {
         &::before {
-          content: '담당자';
+          content: '신청일';
         }
       }
 
