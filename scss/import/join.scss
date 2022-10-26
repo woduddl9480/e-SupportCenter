@@ -1058,6 +1058,11 @@
         background: #eee;
       }
     }
+    td.none::before,
+    td.none::after {
+      content: ''!important;
+      background: transparent!important;
+    }
 
     tr {
       padding: 2rem 0;
