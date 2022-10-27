@@ -814,7 +814,7 @@ header {
 
 @media screen and (max-width: 784px) {
     .lnb {
-        li {
+        >li {
             &:nth-child(n + 4) {
                 display: none;
             }
@@ -879,7 +879,7 @@ header {
                 width: 100%;
                 font-size: 1.5rem;
                 padding-left: 1.2rem;
-
+                letter-spacing: -0.1rem;
                 &::after {
                     right: 1rem;
                     width: 1.2rem;
