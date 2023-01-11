@@ -127,6 +127,46 @@
   .color-box {
   height: 11.6rem;
 }
+.container{
+  .container-bottom{
+    .contents{
+      .listType-header{
+        .info-main{
+          .tour{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            .seventy-five{
+              width: 100%;
+              max-width: 796px;
+             
+            }
+            .thirty-three{
+              width: 100%;
+              max-width: 392px;
+            }
+            .thirty-three.mob{
+              display: none;
+            }
+            .half{
+              width: 100%;
+              max-width: 593px;
+            }
+            li{margin-bottom: 40px;
+              height: 391px;
+              background-color: #000;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
   #map {

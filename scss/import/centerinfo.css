@@ -104,6 +104,16 @@
   height: 11.6rem;
 }
 
+.container .container-bottom .contents .listType-header .info-main .tour {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .container-bottom .contents .listType-header .info-main .tour li {
+  background-color: #000;
+}
+
 @media screen and (max-width: 768px) {
   #map {
     height: 26.2rem;
