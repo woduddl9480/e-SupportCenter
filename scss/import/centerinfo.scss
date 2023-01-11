@@ -6,6 +6,46 @@
 */
 
 // 센터정보 //
+
+@font-face {
+  font-family: "ONE-Mobile-Title";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tour-title{
+  font-family: "ONE-Mobile-Title";
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.28px;
+  text-align: center;
+  color: #222;
+}
+
+.tour-title.white{
+  color: #fff;
+}
+
+.tour-contents{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #444;
+}
+
+.tour-contents.white{
+  color: #eee;
+}
+
 #map {
   position: relative;
   width: 100%;
@@ -156,8 +196,20 @@
             }
             li{margin-bottom: 40px;
               height: 391px;
-              background-color: #000;
-
+              background-color: #ddd;
+              padding: 130px 24px 0px 24px;
+              &:nth-child(2){
+                background-color: rgba($color: #000000, $alpha: 0.8);
+              }
+              &:nth-child(6){
+                background-color:#f0f5ff;
+              }
+              &:nth-child(7){
+                background-color:#f5faf9;
+              }
+              &:nth-child(15){
+                background-color:#fff9f2;
+              }
             }
           }
         }
@@ -220,4 +272,67 @@
   #daumRoughmapContainer1664849100308 {
     display: none;
   }
+
+
+  .container{
+    .container-bottom{
+      .contents{
+        .listType-header{
+          .info-main{
+            .tour{
+              width: 100%;
+              max-width: 1200px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 12px;
+              .seventy-five{
+                width: 100%;
+                max-width: 796px;
+               
+              }
+              .thirty-three{
+                width: 100%;
+                max-width: 392px;
+              }
+              .thirty-three.mob{
+                display: block;
+              }
+              .half{
+                width: 100%;
+                max-width: 593px;
+              }
+              li{margin-bottom: 40px;
+                height: 391px;
+                background-color: #ddd;
+                padding: 130px 24px 0px 24px;
+                &:nth-child(2){
+                  background-color: rgba($color: #000000, $alpha: 0.8);
+                }
+                &:nth-child(3){
+                  
+                  background-color:#f0f5ff;
+                }
+                &:nth-child(6){
+                  display: none;
+                  background-color:#f0f5ff;
+                }
+                &:nth-child(7){
+                  background-color:#f5faf9;
+                }
+                &:nth-child(12){
+                  
+                  background-color:#fff9f2;
+                }
+                &:nth-child(15){
+                  display: none;
+                  background-color:#fff9f2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
