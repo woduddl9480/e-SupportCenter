@@ -1,5 +1,160 @@
 <!-- header include -->
-@@include('../../include/header.html')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<header>
+    <div class="header-logo">
+        <a href="#" >
+            <img src="/img/main_logo.png" alt="대한체육회 e진로지원센터 로고 바로가기" />
+            <img class="main" src="/img/main_logo_w.png" alt="대한체육회 e진로지원센터 로고 바로가기" />
+        </a>
+    </div>
+    <div class="nav-wrap">
+        <ul class="nav">
+            <li>
+                <a href="#" >상담 및 교육</a>
+                <ul>
+                    <li><a href="#" >진로상담</a></li>
+                    <li><a href="#" >진로역량교육</a></li>
+                    <li><a href="#" >멘토링</a></li>
+                    <li><a href="#" >학생선수 진로교육</a></li>
+                    <li><a href="#" >동영상 교육</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" >채용정보</a>
+                <ul>
+                    <li><a href="#" >채용정보 검색</a></li>
+                    <li><a href="#" >분야별 채용공고</a></li>
+                    <li><a href="#" >채용정보알림신청</a></li>
+                    <li><a href="#" >채용정보 사이트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" >스포츠복지</a>
+                <ul>
+                    <li><a href="#" >경기력향상연구연금</a></li>
+                    <li><a href="#" >경기지도자연구비</a></li>
+                    <li><a href="#" >생활보조비</a></li>
+                    <li><a href="#" >대학원진학장학금</a></li>
+                    <li><a href="#" >국위유학지원금</a></li>
+                    <li><a href="#" >체육장학금</a></li>
+                    <li><a href="#" >특별보조금</a></li>
+                    <li><a href="#" >장애연금</a></li>
+                    <li><a href="#" >체육전문가 전환지원금</a></li>
+                    <li><a href="#" >대한체육회체육상</a></li>
+                    <li><a href="#" >체육발전유공자포상</a></li>
+                    <li><a href="#" >대한민국체육상</a></li>
+                    <li><a href="#" >우수선수 주택특별공급</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" >게시판</a>
+                <ul>
+                    <li><a href="#" >공지사항</a></li>
+                    <li><a href="#" >공개자료실</a></li>
+                    <li><a href="#" >질의응답</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" >센터 안내</a>
+                <ul>
+                    <li><a href="#" >위치 및 연락처</a></li>
+                    <li><a href="#">센터 둘러보기</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-bg"></div>
+    </div>
+    <ul class="header-login">
+        <li><a href="#" >로그인</a></li>
+        <li><a href="#" >회원가입</a></li>
+    </ul>
+    <button class="hamburger"></button>
+    <div class="nav-box nav-on"></div>
+    <div class="nav-right nav-on">
+        <div class="nav-header">
+            <!-- 로그인 전 -->
+            <!-- <p class="none">로그인을 진행해주세요</p> -->
+            <p class="login">
+                <span class="name">홍길동</span>
+                <span class="badge">14세 미만 회원</span>
+            </p>
+            <button class="btn btn--size-m">로그인</button>
+            <button class="btn btn--size-m">회원가입</button>
+            <button class="close"></button>
+        </div>
+        <ul class="nav-list">
+            <li class="active">
+                <a href="#" onclick="return false;" class="title-03">상담 및 교육</a>
+                <ul>
+                    <li><a href="#" >진로상담</a></li>
+                    <li><a href="#" >진로역량교육</a></li>
+                    <li><a href="#" >멘토링</a></li>
+                    <li><a href="#" >선수 진로교육</a></li>
+                    <li><a href="#" >동영상 교육</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="return false;" class="title-03">채용정보</a>
+                <ul>
+                    <li><a href="#" >채용정보 검색</a></li>
+                    <li><a href="#" >분야별 채용공고</a></li>
+                    <li><a href="#" >채용정보알림신청</a></li>
+                    <li><a href="#" >채용정보 사이트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="return false;" class="title-03">스포츠복지</a>
+                <ul>
+                    <li><a href="#" >경기력향상연구연금</a></li>
+                    <li><a href="#" >경기지도자연구비</a></li>
+                    <li><a href="#" >생활보조비</a></li>
+                    <li><a href="#" >대학원진학장학금</a></li>
+                    <li><a href="#" >국위유학지원금</a></li>
+                    <li><a href="#" >체육장학금</a></li>
+                    <li><a href="#" >특별보조금</a></li>
+                    <li><a href="#" >장애연금</a></li>
+                    <li><a href="#" >체육전문가 전환지원금</a></li>
+                    <li><a href="#" >대한체육회체육상</a></li>
+                    <li><a href="#" >체육발전유공자포상</a></li>
+                    <li><a href="#" >대한민국체육상</a></li>
+                    <li><a href="#" >우수선수 주택특별공급</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="return false;" class="title-03">게시판</a>
+                <ul>
+                    <li><a href="#" >공지사항</a></li>
+                    <li><a href="#" >공개자료실</a></li>
+                    <li><a href="#" >질의응답</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="return false;" class="title-03">센터 안내</a>
+                <ul>
+                    <li><a href="#" >위치 및 연락처</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-info">
+            <h5>고객센터</h5>
+            <p><span>전화</span><span>02-419-1114</span></p>
+            <p><span>메일</span><span>123456@gamil.com</span></p>
+        </div>
+    </div>
+</header>
 <!-- header include -->
 <div class="container">
   <!--
@@ -24,10 +179,10 @@
           </ul>
         </li>
         <li>
-          <a href="">위치 및 연락처</a>
+          <a href="">센터 둘러보기</a>
           <ul>
             <li><a href="">위치및연락처</a></li>
-            <li><a href="">센터둘러보기</a></li>
+            <li><a href="">센터 둘러보기</a></li>
           </ul>
         </li>
       </ul>
@@ -37,116 +192,16 @@
     <div class="contents">
       <div class="contents-title">
         <div class="icon-box">
-          <img src="../img/ping.png" alt="위치 및 연락처" />
+          <img src="../img/home_black.png" alt="센터 둘러보기" />
         </div>
-        <p>위치 및 연락처</p>
+        <p>센터 둘러보기</p>
       </div>
       <div class="listType-header">
         <div class="centerinfo-main-title">
           <h1 class="main-title-info">진로지원센터(서울)</h1>
         </div>
         <div class="info-main">
-          <div id="map">
-            <div class="map-btn">
-              <button onclick="zoomIn()">-</button>
-              <button onclick="zoomOut()">+</button>
-            </div>
-          </div>
-          <script>
-            window.kakao=window.kakao||{},window.kakao.maps=window.kakao.maps||{},window.daum&&window.daum.maps?window.kakao.maps=window.daum.maps:(window.daum=window.daum||{},window.daum.maps=window.kakao.maps),function(){function a(){if(E.length){t(I[E.shift()],a).start()}else e()}function t(a,t){var e=document.createElement("script");return e.charset="utf-8",e.onload=t,e.onreadystatechange=function(){/loaded|complete/.test(this.readyState)&&t()},{start:function(){e.src=a||"",
-            document.getElementsByTagName("head")[0].appendChild(e),e=null}}}function e(){for(;c[0];)c.shift()();o.readyState=2}var o=kakao.maps=kakao.maps||{};if(void 0===o.readyState)o.onloadcallbacks=[],o.readyState=0;else if(2===o.readyState)return;o.VERSION={ROADMAP:"2209kdm",ROADMAP_SUFFIX:"",HYBRID:"2209kdm",SR:"3.00",ROADVIEW:"7.00",ROADVIEW_FLASH:"200402",BICYCLE:"6.00",USE_DISTRICT:"2209kdm",
-            SKYVIEW_VERSION:"160114",SKYVIEW_HD_VERSION:"160107"},o.RESOURCE_PATH={ROADVIEW_AJAX:"//t1.daumcdn.net/roadviewjscore/core/css3d/200204/standard/1580795088957/roadview.js",ROADVIEW_CSS:"//t1.daumcdn.net/roadviewjscore/core/openapi/standard/211122/roadview.js"};for(var n,r="https:"==location.protocol?"https:":"http:",s="",i=document.getElementsByTagName("script"),d=i.length;n=i[--d];)if(/\/(beta-)?dapi\.kakao\.com\/v2\/maps\/sdk\.js\b/.test(n.src)){s=n.src;break}i=null;var c=o.onloadcallbacks,E=["v3"],S="",I={v3:r+"//t1.daumcdn.net/mapjsapi/js/main/4.4.7/kakao.js",services:r+"//t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js",
-            drawing:r+"//t1.daumcdn.net/mapjsapi/js/libs/drawing/1.2.6/drawing.js",clusterer:r+"//t1.daumcdn.net/mapjsapi/js/libs/clusterer/1.0.9/clusterer.js"},_=function(a){var t={};return a.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(a,e,o){t[e]=o}),t}(s);S=_.appkey,S&&(o.apikey=S),o.version="4.4.7";var R=_.libraries;if(R&&(E=E.concat(R.split(","))),"false"!==_.autoload){for(var d=0,l=E.length;d<l;d++)!function(a){a&&document.write('<script charset="UTF-8" src="'+a+'"><\/script>')}(I[E[d]]);o.readyState=2}o.load=function(t){switch(c.push(t),o.readyState){case 0:o.readyState=1,a();break
-            ;case 2:e()}}}();
-            </script>
-          <script>
-            var mapContainer = document.getElementById("map"), // 지도를 표시할 div
-              mapOption = {
-                center: new kakao.maps.LatLng(37.5186072, 127.1163604), // 지도의 중심좌표
-                level: 3, // 지도의 확대 레벨
-              };
-
-            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-            var map = new kakao.maps.Map(mapContainer, mapOption);
-
-            function zoomIn() {
-              // 현재 지도의 레벨을 얻어옵니다
-              var level = map.getLevel();
-
-              // 지도를 1레벨 내립니다 (지도가 확대됩니다)
-              map.setLevel(level - 1);
-
-              // 지도 레벨을 표시합니다
-              displayLevel();
-            }
-
-            function zoomOut() {
-              // 현재 지도의 레벨을 얻어옵니다
-              var level = map.getLevel();
-
-              // 지도를 1레벨 올립니다 (지도가 축소됩니다)
-              map.setLevel(level + 1);
-
-              // 지도 레벨을 표시합니다
-              displayLevel();
-            }
-            var markerPosition = new kakao.maps.LatLng(37.5186072, 127.1163604);
-
-            // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-              position: markerPosition,
-            });
-            marker.setMap(map);
-
-            var iwContent =
-                '<div style="width:18rem; height:6rem; color:#000; text-align:center;"  >대한체육회 진로지원센터 <br><a href="https://map.kakao.com/link/map/대한체육회 진로지원센터,37.5186072, 127.1163604" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/대한체육회 진로지원센터,37.5186072, 127.1163604" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-              iwPosition = new kakao.maps.LatLng(37.5186072, 127.1163604); //인포윈도우 표시 위치입니다
-
-            // 인포윈도우를 생성합니다
-            var infowindow = new kakao.maps.InfoWindow({
-              position: iwPosition,
-              content: iwContent,
-            });
-
-            // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
-            infowindow.open(map, marker);
-            </script>
-          <div class="info-right">
-            <div class="info-right-content">
-              <h1 class="main-info">대한체육회 진로지원센터</h1>
-              <table class="info-tb">
-                <colgroup>
-                  <col style="width: 30%" />
-                  <col style="width: 70%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td class="color-box">전화</td>
-                    <td>02-1588-3011</td>
-                  </tr>
-                  <tr>
-                    <td class="color-box">카카오톡</td>
-                    <td>대한체육회 진로지원센터</td>
-                  </tr>
-                  <tr>
-                    <td class="color-box">메일</td>
-                    <td>career@sports.or.kr</td>
-                  </tr>
-                  <tr>
-                    <td class="color-box">웹사이트</td>
-                    <td>welfare.sports.or.kr</td>
-                  </tr>
-                  <tr>
-                    <td class="color-box">주소</td>
-                    <td>
-                      서울 송파구 올림픽로 424 올림픽공원 평화의광장 편익시설
-                      A-1동 (지번) 방이동 88-1
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -154,5 +209,51 @@
 </div>
 
 <!-- footer include -->
-@@include('../../include/footer.html')
+<footer class="footer">
+  <div class="inner2">
+    <div class="siteWrap">
+      <ol class="mobile_only">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">찾아오시는 길</a></li>
+        <li><a href="#">뷰어 다운로드</a></li>
+        <li><a href="#">자주 찾는 질문</a></li>
+      </ol>
+      <div class="relevant-site">
+        <select>
+          <option>관련 사이트</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <hr class="line" />
+  <div class="footer-bottom">
+    <h1>
+      <a href="#"
+        ><img
+          src="/img/logo_footer.png"
+          alt="대한체육회 e진로지원센터 푸터 로고 바로가기"
+      /></a>
+      <!-- 모바일버전용 셀렉트 display:none 처리해놓음 -->
+      <span class="relevant-site2">
+        <select>
+          <option>관련 사이트</option>
+        </select>
+      </span>
+      <!-- 모바일버전용 셀렉트 -->
+    </h1>
+    <hr class="line2" />
+    <div class="information">
+      <p>주소｜서울특별시 송파구 올림픽로 424(방이동)</p>
+      <p>전화｜02-419-1114</p>
+      <p>메일｜123456@gmail.com</p>
+      <p>
+        Copyrightⓒ 2018 Korean Sport & Olympic Committee. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
 <!-- footer include -->
