@@ -1,0 +1,154 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.footer {
+  overflow: hidden;
+  width: 100%;
+  background: #222;
+  padding: 3.2rem 0;
+}
+.footer .inner2 {
+  width: 100%;
+  position: relative;
+  max-width: 128rem;
+  margin: -1.5rem auto;
+}
+.footer .inner2 .siteWrap {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.footer .inner2 .siteWrap .mobile_only {
+  display: flex;
+  width: 90%;
+  color: #ccc;
+  gap: 4%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.072rem;
+  text-align: left;
+}
+.footer .inner2 .siteWrap .relevant-site select {
+  border-radius: 0.4rem;
+  border: solid 0.1rem #aaa;
+  background-color: #222;
+  width: 24rem;
+  height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #aaa;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("$imgPath + 'footer_arrow.png'") no-repeat 93% 50%/1.5rem auto;
+  padding-left: 2rem;
+}
+.footer .line {
+  width: 100%;
+  margin-top: 3.1rem;
+  border: 0.1rem solid #444;
+}
+.footer .footer-bottom {
+  width: 100%;
+  position: relative;
+  max-width: 128rem;
+  display: flex;
+  margin: 2rem auto;
+}
+.footer .footer-bottom h1 {
+  width: 26%;
+}
+.footer .footer-bottom h1 .relevant-site2 {
+  display: block;
+}
+.footer .footer-bottom h1 .relevant-site2 select {
+  display: none;
+  border-radius: 0.4rem;
+  border: solid 0.1rem #aaa;
+  background-color: #222;
+  width: 18rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #aaa;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("$imgPath + 'footer_arrow.png'") no-repeat 93% 50%/1.5rem auto;
+  padding-left: 2rem;
+  letter-spacing: -0.064rem;
+}
+.footer .footer-bottom .line2 {
+  display: none;
+  width: 100%;
+  margin-top: 3.1rem;
+  border: 0.1rem solid #444;
+}
+.footer .footer-bottom .information {
+  letter-spacing: -0.064rem;
+  font-size: 1.5rem;
+  color: #aaa;
+  width: 90%;
+  max-width: 105rem;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.footer .footer-bottom .information p {
+  text-align: left;
+  margin-right: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .relevant-site select {
+    display: none;
+  }
+  .footer .inner2 .siteWrap .mobile_only {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 8%;
+  }
+  .footer .inner2 .siteWrap .mobile_only li:nth-child(4) {
+    display: none;
+  }
+  .footer .footer-bottom {
+    text-align: center;
+    display: block;
+  }
+  .footer .footer-bottom h1 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    padding: 0 2rem;
+  }
+  .footer .footer-bottom h1 .relevant-site2 select {
+    display: block;
+  }
+  .footer .footer-bottom .line2 {
+    display: block;
+    width: 100%;
+    margin-top: 2.5rem;
+    border: 0.1rem solid #444;
+  }
+  .footer .footer-bottom .information {
+    margin: 3rem auto;
+  }
+  .footer .footer-bottom .information p:nth-child(4) {
+    line-height: 1.69;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+  }
+  .footer .footer-bottom .information p {
+    letter-spacing: -0.026rem;
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}/*# sourceMappingURL=jsw.css.map */
