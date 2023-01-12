@@ -218,7 +218,16 @@
                 background-color:#f0f5ff;
               }
               &:nth-child(7){
+                margin-bottom: 12px;
                 background-color:#f5faf9;
+              }
+              &:nth-child(8){
+                margin-bottom: 12px;
+                
+              }
+              &:nth-child(9){
+                margin-bottom: 12px;
+               
               }
               &:nth-child(15){
                 background-color:#fff9f2;
@@ -332,6 +341,10 @@
                 &:nth-child(7){
                   background-color:#f5faf9;
                 }
+                &:nth-child(10){
+                  margin-bottom: 12px;
+                 
+                }
                 &:nth-child(12){
                   
                   background-color:#fff9f2;
@@ -348,4 +361,61 @@
     }
   }
 
+}
+
+@media screen and (max-width: 390px){
+  .container{
+    .container-bottom{
+      .contents{
+        .listType-header{
+          .info-main{
+            .tour{
+              width: 100%;
+              max-width: 1200px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+              .seventy-five{
+                width: 100%;
+                max-width: 796px;
+               
+              }
+              .thirty-three{
+                width: 100%;
+                max-width: 392px;
+              }
+              .thirty-three.mob{
+                display: block;
+              }
+              .half{
+                width: 100%;
+                max-width: 593px;
+              }
+              li{margin-bottom: 0px;
+                height: 391px;
+                background-color: #ddd;
+                padding: 130px 24px 0px 24px;
+                img{
+                  width: 350px;
+                  height: 175px;
+                }
+                &:nth-child(8){
+                  margin-bottom: 0px;
+                 
+                }
+                &:nth-child(9){
+                  margin-bottom: 0px;
+                 
+                }
+                &:nth-child(10){
+                  margin-bottom: 0px;
+                 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
