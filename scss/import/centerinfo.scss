@@ -205,6 +205,7 @@
               width: 100%;
               max-width: 593px;
             }
+            .mob{display: none;}
             li{margin-bottom: 28px;
               height: 391px;
               background-color: #ddd;
@@ -392,9 +393,10 @@
                 height: 391px;
                 background-color: #ddd;
                 padding: 130px 24px 0px 24px;
-                img{
-                  width: 350px;
-                  height: 175px;
+                .mob{
+                  display: block;}
+                .dsktop{
+                  display: none;
                 }
                 &:nth-child(2){
                   margin-bottom: 32px;
